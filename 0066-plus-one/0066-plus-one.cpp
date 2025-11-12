@@ -1,20 +1,20 @@
 class Solution {
 public:
     vector<int> plusOne(vector<int>& arr) {
-        int j = arr.size() - 1;
-        int carry = 1; // start with +1
+        int i = arr.size() - 1 ;
 
-        while (j >= 0) {
-            int data = arr[j] + carry;
-            arr[j] = data % 10;   // new digit after addition
-            carry = data / 10;    // update carry
-            j--;
+        while(i >= 0){
+            if(arr[i] + 1 != 10){
+                arr[i] += 1 ;
+                return arr;
+            }
+            arr[i] = 0 ;
+            if
+            (i == 0){
+                arr.insert(arr.begin() , 1);
+            }
+            i--;
         }
-
-        if (carry > 0) {
-            arr.insert(arr.begin(), carry);
-        }
-
-        return arr;
+        return arr ;
     }
 };
