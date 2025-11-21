@@ -1,15 +1,17 @@
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
-        if (nums.empty()) return 0;
-
-        int i = 0; // slow pointer
-        for (int j = 1; j < nums.size(); j++) {
-            if (nums[j] != nums[i]) { // found new unique value
-                i++;
-                nums[i] = nums[j];
-            }
+        set <int> st;
+        for(int i = 0 ; i<nums.size() ; i++){
+            st.insert(nums[i]);
         }
-        return i + 1; // length of unique elements
+        
+        int index = 0 ;
+        for(auto it : st){
+            nums[index] = it ;
+            index ++ ;
+        }
+        return st.size() ;
     }
+    
 };
