@@ -1,31 +1,29 @@
 class Solution {
 public:
-    int findPairs(vector<int>& nums, int k) {
-        if(nums.size() == 1 ) return 0 ;
-        sort(nums.begin(), nums.end());
-        int i = 0 ;
-        int j = i + 1 ;
-        set<pair<int, int>> ans ;
-        while(j < nums.size()){
-            if(i == j){
-                j++;
-                continue;
-            }
-            int diff = nums[j] - nums[i];
-            if(diff == k){
-                pair<int ,int> pp ;
-                pp = make_pair(nums[i] , nums[j]);
-                ans.insert(pp);
-                i++;
-                j++;
-            }
-            else if(diff > k){
-                i++;
-            }
-            else{
-                j++;
+
+    bool bs(vector<int> &nums, int start, int x) {
+        int end = nums.size() - 1;
+        while (start <= end) {
+            int mid = (start + end) / 2;
+            if (nums[mid] == x) {
+                return true;
+            } else if (nums[mid] > x) {
+                end = mid - 1;
+            } else {
+                start = mid + 1;
             }
         }
-        return ans.size();
+        return false;
+    }
+
+    int findPairs(vector<int>& nums, int k) {
+        sort(nums.begin() , nums.end());
+        int ans = 0 ;
+        for(int i = 0 ; i < nums.size() ; i++){
+            int target = nums[i] + k ;
+            if(i - 1 >= 0 && nums[i] == nums[i-1]) continue ;
+            if(bs(nums , i + 1 , target)) ans++;
+        }
+        return ans ;
     }
 };
