@@ -1,29 +1,22 @@
 class Solution {
 public:
     vector<int> findClosestElements(vector<int>& arr, int k, int x) {
-        auto it = lower_bound(arr.begin(), arr.end(), x);
-        int pos = it - arr.begin();
-        
-        int left = pos - 1;
-        int right = pos;
+        vector<pair<int, int>> diffs ;
+        for(int i = 0 ; i < arr.size() ; i++){
+            int diff = abs(x - arr[i]);
+            diffs.push_back({diff,arr[i]});
+        }
+
+        sort(diffs.begin() , diffs.end());
+
         vector<int> ans;
-        
+        int i = 0 ;
         while(k > 0){
-            int leftDiff = (left >= 0) ? abs(x - arr[left]) : INT_MAX;
-            int rightDiff = (right < arr.size()) ? abs(x - arr[right]) : INT_MAX;
-            
-            if(leftDiff <= rightDiff){
-                ans.push_back(arr[left]);
-                left--;
-            }
-            else{
-                ans.push_back(arr[right]);
-                right++;
-            }
+            ans.push_back(diffs[i].second);
+            i++;
             k--;
         }
-        
-        sort(ans.begin(), ans.end());
+        sort(ans.begin() , ans.end());
         return ans;
     }
 };
