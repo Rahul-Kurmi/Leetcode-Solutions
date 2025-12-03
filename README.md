@@ -25,6 +25,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0349-intersection-of-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0532-k-diff-pairs-in-an-array) |
 | [0540-single-element-in-a-sorted-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0540-single-element-in-a-sorted-array) |
+| [0658-find-k-closest-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0658-find-k-closest-elements) |
 | [0724-find-pivot-index](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0724-find-pivot-index) |
 | [0792-binary-search](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0792-binary-search) |
 | [0898-transpose-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0898-transpose-matrix) |
@@ -60,6 +61,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0287-find-the-duplicate-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0287-find-the-duplicate-number) |
 | [0349-intersection-of-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0532-k-diff-pairs-in-an-array) |
+| [0658-find-k-closest-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0658-find-k-closest-elements) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2271-rearrange-array-elements-by-sign) |
 ## Sorting
 |  |
@@ -70,6 +72,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0268-missing-number) |
 | [0349-intersection-of-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0532-k-diff-pairs-in-an-array) |
+| [0658-find-k-closest-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0658-find-k-closest-elements) |
 ## Binary Search
 |  |
 | ------- |
@@ -85,6 +88,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0349-intersection-of-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0532-k-diff-pairs-in-an-array) |
 | [0540-single-element-in-a-sorted-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0540-single-element-in-a-sorted-array) |
+| [0658-find-k-closest-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0658-find-k-closest-elements) |
 | [0792-binary-search](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0792-binary-search) |
 ## Math
 |  |
@@ -128,4 +132,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0724-find-pivot-index](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0724-find-pivot-index) |
+## Sliding Window
+|  |
+| ------- |
+| [0658-find-k-closest-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0658-find-k-closest-elements) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0658-find-k-closest-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0658-find-k-closest-elements) |
 <!---LeetCode Topics End-->
