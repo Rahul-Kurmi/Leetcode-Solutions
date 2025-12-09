@@ -32,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0898-transpose-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0898-transpose-matrix) |
 | [1031-add-to-array-form-of-integer](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1031-add-to-array-form-of-integer) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
+| [1480-running-sum-of-1d-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1480-running-sum-of-1d-array) |
 | [1672-richest-customer-wealth](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1672-richest-customer-wealth) |
 | [1848-sum-of-unique-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1848-sum-of-unique-elements) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2271-rearrange-array-elements-by-sign) |
@@ -142,6 +143,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0724-find-pivot-index](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0724-find-pivot-index) |
+| [1480-running-sum-of-1d-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1480-running-sum-of-1d-array) |
 ## Sliding Window
 |  |
 | ------- |
