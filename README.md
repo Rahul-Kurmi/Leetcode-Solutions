@@ -33,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1031-add-to-array-form-of-integer](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1031-add-to-array-form-of-integer) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1480-running-sum-of-1d-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1480-running-sum-of-1d-array) |
+| [1552-magnetic-force-between-two-balls](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1552-magnetic-force-between-two-balls) |
 | [1672-richest-customer-wealth](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1672-richest-customer-wealth) |
 | [1848-sum-of-unique-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1848-sum-of-unique-elements) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2271-rearrange-array-elements-by-sign) |
@@ -78,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0349-intersection-of-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0532-k-diff-pairs-in-an-array) |
 | [0658-find-k-closest-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0658-find-k-closest-elements) |
+| [1552-magnetic-force-between-two-balls](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1552-magnetic-force-between-two-balls) |
 ## Binary Search
 |  |
 | ------- |
@@ -97,6 +99,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0704-binary-search](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0704-binary-search) |
 | [0792-binary-search](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0792-binary-search) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
+| [1552-magnetic-force-between-two-balls](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1552-magnetic-force-between-two-balls) |
 | [2529-maximum-count-of-positive-integer-and-negative-integer](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2529-maximum-count-of-positive-integer-and-negative-integer) |
 ## Math
 |  |
