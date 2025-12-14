@@ -1,23 +1,36 @@
 class Solution {
 public:
-    void reverse(string &s, int i, int j){
-        while(i <= j){
-            swap(s[i], s[j]);
-            i++;
-            j--;
-        }
-    }
-
     string reverseStr(string s, int k) {
         int n = s.size();
+        string result = "";
         int i = 0;
         
         while(i < n){
-            int j = min(i + k - 1, n - 1);
-            reverse(s, i, j);
-            i += 2 * k;
+            stack<char> st;
+            
+            // Push first k characters (or remaining) into stack
+            int count = 0;
+            while(count < k && i < n){
+                st.push(s[i]);
+                i++;
+                count++;
+            }
+            
+            // Pop from stack to reverse these characters
+            while(!st.empty()){
+                result += st.top();
+                st.pop();
+            }
+            
+            // Append next k characters as-is (no reversal)
+            count = 0;
+            while(count < k && i < n){
+                result += s[i];
+                i++;
+                count++;
+            }
         }
         
-        return s;
+        return result;
     }
 };
