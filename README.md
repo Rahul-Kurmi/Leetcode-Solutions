@@ -59,6 +59,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0344-reverse-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0345-reverse-vowels-of-a-string) |
 | [0541-reverse-string-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0541-reverse-string-ii) |
+| [2414-length-of-the-longest-alphabetical-continuous-substring](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2414-length-of-the-longest-alphabetical-continuous-substring) |
 ## Trie
 |  |
 | ------- |
