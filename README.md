@@ -117,6 +117,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0009-palindrome-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0009-palindrome-number) |
 | [0012-integer-to-roman](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0012-integer-to-roman) |
 | [0029-divide-two-integers](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0029-divide-two-integers) |
 | [0048-rotate-image](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0048-rotate-image) |
