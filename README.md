@@ -46,6 +46,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0001-two-sum) |
 | [0012-integer-to-roman](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0012-integer-to-roman) |
+| [0205-isomorphic-strings](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0205-isomorphic-strings) |
 | [0268-missing-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0268-missing-number) |
 | [0349-intersection-of-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0532-k-diff-pairs-in-an-array) |
@@ -56,6 +57,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0012-integer-to-roman](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0012-integer-to-roman) |
 | [0014-longest-common-prefix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0014-longest-common-prefix) |
+| [0205-isomorphic-strings](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0205-isomorphic-strings) |
 | [0344-reverse-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0345-reverse-vowels-of-a-string) |
 | [0541-reverse-string-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0541-reverse-string-ii) |
