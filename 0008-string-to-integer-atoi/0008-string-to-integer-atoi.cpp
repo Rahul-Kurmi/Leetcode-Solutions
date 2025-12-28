@@ -2,36 +2,25 @@ class Solution {
 public:
     int myAtoi(string s) {
         int ans = 0 ;
-        bool foundNum = false ;
-        bool isNegative = false ;
-        for(int i = 0 ; i < s.size() ; i++){
-            if(foundNum && !isdigit(s[i])){
-                break ;
-            }
-            if(s[i] == ' '){
-                continue ;
-            }
-            else if(s[i] == '-'){
-                isNegative = true ;
-                foundNum = true;
-            }
-            else if(s[i] == '+'){
-                isNegative = false ;
-                foundNum = true;
-            }
-            else if(isdigit(s[i])){
-                cout << ans << endl ;
-                int digit = s[i] - '0';
-                if (ans > (INT_MAX - digit) / 10) {
-                    return isNegative ? INT_MIN : INT_MAX;
-                }
-                ans = ans * 10 + (s[i] - '0');
-                foundNum = true ; 
-            }else{
-                break ;
-            }
+        int sign = 1 ;
+        int n = s.size();
+        int i = 0 ;
+        while(i < n &&  s[i] == ' '){
+            i++;
+        }
+        if(i < n && (s[i] == '-' || s[i] == '+')){
+            sign = s[i] == '+' ? 1 : -1;
+            i++;
         }
 
-        return (isNegative) ? -ans : ans ;
+        while(i < n && isdigit(s[i])){
+            // num > INT_MAX/10 || (num == INT_MAX/10 && s[i] > '7'
+            if(ans > (INT_MAX - (s[i] - '0'))/10){
+                return sign == -1 ? INT_MIN : INT_MAX;
+            }
+            ans = ans * 10 + (s[i] - '0');
+            i++;
+        }
+        return  sign == -1 ? -ans : ans ;
     }
 };
