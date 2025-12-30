@@ -1,38 +1,44 @@
 class Solution {
 public:
     string convert(string s, int numRows) {
-        if (numRows == 1) return s;  
-        vector<string> store(numRows , "") ;
-        int i = 0 ;
-        bool isDown = true ;
-        int j  = 0 ;
-        while(i < s.size() && j < numRows ){            
-            while(isDown && i < s.size() ){
-                if(j == numRows){
-                    j = numRows-2 ;
-                    isDown = false ;
-                    break ;
-                }
-                store[j] += s[i];
-                j++;
-                i++;
-            }
-            while(!isDown && i < s.size() ){
-                if(j == 0){
-                    isDown = true ;
+
+        if (numRows == 1) return s;   // edge case
+
+        vector<string> store(numRows, "");
+        int i = 0;
+        bool isDown = true;
+        int j = 0;
+
+        while (i < s.size()) {
+
+            // moving down
+            while (isDown && i < s.size()) {
+                store[j] += s[i++];
+                if (j == numRows - 1) {
+                    isDown = false;
+                    j--;              // step back into range
                     break;
                 }
-                store[j] += s[i];
-                i++;
+                j++;
+            }
+
+            // moving up
+            while (!isDown && i < s.size()) {
+                store[j] += s[i++];
+                if (j == 0) {
+                    isDown = true;
+                    j++;              // step forward into range
+                    break;
+                }
                 j--;
             }
         }
 
         string ans = "";
-        for(auto it : store){
-            ans += it ;
+        for (auto &it : store) {
+            ans += it;
         }
 
-        return ans ;
+        return ans;
     }
 };
