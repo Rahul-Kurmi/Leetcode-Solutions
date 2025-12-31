@@ -22,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0162-find-peak-element) |
 | [0179-largest-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0179-largest-number) |
+| [0204-count-primes](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0204-count-primes) |
 | [0268-missing-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0287-find-the-duplicate-number) |
 | [0349-intersection-of-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
@@ -147,6 +148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0048-rotate-image) |
 | [0066-plus-one](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0066-plus-one) |
 | [0069-sqrtx](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0069-sqrtx) |
+| [0204-count-primes](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0204-count-primes) |
 | [0268-missing-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0268-missing-number) |
 | [1031-add-to-array-form-of-integer](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1031-add-to-array-form-of-integer) |
 | [1048-clumsy-factorial](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1048-clumsy-factorial) |
@@ -210,4 +212,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
+## Enumeration
+|  |
+| ------- |
+| [0204-count-primes](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0204-count-primes) |
+## Number Theory
+|  |
+| ------- |
+| [0204-count-primes](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0204-count-primes) |
 <!---LeetCode Topics End-->
