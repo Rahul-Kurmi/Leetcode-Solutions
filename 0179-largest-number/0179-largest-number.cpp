@@ -1,9 +1,9 @@
+bool cmp(string a , string b){
+    return a+b > b+a;
+}
+
 class Solution {
 public:
-    static bool cmp(string a , string b){
-        return a+b > b+a;
-    }
-
     string largestNumber(vector<int>& nums) {
         vector<string> store ;
         for(auto it : nums){
