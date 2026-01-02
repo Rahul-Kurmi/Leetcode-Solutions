@@ -29,8 +29,8 @@ public:
         for(int i = 0 ; i < words.size() ; i++){
             string left , right ;
             for(int j = 0 ; j < words[i].size() ; j++){
-                left.push_back(words[i][j]);
-                right = words[i].substr(j + 1);
+                left  = words[i].substr(0 , j + 1);
+                right = words[i].substr(j + 1 , words[i].size() - j);
 
                 if(mp.find(left) != mp.end() && isPallindrome(right) && mp[left] != i){
                     ans.push_back({i , mp[left]});
