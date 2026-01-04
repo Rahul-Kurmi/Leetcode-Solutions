@@ -159,6 +159,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1031-add-to-array-form-of-integer](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1031-add-to-array-form-of-integer) |
 | [1048-clumsy-factorial](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1048-clumsy-factorial) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1979-find-greatest-common-divisor-of-array) |
+| [2523-closest-prime-numbers-in-range](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2523-closest-prime-numbers-in-range) |
 ## Counting
 |  |
 | ------- |
@@ -228,6 +229,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0204-count-primes](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0204-count-primes) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1979-find-greatest-common-divisor-of-array) |
+| [2523-closest-prime-numbers-in-range](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2523-closest-prime-numbers-in-range) |
 ## Recursion
 |  |
 | ------- |
