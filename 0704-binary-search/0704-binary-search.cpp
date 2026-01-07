@@ -1,31 +1,20 @@
 class Solution {
 public:
-    int bs (vector<int>&nums , int low , int high , int target){
-        int mid = low + (high - low) / 2 ;
-        while(low <= high){
-            if(nums[mid] == target){
-                return mid ;
-            }
-            else if(target > nums[mid]){
-                low = mid + 1 ;
-            }else{
-                high = mid - 1 ;
-            }
-            cout << mid << endl ;
-            mid = low + (high - low) / 2 ;
+    int BinarySearch(vector<int>& nums, int& target, int left, int right){
+        if(left > right) return -1;
+        int mid = left + (right - left) / 2;
+        if(nums[mid] == target) return mid;
+        else if(nums[mid] < target){
+            return BinarySearch(nums, target, mid + 1, right); 
         }
-
-        return -1 ;
+        else{
+            return BinarySearch(nums, target, left, mid - 1);  
+        }
     }
 
     int search(vector<int>& nums, int target) {
-       if(nums[0] == target) return 0 ;
-       int i = 1 ;
-       int n = nums.size();
-       while(i < nums.size() && nums[i] <= target){
-        i = i * 2;
-       }
-       int ans = bs(nums , i/2 , min(i , n-1), target);
-       return ans ;
+        int n = nums.size() - 1;
+        int ans = BinarySearch(nums, target, 0, n);
+        return ans; 
     }
 };
