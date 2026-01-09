@@ -76,6 +76,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0336-palindrome-pairs](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0336-palindrome-pairs) |
 | [0344-reverse-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0345-reverse-vowels-of-a-string) |
+| [0415-add-strings](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0415-add-strings) |
 | [0443-string-compression](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0443-string-compression) |
 | [0541-reverse-string-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0541-reverse-string-ii) |
 | [0680-valid-palindrome-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0680-valid-palindrome-ii) |
@@ -159,6 +160,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0204-count-primes](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0204-count-primes) |
 | [0263-ugly-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0263-ugly-number) |
 | [0268-missing-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0268-missing-number) |
+| [0415-add-strings](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0415-add-strings) |
 | [1031-add-to-array-form-of-integer](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1031-add-to-array-form-of-integer) |
 | [1048-clumsy-factorial](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1048-clumsy-factorial) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1979-find-greatest-common-divisor-of-array) |
@@ -183,6 +185,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0054-spiral-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0054-spiral-matrix) |
+| [0415-add-strings](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0415-add-strings) |
 | [0898-transpose-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0898-transpose-matrix) |
 | [1048-clumsy-factorial](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1048-clumsy-factorial) |
 | [1910-remove-all-occurrences-of-a-substring](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1910-remove-all-occurrences-of-a-substring) |
