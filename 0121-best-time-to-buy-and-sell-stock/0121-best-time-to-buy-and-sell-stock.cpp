@@ -1,30 +1,21 @@
 class Solution {
 public:
-    void maxProfitFinder(vector<int> &prices , int i , int& minPrice , int& maxProfit){
-        // base case 
-        if(i == prices.size()){
-            return ;
+    int highestProfit(vector<int>&prices , int i , int buyStock){
+        if(i == prices.size() - 1 ){
+            return (prices[i] - buyStock);
         }
 
-        // soln for one case 
-        if(prices[i] < minPrice){
-            minPrice = prices[i] ;
-        }
-        
-        int todayProfit = prices[i] - minPrice ;
-        if(todayProfit > maxProfit){
-            maxProfit = todayProfit ;
+        if(buyStock > prices[i]){
+            buyStock = prices[i];
         }
 
-        // RE
-        maxProfitFinder(prices , i+1 , minPrice , maxProfit ) ;
+        int profit = prices[i] - buyStock ;
+        int recursionProfit = highestProfit(prices , i+1 , buyStock);
+        return max(profit  , recursionProfit);
+
     }
 
     int maxProfit(vector<int>& prices) {
-       int minPrice = INT_MAX;
-       int maxProfit = INT_MIN;
-
-       maxProfitFinder(prices , 0 , minPrice , maxProfit) ;
-       return maxProfit ;  
+        return highestProfit(prices , 0 , prices[0]);
     }
 };
