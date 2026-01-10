@@ -1,19 +1,14 @@
 class Solution {
 public:
     string removeOccurrences(string s, string part) {
-        string ans = "";
-        for(int i = 0; i < s.size(); i++){
-            ans.push_back(s[i]);  // Always add current character first
-            
-            // Check if the end of ans matches part
-            if(ans.size() >= part.size()){
-                int startPos = ans.size() - part.size();
-                string sub = ans.substr(startPos, part.size());
-                if(sub == part){
-                    ans = ans.substr(0, startPos);  // Remove the match
-                }
-            }
+        int found = s.find(part);
+        if(found != string :: npos){
+            string left_part = s.substr(0 , found);
+            string right_part = s.substr(found + part.size() , s.size());
+            s = left_part + right_part ;
+            return removeOccurrences(s , part);
+        }else{
+            return s ;
         }
-        return ans;
     }
 };
