@@ -20,6 +20,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0066-plus-one](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0066-plus-one) |
 | [0074-search-a-2d-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0075-sort-colors) |
+| [0078-subsets](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0078-subsets) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0162-find-peak-element) |
@@ -205,6 +206,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0029-divide-two-integers](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0029-divide-two-integers) |
+| [0078-subsets](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0078-subsets) |
 | [0268-missing-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0287-find-the-duplicate-number) |
 | [0342-power-of-four](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0342-power-of-four) |
@@ -270,6 +272,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0046-permutations](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0046-permutations) |
+| [0078-subsets](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0078-subsets) |
 | [0494-target-sum](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0494-target-sum) |
 ## Bucket Sort
 |  |
