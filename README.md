@@ -22,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0074-search-a-2d-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0078-subsets) |
+| [0088-merge-sorted-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0088-merge-sorted-array) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0162-find-peak-element) |
@@ -112,6 +113,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0027-remove-element](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0027-remove-element) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0075-sort-colors](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0075-sort-colors) |
+| [0088-merge-sorted-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0088-merge-sorted-array) |
 | [0287-find-the-duplicate-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0287-find-the-duplicate-number) |
 | [0344-reverse-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0345-reverse-vowels-of-a-string) |
@@ -130,6 +132,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0016-3sum-closest](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0016-3sum-closest) |
 | [0049-group-anagrams](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0049-group-anagrams) |
 | [0075-sort-colors](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0075-sort-colors) |
+| [0088-merge-sorted-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0088-merge-sorted-array) |
 | [0164-maximum-gap](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0164-maximum-gap) |
 | [0179-largest-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0179-largest-number) |
 | [0268-missing-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0268-missing-number) |
