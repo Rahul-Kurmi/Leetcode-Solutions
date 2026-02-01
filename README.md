@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0046-permutations](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0046-permutations) |
 | [0048-rotate-image](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0048-rotate-image) |
 | [0049-group-anagrams](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0049-group-anagrams) |
+| [0051-n-queens](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0051-n-queens) |
 | [0054-spiral-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0054-spiral-matrix) |
 | [0066-plus-one](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0066-plus-one) |
 | [0074-search-a-2d-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0074-search-a-2d-matrix) |
@@ -278,6 +279,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0022-generate-parentheses](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0022-generate-parentheses) |
 | [0046-permutations](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0046-permutations) |
+| [0051-n-queens](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0051-n-queens) |
 | [0078-subsets](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0078-subsets) |
 | [0494-target-sum](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0494-target-sum) |
 ## Bucket Sort
