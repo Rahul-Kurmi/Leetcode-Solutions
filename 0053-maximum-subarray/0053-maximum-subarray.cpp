@@ -1,7 +1,14 @@
 class Solution {
 public:
-    void findCrossSum(vector<int>& arr, int start, int end, int& maxSum){
-        int mid = start + (end - start) / 2 ;
+    int maxSumArrayHelper(vector<int>& arr, int start , int end){
+        if(start == end) {
+            return arr[start];
+        }
+
+        int mid = start + (end - start) / 2; 
+ 
+        int leftSum = maxSumArrayHelper(arr, start , mid) ;
+        int rightSum = maxSumArrayHelper(arr, mid+1 , end) ;
 
         int maxLeftBorderSum = INT_MIN ;
         int maxRightBorderSum = INT_MIN ;
@@ -14,34 +21,17 @@ public:
             maxLeftBorderSum = max(maxLeftBorderSum , leftBorderSum);
         }
 
-        for(int i = mid+1; i <= end ; i++){
+        for(int i = mid + 1 ; i <= end ; i++){
             rightBorderSum += arr[i];
             maxRightBorderSum = max(maxRightBorderSum , rightBorderSum);
         }
 
-        int crossSum = maxLeftBorderSum + maxRightBorderSum ;
+        int crossSum = maxLeftBorderSum + maxRightBorderSum  ;
 
-        maxSum = max(maxSum , crossSum);
-
-    }
-
-    void maxSubArrayRec(vector<int>& arr, int start, int end, int& maxSum){
-        if(start == end){
-            maxSum = max(maxSum , arr[start]);
-            return ;
-        }
-
-        int mid = start + (end - start) / 2 ;
-
-        maxSubArrayRec(arr, start , mid , maxSum);
-        maxSubArrayRec(arr, mid+1 , end , maxSum);
-
-        findCrossSum(arr, start , end , maxSum);
+        return max({leftSum , rightSum , crossSum});
     }
 
     int maxSubArray(vector<int>& nums) {
-        int ans = INT_MIN;
-        maxSubArrayRec(nums, 0, nums.size() - 1, ans);
-        return ans;
+        return maxSumArrayHelper(nums, 0 , nums.size() - 1);
     }
 };
