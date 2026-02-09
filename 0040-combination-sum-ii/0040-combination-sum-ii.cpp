@@ -2,28 +2,22 @@ class Solution {
 public:
     vector<vector<int>> ans;
 
-    void findingAns(vector<int>& arr, int target, int sum, vector<int>& store, int i) {
+    void findingAns(vector<int>& arr, int target, int sum, vector<int>& store, int start) {
 
         if (sum == target) {
             ans.push_back(store);
             return;
         }
 
-        if (sum > target || i == arr.size()) return;
+        if (sum > target || start == arr.size()) return;
 
-        // ✅ INCLUDE current element
-        store.push_back(arr[i]);
-        findingAns(arr, target, sum + arr[i], store, i + 1);
-        store.pop_back();
+        for(int i = start ; i < arr.size() ; i++){
+            if(i > start && arr[i] == arr[i-1]) continue ;
 
-        // ✅ EXCLUDE current element
-        // skip all duplicates of arr[i]
-        int next = i + 1;
-        while (next < arr.size() && arr[next] == arr[i]) {
-            next++;
+            store.push_back(arr[i]);
+            findingAns(arr, target , sum + arr[i] , store , i+1);
+            store.pop_back();
         }
-        
-        findingAns(arr, target, sum, store, next);
         
     }
 
