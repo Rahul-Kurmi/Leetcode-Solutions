@@ -8,11 +8,11 @@ public:
             return ;
         }
 
-        unordered_map<int, bool> visited ;
+        set<int> visited ;
         for(int i = start ; i < arr.size() ; i++){
             // check if visited 
-            if(visited[arr[i]]) continue ;
-            visited[arr[i]] = true ;
+            if(visited.find(arr[i]) != visited.end()) continue ;
+            visited.insert(arr[i]); 
 
             swap(arr[i] , arr[start]);
             findingAns(arr, start+1);
