@@ -1,26 +1,26 @@
 class Solution {
 public:
-    int count = 0 ;
-    void beautifulArrangements(vector<int>& arr , int start, int numPlace, int numCount){
-        if(numCount == 0){
-            count++;
+    void findingArrangements(vector<int>& arr, int&n , int&ansCount , int currNum){
+        if(currNum == n+1){
+            ++ansCount;
             return ;
         }
 
-        for(int i = 0 ; i < arr.size() ; i++){
-            if(arr[i] == 0){
-                if((numPlace % (i+1) == 0) || ((i+1) % numPlace) == 0){
-                    arr[i] = numPlace ;
-                    beautifulArrangements(arr, start , numPlace+1 , numCount-1);
-                    arr[i] = 0 ;
-                }
+        // iterate from 1 index
+        for(int i = 1 ; i <= n ; i++){
+            if (arr[i] == 0 && ( (currNum % i == 0) || (i % currNum == 0) )){
+                arr[i] = currNum ;
+                findingArrangements(arr, n , ansCount , currNum + 1);
+                arr[i] = 0 ; // BackTracking
             }
         }
     }
 
     int countArrangement(int n) {
-        vector<int> arr(n , 0);
-        beautifulArrangements(arr, 0 , 1, n);
-        return count ;
+        // Here we will iterate form 1 index only in the recursion function thus taking size of array n + 1 
+        vector<int> arr(n+1); // Initially every element is initailized by 0
+        int ans = 0 ;
+        findingArrangements(arr, n , ans , 1);
+        return ans;
     }
 };
