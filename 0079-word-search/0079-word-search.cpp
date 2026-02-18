@@ -1,55 +1,60 @@
 class Solution {
 public:
     
-    void  checkIfExist(vector<vector<char>>& board , string& word ,
-                      int row , int col, int wordCount , bool& ans ){
+    bool checkIfExist(vector<vector<char>>& board , string& word ,
+                      int row , int col, int wordCount, vector<vector<bool>>& isVisited){
         
         if(wordCount == word.size()){
-            ans = true ;
-            return;
+            return true ;
         }
 
-        char temp = board[row][col];
-        board[row][col] = '#';  // mark visited
+        isVisited[row][col] = true ;
 
         int rows = board.size();
         int cols = board[0].size();
 
         // DOWN
-        if(row+1 < rows && board[row+1][col] == word[wordCount]) {
-            checkIfExist(board , word, row+1 , col , wordCount+1 , ans );
+        if(row+1 < rows && board[row+1][col] == word[wordCount] && (!isVisited[row+1][col])) {
+            if(checkIfExist(board , word, row+1 , col , wordCount+1, isVisited))
+                return true;
         }
 
         // UP
-        if(row-1 >= 0 && board[row-1][col] == word[wordCount]) {
-           checkIfExist(board , word, row-1 , col , wordCount+1, ans);
+        if(row-1 >= 0 && board[row-1][col] == word[wordCount] && (!isVisited[row-1][col])) {
+            if(checkIfExist(board , word, row-1 , col , wordCount+1, isVisited))
+                return true;
         }
 
         // LEFT
-        if(col-1 >= 0 && board[row][col-1] == word[wordCount]) {
-            checkIfExist(board , word, row , col-1 , wordCount+1, ans);
+        if(col-1 >= 0 && board[row][col-1] == word[wordCount] && (!isVisited[row][col-1])) {
+            if(checkIfExist(board , word, row , col-1 , wordCount+1, isVisited))
+                return true;
         }
 
         // RIGHT
-        if(col+1 < cols && board[row][col+1] == word[wordCount]) {
-            checkIfExist(board , word, row , col+1 , wordCount+1, ans);
+        if(col+1 < cols && board[row][col+1] == word[wordCount] && (!isVisited[row][col+1])) {
+            if(checkIfExist(board , word, row , col+1 , wordCount+1, isVisited))
+                return true;
         }
 
-        board[row][col] = temp;  // restore;
+        isVisited[row][col] = false ;  // restore
+        return false ;
     }
 
     bool exist(vector<vector<char>>& board, string word) {
         int row = board.size();
         int col = board[0].size();
-        bool ans = false ;
+
+        vector<vector<bool>> isVisited(row , vector<bool>(col , false));
 
         for(int i = 0 ; i < row ; i++){
             for(int j = 0 ; j < col ; j++){
-                if(board[i][j] == word[0]){
-                    checkIfExist(board , word, i , j , 1, ans);
+                if(board[i][j] == word[0] &&
+                   checkIfExist(board , word, i , j , 1, isVisited)){
+                    return true ;
                 }
             }
         }
-        return ans ;
+        return false ;
     }
 };
