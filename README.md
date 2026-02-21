@@ -39,6 +39,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0287-find-the-duplicate-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0287-find-the-duplicate-number) |
 | [0336-palindrome-pairs](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0336-palindrome-pairs) |
 | [0349-intersection-of-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
+| [0491-non-decreasing-subsequences](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0491-non-decreasing-subsequences) |
 | [0494-target-sum](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0494-target-sum) |
 | [0526-beautiful-arrangement](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0526-beautiful-arrangement) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0532-k-diff-pairs-in-an-array) |
@@ -77,6 +78,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0268-missing-number) |
 | [0336-palindrome-pairs](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0336-palindrome-pairs) |
 | [0349-intersection-of-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
+| [0491-non-decreasing-subsequences](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0491-non-decreasing-subsequences) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0532-k-diff-pairs-in-an-array) |
 | [0767-reorganize-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0767-reorganize-string) |
 | [1655-distribute-repeating-integers](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1655-distribute-repeating-integers) |
@@ -246,6 +248,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0287-find-the-duplicate-number) |
 | [0342-power-of-four](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0342-power-of-four) |
+| [0491-non-decreasing-subsequences](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0491-non-decreasing-subsequences) |
 | [0526-beautiful-arrangement](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0526-beautiful-arrangement) |
 | [0779-k-th-symbol-in-grammar](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0779-k-th-symbol-in-grammar) |
 | [0980-unique-paths-iii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0980-unique-paths-iii) |
@@ -326,6 +329,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0051-n-queens](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0051-n-queens) |
 | [0078-subsets](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0079-word-search) |
+| [0491-non-decreasing-subsequences](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0491-non-decreasing-subsequences) |
 | [0494-target-sum](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0494-target-sum) |
 | [0526-beautiful-arrangement](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0526-beautiful-arrangement) |
 | [0980-unique-paths-iii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0980-unique-paths-iii) |
