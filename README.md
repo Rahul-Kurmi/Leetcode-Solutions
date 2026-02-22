@@ -367,4 +367,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0079-word-search](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0079-word-search) |
+## Linked List
+|  |
+| ------- |
+| [0707-design-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0707-design-linked-list) |
+## Design
+|  |
+| ------- |
+| [0707-design-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0707-design-linked-list) |
 <!---LeetCode Topics End-->
