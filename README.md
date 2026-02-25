@@ -134,6 +134,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0075-sort-colors](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0088-merge-sorted-array) |
 | [0142-linked-list-cycle-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0142-linked-list-cycle-ii) |
+| [0234-palindrome-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0234-palindrome-linked-list) |
 | [0287-find-the-duplicate-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0287-find-the-duplicate-number) |
 | [0344-reverse-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0345-reverse-vowels-of-a-string) |
@@ -261,6 +262,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [0234-palindrome-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0234-palindrome-linked-list) |
 | [1047-remove-all-adjacent-duplicates-in-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1047-remove-all-adjacent-duplicates-in-string) |
 | [1048-clumsy-factorial](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1048-clumsy-factorial) |
 | [1910-remove-all-occurrences-of-a-substring](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1910-remove-all-occurrences-of-a-substring) |
@@ -309,6 +311,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0025-reverse-nodes-in-k-group](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0025-reverse-nodes-in-k-group) |
 | [0050-powx-n](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0050-powx-n) |
 | [0203-remove-linked-list-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0203-remove-linked-list-elements) |
+| [0234-palindrome-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0234-palindrome-linked-list) |
 | [0273-integer-to-english-words](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0273-integer-to-english-words) |
 | [0326-power-of-three](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0342-power-of-four) |
@@ -381,6 +384,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0025-reverse-nodes-in-k-group](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0025-reverse-nodes-in-k-group) |
 | [0142-linked-list-cycle-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0142-linked-list-cycle-ii) |
 | [0203-remove-linked-list-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0203-remove-linked-list-elements) |
+| [0234-palindrome-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0234-palindrome-linked-list) |
 | [0707-design-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0707-design-linked-list) |
 ## Design
 |  |
