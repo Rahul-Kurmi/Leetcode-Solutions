@@ -5,15 +5,9 @@ public:
         k = k % nums.size();
         if (k == 0) return; 
 
-        for(int i = nums.size() - k ; i  < nums.size() ; i++){
-            arr.push_back(nums[i]);
-        }
-        for(int i = 0 ; i < nums.size() - k ; i++){
-            arr.push_back(nums[i]);
-        }
-        for(int i = 0 ; i < nums.size() ; i++){
-            nums[i] = arr[i];
-        }
+        reverse(nums.begin() , nums.end());
+        reverse(nums.begin() , nums.begin() + k);
+        reverse(nums.begin() + k , nums.end());
 
     }
 };
