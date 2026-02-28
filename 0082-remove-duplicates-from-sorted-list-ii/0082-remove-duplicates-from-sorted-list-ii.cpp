@@ -11,30 +11,31 @@
 class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {
-        if(head == nullptr) return nullptr;
 
-        // Step 1: Count frequency
-        unordered_map<int,int> mp;
-        ListNode* temp = head;
-        while(temp != nullptr){
-            mp[temp->val]++;
-            temp = temp->next;
-        }
-
-        // Step 2: Remove nodes with freq > 1
         ListNode* dummy = new ListNode(0);
         dummy->next = head;
 
-        ListNode* prev = dummy;
-        temp = head;
+        ListNode* prev = dummy;   // last confirmed unique node
+        ListNode* curr = head;
 
-        while(temp != nullptr){
-            if(mp[temp->val] > 1){
-                prev->next = temp->next;   // remove node
-            } else {
-                prev = temp;              // keep node
+        while(curr != nullptr){
+
+            // If duplicate sequence found
+            if(curr->next != nullptr && curr->val == curr->next->val){
+
+                int duplicateValue = curr->val;
+
+                // skip all nodes with same value
+                while(curr != nullptr && curr->val == duplicateValue){
+                    curr = curr->next;
+                }
+
+                prev->next = curr;  // remove duplicates
             }
-            temp = temp->next;
+            else{
+                prev = curr;
+                curr = curr->next;
+            }
         }
 
         return dummy->next;
