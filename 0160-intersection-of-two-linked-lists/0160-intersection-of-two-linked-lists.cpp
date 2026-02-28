@@ -51,14 +51,11 @@ public:
             }
         }
 
-        while(headA != nullptr && headB != nullptr){
-            if(headA == headB){
-                return headA ;
-            }
+        while(headA != headB ){
             headA = headA -> next ;
             headB = headB -> next ;
         }
 
-        return nullptr ;
+        return headA ;
     }
 };
