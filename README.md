@@ -77,6 +77,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0049-group-anagrams](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0049-group-anagrams) |
 | [0142-linked-list-cycle-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0142-linked-list-cycle-ii) |
+| [0160-intersection-of-two-linked-lists](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0160-intersection-of-two-linked-lists) |
 | [0205-isomorphic-strings](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0205-isomorphic-strings) |
 | [0268-missing-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0268-missing-number) |
 | [0336-palindrome-pairs](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0336-palindrome-pairs) |
@@ -136,6 +137,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0082-remove-duplicates-from-sorted-list-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0082-remove-duplicates-from-sorted-list-ii) |
 | [0088-merge-sorted-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0088-merge-sorted-array) |
 | [0142-linked-list-cycle-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0142-linked-list-cycle-ii) |
+| [0160-intersection-of-two-linked-lists](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0160-intersection-of-two-linked-lists) |
 | [0189-rotate-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0189-rotate-array) |
 | [0234-palindrome-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0234-palindrome-linked-list) |
 | [0287-find-the-duplicate-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0287-find-the-duplicate-number) |
@@ -389,6 +391,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0082-remove-duplicates-from-sorted-list-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0082-remove-duplicates-from-sorted-list-ii) |
 | [0083-remove-duplicates-from-sorted-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0083-remove-duplicates-from-sorted-list) |
 | [0142-linked-list-cycle-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0142-linked-list-cycle-ii) |
+| [0160-intersection-of-two-linked-lists](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0160-intersection-of-two-linked-lists) |
 | [0203-remove-linked-list-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0203-remove-linked-list-elements) |
 | [0234-palindrome-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0234-palindrome-linked-list) |
 | [0707-design-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0707-design-linked-list) |
