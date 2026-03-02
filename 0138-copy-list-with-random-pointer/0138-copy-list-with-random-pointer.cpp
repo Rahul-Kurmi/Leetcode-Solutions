@@ -16,17 +16,23 @@ public:
 
 class Solution {
 public:
-    Node* deepCopy(Node* head, unordered_map<Node* , Node*>& mp){
-        if(head == nullptr) return head;
-        Node* newNode = new Node(head -> val);
-        mp[head] = newNode ;
-        newNode -> next = deepCopy(head -> next , mp);
-        newNode -> random = mp[head -> random];
-        return newNode ; 
-    }
-
     Node* copyRandomList(Node* head) {
-        unordered_map<Node* , Node* > mp;
-        return deepCopy(head , mp);
+        unordered_map<Node* , Node* > mp ;
+        Node* temp = head ;
+        while(temp != nullptr){
+            Node* newNode = new Node(temp -> val);
+            mp[temp] = newNode;
+            temp = temp -> next ; 
+        }
+
+        temp = head ;
+        while(temp != nullptr){
+            Node* copyNode = mp[temp];
+            copyNode -> next = mp[temp -> next];
+            copyNode -> random = mp[temp -> random];
+            temp = temp -> next ;
+        }
+
+        return mp[head];
     }
 };
