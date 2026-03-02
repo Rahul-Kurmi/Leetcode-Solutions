@@ -18,6 +18,8 @@ class Solution {
 public:
     Node* copyRandomList(Node* head) {
         if(head == nullptr) return head ;
+
+        // STEP 1 : Clone A -> A' 
         Node* temp = head ;
         while(temp != nullptr){
             Node* newNode = new Node(temp -> val);
@@ -26,6 +28,7 @@ public:
             temp = temp -> next -> next ; 
         }
 
+        // STEP 2 : Assign random links of A' with the help of old Nodes (A)
         temp = head ;
         while(temp != nullptr){
             Node * copyNode = temp -> next ;
@@ -36,17 +39,16 @@ public:
             temp = temp -> next -> next ;
         }
 
+        // STEP 3 : Detach A' from A
         temp = head ;
         Node* copyHead = temp -> next ;
         while(temp != nullptr){
-            Node* copyNode = temp -> next ;
-            temp -> next = copyNode -> next  ;
-            temp = copyNode -> next ;
-            if(temp != nullptr && temp -> next != nullptr){
-                copyNode -> next = temp -> next ;
-            }else{
-                copyNode -> next = nullptr ;
-            }
+           Node* copyNode = temp -> next ;
+           temp -> next = temp -> next -> next ;
+           if(copyNode -> next != nullptr){
+            copyNode -> next = copyNode -> next -> next ;
+           }
+           temp = temp -> next ;
         }
         return copyHead ;
     }
