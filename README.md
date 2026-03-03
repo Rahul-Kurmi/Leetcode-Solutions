@@ -409,6 +409,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0203-remove-linked-list-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0203-remove-linked-list-elements) |
 | [0234-palindrome-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0234-palindrome-linked-list) |
 | [0707-design-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0707-design-linked-list) |
+| [2058-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2058-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
 ## Design
 |  |
 | ------- |
