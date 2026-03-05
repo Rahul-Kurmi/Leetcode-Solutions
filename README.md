@@ -65,6 +65,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1848-sum-of-unique-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1848-sum-of-unique-elements) |
 | [1961-check-if-string-is-a-prefix-of-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1961-check-if-string-is-a-prefix-of-array) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1979-find-greatest-common-divisor-of-array) |
+| [1991-find-the-middle-index-in-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1991-find-the-middle-index-in-array) |
 | [2064-minimized-maximum-of-products-distributed-to-any-store](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2064-minimized-maximum-of-products-distributed-to-any-store) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2470-number-of-subarrays-with-lcm-equal-to-k](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2470-number-of-subarrays-with-lcm-equal-to-k) |
@@ -287,6 +288,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0724-find-pivot-index](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0724-find-pivot-index) |
 | [1480-running-sum-of-1d-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1480-running-sum-of-1d-array) |
+| [1991-find-the-middle-index-in-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1991-find-the-middle-index-in-array) |
 ## Sliding Window
 |  |
 | ------- |
