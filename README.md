@@ -224,6 +224,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1048-clumsy-factorial](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1048-clumsy-factorial) |
 | [1823-find-the-winner-of-the-circular-game](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1823-find-the-winner-of-the-circular-game) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1979-find-greatest-common-divisor-of-array) |
+| [2180-count-integers-with-even-digit-sum](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2180-count-integers-with-even-digit-sum) |
 | [2470-number-of-subarrays-with-lcm-equal-to-k](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2470-number-of-subarrays-with-lcm-equal-to-k) |
 | [2523-closest-prime-numbers-in-range](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2523-closest-prime-numbers-in-range) |
 ## Counting
@@ -255,6 +256,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1441-build-an-array-with-stack-operations](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1441-build-an-array-with-stack-operations) |
 | [1823-find-the-winner-of-the-circular-game](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1823-find-the-winner-of-the-circular-game) |
 | [1910-remove-all-occurrences-of-a-substring](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1910-remove-all-occurrences-of-a-substring) |
+| [2180-count-integers-with-even-digit-sum](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2180-count-integers-with-even-digit-sum) |
 | [2181-merge-nodes-in-between-zeros](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2181-merge-nodes-in-between-zeros) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2271-rearrange-array-elements-by-sign) |
 ## Bit Manipulation
