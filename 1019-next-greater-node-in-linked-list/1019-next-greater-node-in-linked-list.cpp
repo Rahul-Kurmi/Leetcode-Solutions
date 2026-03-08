@@ -8,43 +8,45 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
 class Solution {
 public:
-    ListNode* reverseNode(ListNode* &head){
-        ListNode* prev = nullptr ;
-        ListNode* curr = head ;
-        ListNode* forward ;
-        while(curr != nullptr){
-            forward = curr -> next ;
-            curr -> next = prev ;
-            prev = curr ;
-            curr = forward ;
-        }
-        return prev ;
-    }
-
     vector<int> nextLargerNodes(ListNode* head) {
-        vector<int> ans ;
-        head = reverseNode(head) ;
-        stack<int> st ;
-        while(head != nullptr){
-            if(st.empty()){
-                ans.push_back(0);
-            }
-            else{
-                int val = head -> val ;
-                while(!st.empty() && st.top() <= val){
-                    st.pop();
-                }
 
-                st.empty() ? ans.push_back(0) : ans.push_back(st.top());
-            }
-            st.push(head -> val);
-            head = head -> next ;
+        // Step 1: Store all linked list values in a vector
+        // This allows us to access elements using indices
+        vector<int> storeLL;
+        while(head != nullptr){
+            storeLL.push_back(head->val);
+            head = head->next;
         }
 
-        reverse(ans.begin() , ans.end());
-        return ans;
+        // Step 2: Initialize answer vector with 0
+        // Default value is 0 because if no greater element exists,
+        // the answer for that position should remain 0
+        vector<int> ans(storeLL.size());
 
+        // Stack will store indices of elements whose
+        // next greater element has not been found yet
+        stack<int> st;
+
+        // Step 3: Traverse the array from left to right
+        for(int i = 0; i < storeLL.size(); i++){
+
+            // While stack is not empty and current value
+            // is greater than the value at index stored in stack
+            // we found the next greater element
+            while(!st.empty() && storeLL[st.top()] < storeLL[i]){
+                ans[st.top()] = storeLL[i];
+                st.pop();
+            }
+
+            // Push current index to stack
+            st.push(i);
+        }
+
+        // Step 4: Remaining indices in stack do not have
+        // any next greater element, so their answer remains 0
+        return ans;
     }
 };
