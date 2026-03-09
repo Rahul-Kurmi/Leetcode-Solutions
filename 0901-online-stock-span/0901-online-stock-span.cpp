@@ -1,34 +1,19 @@
 class StockSpanner {
 public:
-    stack<pair<int , int>> st ;
-    int index = -1 ; // initial index 
-    
+    stack<pair<int, int>> st ; 
     StockSpanner() {
-        // Make sure when StockSpanner is reiitialized the inidex becomes -1
-        // and stack is empty
-        index = -1 ;
-        while(!st.empty()){
-            st.pop();
-        }
+        
     }
     
     int next(int price) {
-        index++;
-
+        int span  = 1 ;
         while(!st.empty() && st.top().first <= price){
+            span += st.top().second ;
             st.pop();
         }
 
-        int ans;
-
-        if(st.empty())
-            ans = index + 1;
-        else
-            ans = index - st.top().second;
-
-        st.push({price, index});
-
-        return ans;
+        st.push({price , span});
+        return span ; 
     }
 };
 
