@@ -1,49 +1,41 @@
 class Solution {
 public:
+    void buildAns(stack<string>& st , string& ans){
+        if(st.empty()) return ;
+        string temp = st.top() ;
+        st.pop() ;
+        buildAns(st , ans);
+        ans += temp ;
+    }
+
     string simplifyPath(string path) {
-        stack<string> st;
-        string temp = "";
-        temp.push_back('/');
-        int i = 1;
-
-        while(true){
-
-            for(; i < path.size(); i++){
-                if(path[i] == '/') break;
-                temp += path[i];
+        stack<string> st ;
+        int i = 0 ;
+        while(i < path.size()){
+            int start = i ;
+            int end = i + 1 ;
+            while(end < path.size() && path[end] != '/'){
+                end++;
             }
 
-            if(temp == "/" || temp == "/."){
-                // If we want to write continue here then we have to add code 
-                // the code that is written after if else 
-                temp = "/";
-                if(i == path.size()) break;
-                i++;
-                continue ;
+            string minPath = path.substr(start , end - start);
+            i = end ; // update i 
+
+            if(minPath == "/" || minPath == "/."){
+                continue ; // skip for these values
             }
-            else if(temp == "/.."){
-                if(!st.empty()) st.pop();
+            else if(minPath != "/.."){
+                st.push(minPath);
             }
             else{
-                st.push(temp);
+                if(!st.empty()){
+                    st.pop();
+                }
             }
-
-            temp = "/";
-
-            if(i == path.size()) break;
-
-            i++;
         }
 
-        path = "";
-
-        while(!st.empty()){
-            path = st.top() + path;
-            st.pop();
-        }
-
-        if(path == "") return "/";
-
-        return path;
+        string ans = st.empty() ? "/" : "";
+        buildAns(st , ans);
+        return ans ;
     }
 };
