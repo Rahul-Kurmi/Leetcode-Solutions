@@ -1,21 +1,16 @@
 class Solution {
 public:
+    // By stack we acn also do that but most Competetive Programmer use this 
     bool isValid(string s) {
-        stack<char> st ;
-        for(char ch : s){
-            st.push(ch);
-            if(st.size() >= 3){
-                char c1 = st.top() ; st.pop() ;
-                char c2 = st.top() ; st.pop() ;
-                char c3 = st.top() ; st.pop() ;
-                if(!(c1 == 'c' && c2 == 'b' && c3 == 'a')){
-                    // means we didn't get abc in order 
-                    st.push(c3);
-                    st.push(c2);
-                    st.push(c1);
-                }
+        string st ;
+        for(auto ch : s){
+            st +=ch ;
+            if(st.size() >= 3 && st.substr(st.size() - 3) == "abc" ){
+                // this will erase all elements after st.size() - 3
+                // st.erase(st.size() - 3) ;
+                st = st.substr(0 , st.size() - 3);
             }
         }
-        return st.empty();
+        return st.empty();   
     }
 };
