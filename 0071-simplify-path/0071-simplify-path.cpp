@@ -14,9 +14,12 @@ public:
             }
 
             if(temp == "/" || temp == "/."){
-                // We are just ignoring this not doing anything here,
-                // BUt we can't write continue here if written --> BLUNDER
-                // As we have to run code that is written after if else as 
+                // If we want to write continue here then we have to add code 
+                // the code that is written after if else 
+                temp = "/";
+                if(i == path.size()) break;
+                i++;
+                continue ;
             }
             else if(temp == "/.."){
                 if(!st.empty()) st.pop();
