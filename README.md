@@ -28,6 +28,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0078-subsets](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0079-word-search) |
 | [0084-largest-rectangle-in-histogram](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0084-largest-rectangle-in-histogram) |
+| [0085-maximal-rectangle](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0085-maximal-rectangle) |
 | [0088-merge-sorted-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0088-merge-sorted-array) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
@@ -253,6 +254,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0054-spiral-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0054-spiral-matrix) |
 | [0074-search-a-2d-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0074-search-a-2d-matrix) |
 | [0079-word-search](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0079-word-search) |
+| [0085-maximal-rectangle](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0085-maximal-rectangle) |
 | [0898-transpose-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0898-transpose-matrix) |
 | [0980-unique-paths-iii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0980-unique-paths-iii) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
@@ -293,6 +295,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0032-longest-valid-parentheses](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0032-longest-valid-parentheses) |
 | [0071-simplify-path](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0071-simplify-path) |
 | [0084-largest-rectangle-in-histogram](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0084-largest-rectangle-in-histogram) |
+| [0085-maximal-rectangle](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0085-maximal-rectangle) |
 | [0155-min-stack](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0155-min-stack) |
 | [0234-palindrome-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0234-palindrome-linked-list) |
 | [0394-decode-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0394-decode-string) |
@@ -369,6 +372,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0022-generate-parentheses](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0022-generate-parentheses) |
 | [0032-longest-valid-parentheses](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0032-longest-valid-parentheses) |
 | [0053-maximum-subarray](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0053-maximum-subarray) |
+| [0085-maximal-rectangle](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0085-maximal-rectangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0198-house-robber](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0198-house-robber) |
 | [0494-target-sum](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0494-target-sum) |
@@ -462,6 +466,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0084-largest-rectangle-in-histogram](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0084-largest-rectangle-in-histogram) |
+| [0085-maximal-rectangle](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0085-maximal-rectangle) |
 | [0901-online-stock-span](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0901-online-stock-span) |
 | [1019-next-greater-node-in-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1019-next-greater-node-in-linked-list) |
 ## Data Stream
