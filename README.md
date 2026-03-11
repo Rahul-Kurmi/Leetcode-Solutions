@@ -117,6 +117,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0336-palindrome-pairs](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0336-palindrome-pairs) |
 | [0344-reverse-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0345-reverse-vowels-of-a-string) |
+| [0394-decode-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0394-decode-string) |
 | [0415-add-strings](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0415-add-strings) |
 | [0443-string-compression](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0443-string-compression) |
 | [0541-reverse-string-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0541-reverse-string-ii) |
@@ -294,6 +295,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0084-largest-rectangle-in-histogram](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0084-largest-rectangle-in-histogram) |
 | [0155-min-stack](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0155-min-stack) |
 | [0234-palindrome-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0234-palindrome-linked-list) |
+| [0394-decode-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0394-decode-string) |
 | [0901-online-stock-span](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0901-online-stock-span) |
 | [1003-check-if-word-is-valid-after-substitutions](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1003-check-if-word-is-valid-after-substitutions) |
 | [1019-next-greater-node-in-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1019-next-greater-node-in-linked-list) |
@@ -357,6 +359,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0273-integer-to-english-words](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0273-integer-to-english-words) |
 | [0326-power-of-three](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0342-power-of-four) |
+| [0394-decode-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0394-decode-string) |
 | [0779-k-th-symbol-in-grammar](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0779-k-th-symbol-in-grammar) |
 | [1823-find-the-winner-of-the-circular-game](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1823-find-the-winner-of-the-circular-game) |
 ## Dynamic Programming
