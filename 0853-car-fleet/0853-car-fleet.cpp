@@ -4,10 +4,11 @@ class Solution {
             int pos ;
             int speed ;
             Car(int _p , int _s) : pos(_p) , speed(_s) {} ;
-            static bool cmp(Car c1 , Car c2){
-                return c1.pos < c2.pos ;
-            }
     };
+
+    static bool cmp(Car c1 , Car c2){
+        return c1.pos < c2.pos ;
+    }
 
     
 
@@ -20,7 +21,9 @@ public:
             cars.push_back(c1) ;
         }
 
-        sort(cars.begin(), cars.end(), Car::cmp);
+        sort(cars.begin(), cars.end(), cmp);
+        // can also use --> but no need as we're in Solution class itself 
+        // sort(cars.begin(), cars.end(), Solution::cmp);
 
         vector<double> times ;
         for(int i = 0 ; i < n ; i++){
