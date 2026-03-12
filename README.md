@@ -66,6 +66,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1552-magnetic-force-between-two-balls](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1552-magnetic-force-between-two-balls) |
 | [1655-distribute-repeating-integers](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1655-distribute-repeating-integers) |
 | [1672-richest-customer-wealth](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1672-richest-customer-wealth) |
+| [1776-car-fleet-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1776-car-fleet-ii) |
 | [1823-find-the-winner-of-the-circular-game](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1823-find-the-winner-of-the-circular-game) |
 | [1848-sum-of-unique-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1848-sum-of-unique-elements) |
 | [1961-check-if-string-is-a-prefix-of-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1961-check-if-string-is-a-prefix-of-array) |
@@ -237,6 +238,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0779-k-th-symbol-in-grammar](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0779-k-th-symbol-in-grammar) |
 | [1031-add-to-array-form-of-integer](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1031-add-to-array-form-of-integer) |
 | [1048-clumsy-factorial](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1048-clumsy-factorial) |
+| [1776-car-fleet-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1776-car-fleet-ii) |
 | [1823-find-the-winner-of-the-circular-game](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1823-find-the-winner-of-the-circular-game) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [2180-count-integers-with-even-digit-sum](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2180-count-integers-with-even-digit-sum) |
@@ -310,6 +312,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1048-clumsy-factorial](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1048-clumsy-factorial) |
 | [1381-design-a-stack-with-increment-operation](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1381-design-a-stack-with-increment-operation) |
 | [1441-build-an-array-with-stack-operations](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1441-build-an-array-with-stack-operations) |
+| [1776-car-fleet-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1776-car-fleet-ii) |
 | [1910-remove-all-occurrences-of-a-substring](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1910-remove-all-occurrences-of-a-substring) |
 | [1963-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1963-minimum-number-of-swaps-to-make-the-string-balanced) |
 ## Prefix Sum
@@ -329,6 +332,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0658-find-k-closest-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0658-find-k-closest-elements) |
 | [0767-reorganize-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0767-reorganize-string) |
 | [0912-sort-an-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0912-sort-an-array) |
+| [1776-car-fleet-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1776-car-fleet-ii) |
 ## Greedy
 |  |
 | ------- |
@@ -473,6 +477,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0853-car-fleet](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0853-car-fleet) |
 | [0901-online-stock-span](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0901-online-stock-span) |
 | [1019-next-greater-node-in-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1019-next-greater-node-in-linked-list) |
+| [1776-car-fleet-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1776-car-fleet-ii) |
 ## Data Stream
 |  |
 | ------- |
