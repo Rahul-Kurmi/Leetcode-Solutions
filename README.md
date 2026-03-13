@@ -43,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0336-palindrome-pairs](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0336-palindrome-pairs) |
 | [0349-intersection-of-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0491-non-decreasing-subsequences](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0491-non-decreasing-subsequences) |
+| [0493-reverse-pairs](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0493-reverse-pairs) |
 | [0494-target-sum](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0494-target-sum) |
 | [0526-beautiful-arrangement](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0526-beautiful-arrangement) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0532-k-diff-pairs-in-an-array) |
@@ -205,6 +206,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0287-find-the-duplicate-number) |
 | [0349-intersection-of-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
+| [0493-reverse-pairs](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0493-reverse-pairs) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0532-k-diff-pairs-in-an-array) |
 | [0540-single-element-in-a-sorted-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0540-single-element-in-a-sorted-array) |
 | [0658-find-k-closest-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0658-find-k-closest-elements) |
@@ -419,12 +421,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0053-maximum-subarray](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0053-maximum-subarray) |
 | [0148-sort-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0148-sort-list) |
 | [0190-reverse-bits](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0190-reverse-bits) |
+| [0493-reverse-pairs](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0493-reverse-pairs) |
 | [0912-sort-an-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0912-sort-an-array) |
 ## Merge Sort
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0023-merge-k-sorted-lists) |
 | [0148-sort-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0148-sort-list) |
+| [0493-reverse-pairs](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0493-reverse-pairs) |
 | [0912-sort-an-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0912-sort-an-array) |
 ## Counting Sort
 |  |
@@ -482,4 +486,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0901-online-stock-span](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0901-online-stock-span) |
+## Binary Indexed Tree
+|  |
+| ------- |
+| [0493-reverse-pairs](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0493-reverse-pairs) |
+## Segment Tree
+|  |
+| ------- |
+| [0493-reverse-pairs](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0493-reverse-pairs) |
+## Ordered Set
+|  |
+| ------- |
+| [0493-reverse-pairs](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0493-reverse-pairs) |
 <!---LeetCode Topics End-->
