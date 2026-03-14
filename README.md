@@ -446,6 +446,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0079-word-search](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0079-word-search) |
+| [0430-flatten-a-multilevel-doubly-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0430-flatten-a-multilevel-doubly-linked-list) |
 ## Linked List
 |  |
 | ------- |
@@ -461,6 +462,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0160-intersection-of-two-linked-lists](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0160-intersection-of-two-linked-lists) |
 | [0203-remove-linked-list-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0203-remove-linked-list-elements) |
 | [0234-palindrome-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0234-palindrome-linked-list) |
+| [0430-flatten-a-multilevel-doubly-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0430-flatten-a-multilevel-doubly-linked-list) |
 | [0707-design-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0707-design-linked-list) |
 | [1019-next-greater-node-in-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1019-next-greater-node-in-linked-list) |
 | [1472-design-browser-history](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1472-design-browser-history) |
@@ -509,5 +511,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Doubly-Linked List
 |  |
 | ------- |
+| [0430-flatten-a-multilevel-doubly-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0430-flatten-a-multilevel-doubly-linked-list) |
 | [1472-design-browser-history](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1472-design-browser-history) |
 <!---LeetCode Topics End-->
