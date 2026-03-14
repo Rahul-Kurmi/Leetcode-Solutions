@@ -12,27 +12,29 @@ public:
 class Solution {
 public:
     Node* flatten(Node* head) {
-        // Using Recursion going till last child and merging till first child 
         Node * curr = head ;
         while(curr != nullptr){
-            if(curr -> child != nullptr){ // found curr's child
+            if(curr -> child != nullptr){
                 Node* nextNode = curr -> next ;
-                Node * childHead = flatten(curr -> child);
+                Node* childNode = curr -> child ;
 
-                curr -> next = childHead ;
-                childHead -> prev = curr ;
-                curr -> child = nullptr ;
-
-                Node* childTail = childHead ;
+                // find tail of child list
+                Node* childTail = childNode ;
                 while(childTail -> next != nullptr){
                     childTail = childTail -> next ;
                 }
 
+                // connect tail with curr->next
                 childTail -> next = nextNode ;
-                if(nextNode != nullptr){ // if nextNode is not null
-                    nextNode -> prev = childTail;
+                if(nextNode != nullptr){
+                    nextNode -> prev = childTail ;
                 }
-            }   
+
+                // connect curr with child
+                curr -> next = childNode ;
+                curr -> child = nullptr ;
+                childNode -> prev = curr ;
+            }
             curr = curr -> next ;
         }
 
