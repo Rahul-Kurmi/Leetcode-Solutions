@@ -12,7 +12,8 @@ public:
     }
     
     bool enQueue(int value) {
-        if((rear == size-1  && front == 0) || (rear == front - 1)){
+        // just write --> front == (rear + 1) % size 
+        if(front == (rear + 1) % size ){
             cout << "OverFlow" << endl ;
             return false ;
         }
@@ -21,13 +22,9 @@ public:
             rear++;
             arr[rear] = value ;
         }
-        else if(rear == size - 1){
-            rear = 0;
-            arr[rear] = value ;
-        }
-        else{
-            rear++;
-            arr[rear] = value ;
+        else {
+            rear = (rear + 1) % size ;
+            arr[rear] = value ; 
         }
         return true ;
     }
@@ -43,13 +40,9 @@ public:
             front = -1 ;
             rear = -1;
         }
-        else if(front == size - 1){
+        else {
             arr[front] = -1 ;
-            front = 0 ;
-        }
-        else{
-            arr[front] = -1 ;
-            front++;
+            front = (front + 1 ) % size ;
         }
         return true ;
     }
@@ -73,9 +66,7 @@ public:
     }
     
     bool isFull() {
-        if(front == 0 && rear == size - 1) return true ;
-        else if(rear == front - 1) return true ;
-        return false ;
+        return front == (rear + 1) % size ;
     }
 };
 
