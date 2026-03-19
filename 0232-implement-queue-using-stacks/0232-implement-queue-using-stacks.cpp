@@ -7,34 +7,42 @@ public:
     }
     
     void push(int x) {
-        // Step 1 : Copy all elements from s1 to s2 
-        while(!s1.empty()){
-            s2.push(s1.top());
-            s1.pop();
-        }
-
-        // Step 2 : Push x in s1 as now it will be bottom of st or rear of queue 
         s1.push(x);
-
-        // step 3: Copy all elements from s2 to s1
-        while(!s2.empty()){
-            s1.push(s2.top());
-            s2.pop();
-        }
     }
     
     int pop() {
-        int element = s1.top();
-        s1.pop();
-        return element ;
+        int popElement = -1 ;
+        if(!s2.empty()){
+            popElement = s2.top();
+        }
+        else{
+            while(!s1.empty()){
+                s2.push(s1.top());
+                s1.pop();
+            }
+            popElement = s2.top();
+        }
+        s2.pop(); // pop both when s2 empty and non empty 
+        return popElement ;
     }
     
     int peek() {
-        return s1.top();
+        int frontElement = -1 ;
+        if(!s2.empty()){
+            frontElement = s2.top() ;
+        }
+        else{
+            while(!s1.empty()){
+                s2.push(s1.top());
+                s1.pop();
+            }
+            frontElement = s2.top();
+        }
+        return frontElement;
     }
     
     bool empty() {
-        return s1.empty();
+        return (s1.empty() && s2.empty());
     }
 };
 
