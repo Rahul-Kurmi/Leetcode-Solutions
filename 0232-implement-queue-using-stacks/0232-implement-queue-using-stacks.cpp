@@ -1,53 +1,40 @@
-int popStack(stack<int>& st){
-    if(st.empty()) return -1;
-    if(st.size() == 1) {
-        int x = st.top() ;
-        st.pop() ;
-        return x ;
-    }
-    int temp = st.top() ;
-    st.pop() ;
-    int ans = popStack(st);
-    st.push(temp);
-    return ans ; 
-}
-
-
-int peekStack(stack<int>& st){
-    if(st.empty()) return -1;
-    if(st.size() == 1) {
-        int x = st.top() ;
-        return x ;
-    }
-    int temp = st.top() ;
-    st.pop() ;
-    int ans = peekStack(st);
-    st.push(temp);
-    return ans ;
-}
 class MyQueue {
 public:
-    stack<int> st ;
+    stack<int> s1 ;
+    stack<int> s2 ;
     MyQueue() {
         
     }
     
     void push(int x) {
-        st.push(x);
-        return ;
+        // Step 1 : Copy all elements from s1 to s2 
+        while(!s1.empty()){
+            s2.push(s1.top());
+            s1.pop();
+        }
+
+        // Step 2 : Push x in s1 as now it will be bottom of st or rear of queue 
+        s1.push(x);
+
+        // step 3: Copy all elements from s2 to s1
+        while(!s2.empty()){
+            s1.push(s2.top());
+            s2.pop();
+        }
     }
     
     int pop() {
-        if(st.empty()) return -1 ;
-        return popStack(st);
+        int element = s1.top();
+        s1.pop();
+        return element ;
     }
     
     int peek() {
-        return peekStack(st);
+        return s1.top();
     }
     
     bool empty() {
-        return st.empty();
+        return s1.empty();
     }
 };
 
