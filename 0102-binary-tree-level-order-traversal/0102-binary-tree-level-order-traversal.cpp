@@ -27,9 +27,6 @@ public:
         vector<int> store; // Stores nodes of current level
         
         while(!q.empty()){
-            
-            // If NULL is at front, we stop (last level processed)
-            if(q.front() == nullptr && q.size() == 1) break;
 
             // Add current node value to current level
             store.push_back(q.front()->val);
@@ -59,8 +56,8 @@ public:
                 // Clear for next level
                 store.clear();
 
-                // Push NULL again to mark next level end
-                q.push(nullptr);
+                // if queue empty then last level
+                if(!q.empty()) q.push(nullptr);
             }
         }
         
