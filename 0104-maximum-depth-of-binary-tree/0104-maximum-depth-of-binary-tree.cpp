@@ -11,19 +11,12 @@
  */
 class Solution {
 public:
-    void maxDepthHelper(TreeNode*& root , int currHeight, int& maxHeight){
-        if(root == nullptr){
-            maxHeight = max(currHeight, maxHeight);
-            return ;
-        }
-
-        maxDepthHelper(root -> left , currHeight+1, maxHeight);
-        maxDepthHelper(root -> right , currHeight+1 , maxHeight);
-    }
-
     int maxDepth(TreeNode* root) {
-        int maxHeight = 0 ;
-        maxDepthHelper(root , 0 , maxHeight);
-        return maxHeight ;
+        if(root == nullptr) return 0 ;
+
+        int leftHeight = maxDepth(root -> left);
+        int rightHeight = maxDepth(root -> right);
+        int height = max(leftHeight , rightHeight) + 1 ;
+        return height ;
     }
 };
