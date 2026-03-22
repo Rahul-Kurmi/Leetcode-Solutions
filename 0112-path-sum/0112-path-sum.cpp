@@ -11,25 +11,20 @@
  */
 class Solution {
 public:
-   bool hasPathSumHelper(TreeNode* root, int targetSum, int currSum){
-
-        // Base case: null node → no valid path
-        if(root == nullptr){
-            return false;
-        }
-
-        // Leaf node: check if path sum matches
-        if(root->left == nullptr && root->right == nullptr){
-            return targetSum == (currSum + root->val);
-        }
-
-        bool leftCheck = hasPathSumHelper(root->left, targetSum , currSum + root->val);
-        bool rightCheck = hasPathSumHelper(root->right, targetSum, currSum + root->val);
-
-        return leftCheck || rightCheck;
-    }
-
     bool hasPathSum(TreeNode* root, int targetSum) {
-        return hasPathSumHelper(root , targetSum , 0);
+        if(root == nullptr) return false ;
+
+        if(root -> left == nullptr && root -> right == nullptr){
+            return targetSum == root -> val ;
+            // here at leaf node targetSum will not be zero because the leaf Node value is not taken yet  
+            // return targetSum == 0 + root-> val ;
+        }
+
+        targetSum -= root -> val ;
+        
+        bool leftCheck = hasPathSum(root -> left , targetSum);
+        bool rightCheck = hasPathSum(root -> right , targetSum);
+
+        return leftCheck || rightCheck ;
     }
 };
