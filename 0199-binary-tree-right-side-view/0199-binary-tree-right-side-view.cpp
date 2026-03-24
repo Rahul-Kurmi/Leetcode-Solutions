@@ -11,53 +11,24 @@
  */
 class Solution {
 public:
+    void rightSideViewRecursion(TreeNode* &root, int level, vector<int>& ans){
+        if(root == nullptr) return ;
+
+        // this means that at this level no rightmost node is found
+        if(ans.size() == level){
+            ans.push_back(root -> val);
+        }
+
+        // move right first 
+        rightSideViewRecursion(root -> right , level + 1, ans);
+
+        // move left next 
+        rightSideViewRecursion(root -> left, level + 1 , ans);
+    }
+
     vector<int> rightSideView(TreeNode* root) {
-        if(root == nullptr) return {} ;
         vector<int> ans ;
-
-        // map will store nodes of each level 
-        map<int, int> nodeLevelMap;
-        
-        // this queue stores the pair of node and level 
-        // here level helps in finding whether it is stored in map or not    
-        queue<pair<TreeNode*, int>> q ;
-        q.push(make_pair(root , 0)); // store root ie. at level 0
-
-        while(!q.empty()){
-            pair<TreeNode*, int> temp = q.front();
-            q.pop();
-
-            // Extract Node and level from temp
-            TreeNode* frontNode = temp.first ;
-            int nodeLevel = temp.second;
-
-            // check if this level is present in map or not 
-            // if not present then insert level and node value 
-            if(nodeLevelMap.find(nodeLevel) == nodeLevelMap.end()){
-                nodeLevelMap[nodeLevel] = frontNode -> val ;
-            }
-            else{ // if found again at same level then it's rightmost 
-            // change the value at that level
-                nodeLevelMap[nodeLevel] = frontNode -> val ;
-            }
-
-
-            // here taking left node first, but question asked right view
-            // thus we will store last level value in map
-            if(frontNode -> left){
-                q.push(make_pair(frontNode -> left , nodeLevel+1));
-            }
-
-            if(frontNode -> right){
-                q.push(make_pair(frontNode -> right, nodeLevel+1));
-            }
-        }
-
-        // Now we have all the level rightmost value in map 
-        for(auto it : nodeLevelMap){
-            ans.push_back(it.second);
-        }
-
+        rightSideViewRecursion(root , 0 , ans);
         return ans ;
     }
 };
