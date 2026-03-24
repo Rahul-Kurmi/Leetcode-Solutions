@@ -9,45 +9,35 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-vector<vector<int>> levelOrderTraversal(TreeNode* root){
-    vector<vector<int>> ans ;
-    if (root == nullptr) {
-        return ans ;
-    }
-    
-    vector<int> store ;
-    queue<TreeNode*> q ;
-    // Push root node 
-    q.push(root);
-    q.push(nullptr);
-
-    while(!q.empty()){
-        TreeNode* node = q.front();
-        q.pop();
-
-        // If NULL → level finished
-        if(node == nullptr){
-            ans.push_back(store);
-            store.clear();
-
-            if(!q.empty()) q.push(nullptr);
-        }
-        else{
-            // Add current node value
-            store.push_back(node->val);
-
-            // Push children
-            if(node->left) q.push(node->left);
-            if(node->right) q.push(node->right);
-        }
-    }
-    return ans ;
-}
-
-
 class Solution {
 public:
     vector<vector<int>> levelOrder(TreeNode* root) {
-        return levelOrderTraversal(root) ;
+        // WITH FOR LOOP INSIDE --> SAME COMPLEXITY O(N)
+        vector<vector<int>> ans ;
+        if (root == nullptr) {
+            return ans ;
+        }
+        
+        vector<int> store ;
+        queue<TreeNode*> q ;
+        // Push root node 
+        q.push(root);
+
+        while(!q.empty()){
+            store.clear(); // new level make this array empty 
+            int qSize = q.size() ; // all current elements of this level
+            for(int i = 0 ; i < qSize ; i++){
+                TreeNode* temp = q.front();
+                q.pop();
+
+                if(temp -> left) q.push(temp -> left);
+                if(temp -> right) q.push(temp -> right);
+
+                store.push_back(temp -> val);  
+            } 
+            ans.push_back(store); 
+        }
+        
+        return ans;
     }
 };
