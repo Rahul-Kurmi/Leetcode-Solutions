@@ -13,29 +13,47 @@ class Solution {
 public:
     vector<int> rightSideView(TreeNode* root) {
         if(root == nullptr) return {} ;
-
         vector<int> ans ;
-        queue<TreeNode*> q ;
+
+        // map will store the first node of each level
+        // As here we will move to right node first 
+        map<int, int> rightFirstNode;
         
-        q.push(root);
-        q.push(nullptr);
+        // this queue stores the pair of node and level 
+        // here level helps in finding whether it is stored in map or not    
+        queue<pair<TreeNode*, int>> q ;
+        q.push(make_pair(root , 0)); // store root ie. at level 0
 
         while(!q.empty()){
-            TreeNode* temp = q.front();
+            pair<TreeNode*, int> temp = q.front();
             q.pop();
 
-            if(!q.empty() && q.front() == nullptr){
-                ans.push_back(temp -> val) ;
-            } 
+            // Extract Node and level from temp
+            TreeNode* frontNode = temp.first ;
+            int nodeLevel = temp.second;
 
-            if(temp == nullptr){
-                if(!q.empty()) q.push(nullptr);
+            // check if this level is present in map or not 
+            // if not present then insert level and node value 
+            if(rightFirstNode.find(nodeLevel) == rightFirstNode.end()){
+                rightFirstNode[nodeLevel] = frontNode -> val ;
             }
-            else{
-                if(temp -> left) q.push(temp -> left);
-                if(temp -> right) q.push(temp -> right);
+
+            // first traverse RIGHT SIDE 
+            if(frontNode -> right){
+                q.push(make_pair(frontNode -> right, nodeLevel+1));
+            }
+
+            // then traverse LEFT 
+            if(frontNode -> left){
+                q.push(make_pair(frontNode -> left , nodeLevel+1));
             }
         }
+
+        // Now we have all the level rightmost value in map 
+        for(auto it : rightFirstNode){
+            ans.push_back(it.second);
+        }
+
         return ans ;
     }
 };
