@@ -1,26 +1,32 @@
 class Solution {
 public:
     vector<int> findDiagonalOrder(vector<vector<int>>& mat) {
-        map<int, vector<int>> rowColSumMap;
-        int row = mat.size();
-        int col = mat[0].size();
-        for(int i = 0 ; i < row ; i++){
-            for(int j = 0 ; j < col ; j++){
-                int rowColSum = i+j ;
-                rowColSumMap[rowColSum].push_back(mat[i][j]);
-            }
-        }
-
         vector<int> ans ;
-        bool flip = true ;
-        for(auto ithDiagonal : rowColSumMap){
-            if(flip){
-                reverse(ithDiagonal.second.begin(), ithDiagonal.second.end());
+        int m = mat.size();
+        int n = mat[0].size();
+
+        int row = 0 ; 
+        int col = 0 ;
+
+        for(int i = 0 ; i < m * n ; i++){
+            ans.push_back(mat[row][col]);
+
+            if((row + col) % 2 == 0){
+                if(col == n - 1) row++; // must do this first 
+                else if(row == 0) col++;
+                else{
+                    row--;
+                    col++;
+                }
             }
-            for(auto it : ithDiagonal.second){
-                ans.push_back(it);
+            else{
+                if(row == m - 1) col++; // must do this first 
+                else if(col == 0) row++;
+                else{
+                    row++;
+                    col--;
+                }
             }
-            flip = !flip ;
         }
         return ans ;
     }
