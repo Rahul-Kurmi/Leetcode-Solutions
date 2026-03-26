@@ -11,33 +11,24 @@
  */
 class Solution {
 public:
-    int calculateHeight(TreeNode* root){
+    int maxDiameter = 0 ;
+    int findDiameterWithHeight(TreeNode*& root){
         if(root == nullptr) return 0 ;
 
-        int leftHeight = calculateHeight(root -> left);
-        int rightHeight = calculateHeight(root -> right);
+        int leftHeight = findDiameterWithHeight(root -> left);
+        int rightHeight = findDiameterWithHeight(root -> right);
 
-        int ans = max(leftHeight, rightHeight) + 1 ;
+        // get curr diameter
+        int currDiameter = leftHeight + rightHeight;
+        // update maxDiameter 
+        maxDiameter = max(currDiameter , maxDiameter);
 
-        return ans ;
+        // return current height
+        return max(leftHeight , rightHeight) + 1 ;
     }
 
     int diameterOfBinaryTree(TreeNode* root) {
-        if(root == nullptr) return 0 ;
-
-        // Left tree Diameter 
-        int leftDiameter = diameterOfBinaryTree(root->left);
-
-        // Right Tree Diameter 
-        int rightDiameter = diameterOfBinaryTree(root->right);
-
-
-        // Diameter of current tree with root 
-        int leftHeight = calculateHeight(root->left);
-        int rightHeight = calculateHeight(root->right);
-
-        int currDiameter = leftHeight + rightHeight;
-
-        return max({leftDiameter, rightDiameter, currDiameter});
+        findDiameterWithHeight(root);
+        return maxDiameter ;
     }
 };
