@@ -11,30 +11,23 @@
  */
 class Solution {
 public:
-    int calculateTreeHeight(TreeNode*& root){
-        if(root == nullptr) return 0;
 
-        int leftHeight = calculateTreeHeight(root -> left);
-        int rightHeight = calculateTreeHeight(root -> right);
+    bool isTreeBalanced = true ;
 
-        return max(leftHeight , rightHeight) + 1 ;
+    int checkBalancedWithHeight(TreeNode* root){
+        if(!root) return 0 ;
+
+        int lh = checkBalancedWithHeight(root -> left);
+        int rh = checkBalancedWithHeight(root -> right);
+
+        bool isCurrBalanced = abs(lh - rh) <= 1;
+        isTreeBalanced = isCurrBalanced && isTreeBalanced ;
+
+        return max(lh , rh) + 1;
     }
 
-    bool isBalanced(TreeNode*& root) {
-        if(root == nullptr) return true ;
-
-        // Calculate current root is balances of not 
-        int leftHeight = calculateTreeHeight(root -> left);
-        int rightHeight = calculateTreeHeight(root -> right);
-
-        bool ans = abs(leftHeight - rightHeight) <= 1 ? true : false;
-
-        // Calculate left subTree is balanced 
-        bool leftBalanceCheck = isBalanced(root -> left);
-
-        // Calculate right subTree is balanced
-        bool rightBalanceCheck = isBalanced(root -> right);
-
-        return ans && leftBalanceCheck && rightBalanceCheck ; 
+    bool isBalanced(TreeNode* root) {
+        checkBalancedWithHeight(root);
+        return isTreeBalanced ;
     }
 };
