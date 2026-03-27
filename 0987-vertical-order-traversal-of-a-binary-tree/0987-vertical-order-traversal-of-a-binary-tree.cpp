@@ -11,28 +11,19 @@
  */
 class Solution {
 public:
+    void verticalTraversalHelper(TreeNode*& root , int hd , int lvl , map<int, map<int, multiset<int> >>& mp ){
+        if(!root) return ;
+        
+        mp[hd][lvl].insert(root -> val);
+        
+        verticalTraversalHelper(root -> left , hd-1 , lvl+1, mp);
+        verticalTraversalHelper(root -> right, hd+1 , lvl+1, mp);
+    }
+
     vector<vector<int>> verticalTraversal(TreeNode* root) {
         map<int, map<int, multiset<int> >> mp ;
-        queue<pair<TreeNode* , pair<int,int>>> q ;
-        q.push({root , {0 , 0}});
-        while(!q.empty()){
-            auto temp = q.front();
-            q.pop() ;
 
-            TreeNode* node = temp.first;
-            int hd = temp.second.first ;
-            int lvl = temp.second.second ;
-
-            mp[hd][lvl].insert(node -> val);
-
-            if(node -> left){
-                q.push({node -> left , {hd - 1 ,lvl + 1}});
-            }
-
-            if(node -> right){
-                q.push({node -> right, {hd + 1 , lvl + 1}});
-            }
-        }
+        verticalTraversalHelper(root, 0 , 0 , mp);
 
         vector<vector<int>> ans ;
 
