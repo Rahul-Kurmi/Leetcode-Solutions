@@ -11,30 +11,31 @@
  */
 class Solution {
 public:
-    using ll = long long;
-    void pathSumHelper(TreeNode*& root , ll target , int& count){
-        if(root == nullptr) return ;
-        target -= root -> val ;
+    void pathSumHelper(TreeNode* root, long long target, int& count){
+        if(root == nullptr) return;
+
+        target -= root->val;
+
         if(target == 0){
             count++;
         }
-        pathSumHelper(root -> left , target , count);
-        pathSumHelper(root -> right, target , count);
+
+        pathSumHelper(root->left, target, count);
+        pathSumHelper(root->right, target, count);
     }
 
-    void pathSumSolution(TreeNode*& root , ll targetSum , int &count){
-        if(!root) return ;
+    void pathSumSolution(TreeNode* root, long long targetSum, int &count){
+        if(!root) return;
 
-        pathSumHelper(root , targetSum , count);
+        pathSumHelper(root, targetSum, count);
 
-        pathSumSolution(root -> left , targetSum , count);
-        pathSumSolution(root -> right, targetSum , count);
+        pathSumSolution(root->left, targetSum, count);
+        pathSumSolution(root->right, targetSum, count);
     }
 
-    int pathSum(TreeNode* root, ll targetSum) {
-        int count = 0 ;
-        pathSumSolution(root , targetSum , count);
-        return count ;
-
+    int pathSum(TreeNode* root, int targetSum) {
+        int count = 0;
+        pathSumSolution(root, (long long)targetSum, count);
+        return count;
     }
 };
