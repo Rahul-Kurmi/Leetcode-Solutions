@@ -11,41 +11,27 @@
  */
 class Solution {
 public:
-    vector<TreeNode* > ans ;
-    unordered_map<string , int> subTreeMap ;
+    string preorderEncoding(TreeNode* root , unordered_map<string, int>& mp,   vector<TreeNode*> &res){
+        if(root == nullptr)  return "N";
 
-    string preorderEncoding(TreeNode* root){
-        if(root == nullptr) return "N" ;
-
-        string currEncode = to_string(root -> val);
-        string leftEncode = preorderEncoding(root -> left);
-        string rightEncode = preorderEncoding(root -> right);
-        string finalEncode = currEncode + "," + leftEncode + "," + rightEncode;
-
-        // we find that this encoding is present in map
-        if(subTreeMap.find(finalEncode) != subTreeMap.end()){
-            // means this is our second encounter and it was found once before
-            if(subTreeMap[finalEncode] == 1){
-                // push back in ans as identical
-                ans.push_back(root);
-                subTreeMap[finalEncode]++;
-            }
-            else{
-                // Encountered more than once means we have already pushed it into the map
-                // just increase it 
-                subTreeMap[finalEncode]++;;
-            }
-        }
-        else{
-            // means not in map first encounter 
-            subTreeMap[finalEncode] = 1 ;
+        string encode = to_string(root -> val) + "," + 
+                        preorderEncoding(root -> left , mp , res) + "," +
+                        preorderEncoding(root -> right, mp , res);
+        
+        if(mp[encode] == 1){
+            res.push_back(root);
         }
 
-        return finalEncode ;
+        mp[encode]++;
+
+        return encode ;
     }
 
     vector<TreeNode*> findDuplicateSubtrees(TreeNode* root) {
-        preorderEncoding(root);
-        return ans ;
+        unordered_map<string, int> mp ;
+        vector<TreeNode*> res ;
+        preorderEncoding(root , mp , res);
+        return res ;
+
     }
 };
