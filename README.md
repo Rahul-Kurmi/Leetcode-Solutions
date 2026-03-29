@@ -112,6 +112,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0387-first-unique-character-in-a-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0387-first-unique-character-in-a-string) |
 | [0491-non-decreasing-subsequences](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0491-non-decreasing-subsequences) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0532-k-diff-pairs-in-an-array) |
+| [0652-find-duplicate-subtrees](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0652-find-duplicate-subtrees) |
 | [0767-reorganize-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0767-reorganize-string) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 | [1655-distribute-repeating-integers](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1655-distribute-repeating-integers) |
@@ -507,6 +508,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0437-path-sum-iii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0437-path-sum-iii) |
 | [0513-find-bottom-left-tree-value](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0513-find-bottom-left-tree-value) |
 | [0543-diameter-of-binary-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0543-diameter-of-binary-tree) |
+| [0652-find-duplicate-subtrees](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0652-find-duplicate-subtrees) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 | [1367-linked-list-in-binary-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1367-linked-list-in-binary-tree) |
 | [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2385-amount-of-time-for-binary-tree-to-be-infected) |
@@ -621,6 +623,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0437-path-sum-iii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0437-path-sum-iii) |
 | [0513-find-bottom-left-tree-value](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0513-find-bottom-left-tree-value) |
 | [0543-diameter-of-binary-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0543-diameter-of-binary-tree) |
+| [0652-find-duplicate-subtrees](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0652-find-duplicate-subtrees) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 | [1367-linked-list-in-binary-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1367-linked-list-in-binary-tree) |
 | [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2385-amount-of-time-for-binary-tree-to-be-infected) |
@@ -662,6 +665,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0437-path-sum-iii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0437-path-sum-iii) |
 | [0513-find-bottom-left-tree-value](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0513-find-bottom-left-tree-value) |
 | [0543-diameter-of-binary-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0543-diameter-of-binary-tree) |
+| [0652-find-duplicate-subtrees](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0652-find-duplicate-subtrees) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 | [1367-linked-list-in-binary-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1367-linked-list-in-binary-tree) |
 | [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2385-amount-of-time-for-binary-tree-to-be-infected) |
