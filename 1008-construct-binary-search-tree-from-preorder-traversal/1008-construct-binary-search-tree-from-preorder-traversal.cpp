@@ -11,37 +11,30 @@
  */
 class Solution {
 public:
-    void insertIntoBSTHelper(TreeNode* &root , int val){
-        if(root == nullptr) return ;
-
-        if(val > root -> val){
-            if(root -> right == nullptr){
-                TreeNode* newNode = new TreeNode(val);
-                root -> right = newNode ;
-            }
-            else{
-                insertIntoBSTHelper(root -> right , val);
-            }
+    TreeNode* BSTCreation(TreeNode*& root , int data){
+        if(root == nullptr){
+            root = new TreeNode(data);
+            return root ;
         }
 
-        if(val < root -> val){
-            if(root -> left == nullptr){
-                TreeNode* newNode = new TreeNode(val);
-                root -> left = newNode ;
-            }
-            else{
-                insertIntoBSTHelper(root -> left , val);
-            }
+        // left connection 
+        if(root -> val > data){
+            root -> left = BSTCreation(root -> left , data);
         }
-    }
+
+        // right connection
+        if(root -> val < data){
+            root -> right = BSTCreation(root -> right, data);
+        }
+
+        return root ;
+    } 
 
     TreeNode* bstFromPreorder(vector<int>& preorder) {
-        TreeNode* root = new TreeNode(preorder[0]);
-
-        for(int i = 1 ; i < preorder.size() ; i++){
-            insertIntoBSTHelper(root , preorder[i]);
+        TreeNode* root = nullptr ;
+        for(int i = 0 ; i < preorder.size(); i++){
+            BSTCreation(root , preorder[i]);
         }
-
         return root ;
     }
 };
