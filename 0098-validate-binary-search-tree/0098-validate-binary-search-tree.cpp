@@ -11,22 +11,24 @@
  */
 class Solution {
 public:
-    vector<int> inorderTraversal(TreeNode* root){
-        if(!root) return {} ;
+    using ll = long long;
 
-        vector<int> leftAns = inorderTraversal(root -> left);
-        vector<int> rightAns = inorderTraversal(root -> right);
+    bool isValidBSTHelper(TreeNode* root , ll lowerBound , ll upperBound){
+        if(!root) return true ;
 
-        leftAns.push_back(root -> val);
-        leftAns.insert(leftAns.end() , rightAns.begin() , rightAns.end());
-        return leftAns ;
+        bool currNodeCheck = (root -> val > lowerBound) && (root -> val < upperBound);
+
+        bool leftCheck = isValidBSTHelper(root -> left , lowerBound , root -> val);
+        bool rightCheck = isValidBSTHelper(root -> right, root -> val , upperBound);
+
+        return currNodeCheck && leftCheck && rightCheck;
+
+        
     }
 
     bool isValidBST(TreeNode* root) {
-        vector<int> inorder = inorderTraversal(root);
-        for(int i = 1 ; i < inorder.size() ; i++){
-            if(inorder[i-1] >= inorder[i]) return false ;
-        }
-        return true ;
+        ll lb = LLONG_MIN ;
+        ll ub = LLONG_MAX ;
+        return isValidBSTHelper(root , lb , ub);
     }
 };
