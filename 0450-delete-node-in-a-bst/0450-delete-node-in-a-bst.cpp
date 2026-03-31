@@ -11,47 +11,45 @@
  */
 class Solution {
 public:
-    void deleteNodeHelper(TreeNode*& root, int key){
-        if(!root) return ;
+    TreeNode* deleteNodeHelper(TreeNode* root, int key){
+        if(!root) return nullptr ;
 
-        if(key < root -> val){
-            deleteNodeHelper(root -> left , key);
+        if(key > root -> val){
+            root -> right = deleteNodeHelper(root -> right , key);
         }
-        else if(key > root -> val){
-            deleteNodeHelper(root -> right , key);
+        else if(key < root -> val){
+            root -> left = deleteNodeHelper(root -> left , key);
         }
-        else{
-            // Case 1 : no child 
+        else{ // when root -> val == key
+            // Case 1: no childs 
             if(!root -> left && !root -> right){
-                root = nullptr ;
-                return ;
+                return nullptr ;
             }
-            // Case 2 : only right child 
-            else if(!root -> left){
-                root = root -> right ;
-                return ;
+            // Case 2 : if right is null
+            if(!root -> right){
+                return root -> left ;
             }
-            // Case 3 : only left child 
-            else if(!root -> right){
-                root = root -> left ;
-                return ;
+            // Case 3: if left is null 
+            if(!root -> left){
+                return root -> right ;
             }
-            // Case 4 : Both childs
-            else{
+            // Case 4: both child present
+            if(root -> left && root -> right){
+                // find inorder predecessor 
                 TreeNode* temp = root -> left ;
                 while(temp -> right){
                     temp = temp -> right;
                 }
-
+                // replace value of root and inorder predecessor 
                 root -> val = temp -> val ;
-                deleteNodeHelper(root -> left , temp -> val);
+                // Delete that temp node
+                root -> left = deleteNodeHelper(root -> left , temp -> val);
             }
         }
-
+        return root ;
     }
 
     TreeNode* deleteNode(TreeNode* root, int key) {
-        deleteNodeHelper(root , key);
-        return root ;
+        return deleteNodeHelper(root , key);
     }
 };
