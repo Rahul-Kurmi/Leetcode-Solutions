@@ -11,39 +11,29 @@
  */
 class Solution {
 public:
-    unordered_map<TreeNode*, int> NodeDepth;
-    int maxDepth = 0;
 
-    void calculateEachDepth(TreeNode* root, int d) {
-        if (!root) return;
+    pair<int , TreeNode*> lcaDeepestLeaveshelper(TreeNode* root){
+        if(!root) return { 0 , nullptr} ;
 
-        NodeDepth[root] = d;
-        maxDepth = max(d, maxDepth);
+        auto leftAns = lcaDeepestLeaveshelper(root -> left);
+        auto rightAns = lcaDeepestLeaveshelper(root -> right);
 
-        calculateEachDepth(root->left, d + 1);
-        calculateEachDepth(root->right, d + 1);
-    }
-
-    TreeNode* lcaDeepestLeavesHelper(TreeNode* root) {
-        if (!root) return nullptr;
-
-        if (NodeDepth[root] == maxDepth) return root;
-
-        TreeNode* leftAns = lcaDeepestLeavesHelper(root->left);
-        TreeNode* rightAns = lcaDeepestLeavesHelper(root->right);
-
-        if (!leftAns && !rightAns) return nullptr;
-        if (leftAns && !rightAns) return leftAns;
-        if (!leftAns && rightAns) return rightAns;
-
-        return root;
+        int leftDepth = leftAns.first ;
+        int rightDepth = rightAns.first ;
+        if(leftDepth == rightDepth){
+            return {leftDepth + 1 , root};
+        }
+        if(leftDepth > rightDepth){
+            return {leftDepth + 1 , leftAns.second};
+        }
+        if(rightDepth > leftDepth){
+            return {rightDepth + 1 , rightAns.second};
+        }
+        return {0 , nullptr} ;
     }
 
     TreeNode* lcaDeepestLeaves(TreeNode* root) {
-        if (!root) return nullptr;
-
-        calculateEachDepth(root, 0);
-
-        return lcaDeepestLeavesHelper(root);
+        auto pairHeightLCA = lcaDeepestLeaveshelper(root);
+        return pairHeightLCA.second ;
     }
 };
