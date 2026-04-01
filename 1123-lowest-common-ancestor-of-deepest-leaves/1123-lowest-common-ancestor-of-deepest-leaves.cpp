@@ -11,37 +11,39 @@
  */
 class Solution {
 public:
-    TreeNode* findAncestor(TreeNode* root , TreeNode* p , TreeNode* q){
-        if(!root) return nullptr ;
+    unordered_map<TreeNode*, int> NodeDepth;
+    int maxDepth = 0;
 
-        if(root == p) return root ;
-        if(root == q) return root ;
+    void calculateEachDepth(TreeNode* root, int d) {
+        if (!root) return;
 
-        TreeNode* leftAns = findAncestor(root -> left , p , q);
-        TreeNode* rightAns = findAncestor(root -> right , p , q);
+        NodeDepth[root] = d;
+        maxDepth = max(d, maxDepth);
 
-        if(!leftAns && !rightAns) return nullptr ;
-        if(leftAns && !rightAns) return leftAns ;
-        if(!leftAns && rightAns) return rightAns ;
-        return root ;
+        calculateEachDepth(root->left, d + 1);
+        calculateEachDepth(root->right, d + 1);
+    }
+
+    TreeNode* lcaDeepestLeavesHelper(TreeNode* root) {
+        if (!root) return nullptr;
+
+        if (NodeDepth[root] == maxDepth) return root;
+
+        TreeNode* leftAns = lcaDeepestLeavesHelper(root->left);
+        TreeNode* rightAns = lcaDeepestLeavesHelper(root->right);
+
+        if (!leftAns && !rightAns) return nullptr;
+        if (leftAns && !rightAns) return leftAns;
+        if (!leftAns && rightAns) return rightAns;
+
+        return root;
     }
 
     TreeNode* lcaDeepestLeaves(TreeNode* root) {
-        vector<TreeNode*> store ;
-        queue<TreeNode*> q ;
-        q.push(root);
-        while(!q.empty()){
-            store.clear();
-            int qSize = q.size();
-            for(int i = 0 ; i < qSize ; i++){
-                store.push_back(q.front());
-                if(q.front() -> left) q.push(q.front() -> left);
-                if(q.front() -> right)q.push(q.front() -> right);
-                q.pop();
-            }
-        }
+        if (!root) return nullptr;
 
-        if(store.size() == 1) return store[0];
-        return findAncestor(root , store[0] , store[store.size() - 1]);
+        calculateEachDepth(root, 0);
+
+        return lcaDeepestLeavesHelper(root);
     }
 };
