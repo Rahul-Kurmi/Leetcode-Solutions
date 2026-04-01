@@ -11,27 +11,20 @@
  */
 class Solution {
 public:
-    void Store_Inorder(TreeNode* root , vector<int> &Store){
-        if(root == NULL) {
-            return ;
-        }
-        
-        // LNR
-        Store_Inorder(root -> left , Store) ;
-        Store.push_back(root -> val) ;
-        Store_Inorder(root -> right , Store) ;
+    TreeNode* ans = nullptr ;
+    void kthSmallestHelper(TreeNode* root , int k , int& count){
+        if(!root) return;
+
+        kthSmallestHelper(root -> left , k , count);
+        count++;
+        if(k == count) ans = root ;
+        kthSmallestHelper(root -> right , k , count);
+
     }
-    
+
     int kthSmallest(TreeNode* root, int k) {
-        vector<int> Store;
-        Store_Inorder(root , Store) ;
-        int i = 0 ;
-        int ans ;
-        while(k--){
-            ans = Store[i] ;
-            i++ ;
-        }
-        
-        return ans ;
+        int count = 0 ;
+        kthSmallestHelper(root , k , count);
+        return ans -> val ;    
     }
 };
