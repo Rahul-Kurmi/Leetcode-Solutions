@@ -393,6 +393,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0179-largest-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0179-largest-number) |
 | [0680-valid-palindrome-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0680-valid-palindrome-ii) |
 | [0767-reorganize-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0767-reorganize-string) |
+| [1382-balance-a-binary-search-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1382-balance-a-binary-search-tree) |
 | [1963-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1963-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2064-minimized-maximum-of-products-distributed-to-any-store](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2064-minimized-maximum-of-products-distributed-to-any-store) |
 | [2202-maximize-the-topmost-element-after-k-moves](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2202-maximize-the-topmost-element-after-k-moves) |
@@ -481,6 +482,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0493-reverse-pairs](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0493-reverse-pairs) |
 | [0654-maximum-binary-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0654-maximum-binary-tree) |
 | [0912-sort-an-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0912-sort-an-array) |
+| [1382-balance-a-binary-search-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1382-balance-a-binary-search-tree) |
 ## Merge Sort
 |  |
 | ------- |
@@ -529,6 +531,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0988-smallest-string-starting-from-leaf](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0988-smallest-string-starting-from-leaf) |
 | [1123-lowest-common-ancestor-of-deepest-leaves](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1123-lowest-common-ancestor-of-deepest-leaves) |
 | [1367-linked-list-in-binary-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1367-linked-list-in-binary-tree) |
+| [1382-balance-a-binary-search-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1382-balance-a-binary-search-tree) |
 | [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2385-amount-of-time-for-binary-tree-to-be-infected) |
 ## Linked List
 |  |
@@ -658,6 +661,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1008-construct-binary-search-tree-from-preorder-traversal) |
 | [1123-lowest-common-ancestor-of-deepest-leaves](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1123-lowest-common-ancestor-of-deepest-leaves) |
 | [1367-linked-list-in-binary-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1367-linked-list-in-binary-tree) |
+| [1382-balance-a-binary-search-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1382-balance-a-binary-search-tree) |
 | [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2385-amount-of-time-for-binary-tree-to-be-infected) |
 ## Breadth-First Search
 |  |
@@ -715,6 +719,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1008-construct-binary-search-tree-from-preorder-traversal) |
 | [1123-lowest-common-ancestor-of-deepest-leaves](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1123-lowest-common-ancestor-of-deepest-leaves) |
 | [1367-linked-list-in-binary-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1367-linked-list-in-binary-tree) |
+| [1382-balance-a-binary-search-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1382-balance-a-binary-search-tree) |
 | [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2385-amount-of-time-for-binary-tree-to-be-infected) |
 ## Binary Search Tree
 |  |
@@ -725,4 +730,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0700-search-in-a-binary-search-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0700-search-in-a-binary-search-tree) |
 | [0701-insert-into-a-binary-search-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0701-insert-into-a-binary-search-tree) |
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1008-construct-binary-search-tree-from-preorder-traversal) |
+| [1382-balance-a-binary-search-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1382-balance-a-binary-search-tree) |
 <!---LeetCode Topics End-->
