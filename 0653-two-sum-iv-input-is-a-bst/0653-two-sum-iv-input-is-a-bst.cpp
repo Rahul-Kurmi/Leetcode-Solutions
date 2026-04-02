@@ -11,30 +11,24 @@
  */
 class Solution {
 public:
+    void inorderTraversal(TreeNode* root , vector<int>& inorder){
+        if(!root) return ;
 
-    bool checking(TreeNode* root , TreeNode* current , int value){
-        if(!root) return false ;
-
-        if(root -> val == value && root != current) return true ;
-
-        return checking(root -> left , current , value) || 
-               checking(root -> right , current , value) ; 
-    }
-
-    bool traverseAndFind(TreeNode* root, TreeNode* current , int k){
-        if(!current) return false ;
-
-        int value = k - current -> val ;
-
-        if(checking(root , current , value)){
-            return true ;
-        } 
-
-        return traverseAndFind(root , current -> left , k) || 
-               traverseAndFind(root, current -> right , k) ; 
+        inorderTraversal(root -> left , inorder);
+        inorder.push_back(root -> val);
+        inorderTraversal(root -> right , inorder);
     }
 
     bool findTarget(TreeNode* root, int k) {
-        return traverseAndFind(root , root, k);
+        vector<int> inorder ;
+        inorderTraversal(root , inorder);
+        int i = 0 ;
+        int j = inorder.size() - 1;
+        while(i < j){
+            if(inorder[i] + inorder[j] == k) return true ;
+            else if(inorder[i] + inorder[j] > k) j--;
+            else if(inorder[i] + inorder[j] < k) i++ ;
+        }
+        return false ;
     }
 };
