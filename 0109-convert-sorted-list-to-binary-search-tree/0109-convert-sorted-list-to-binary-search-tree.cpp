@@ -21,30 +21,39 @@
  */
 class Solution {
 public:
-    ListNode* findMid(ListNode* start , ListNode* end){
-        ListNode* slow = start ;
-        ListNode* fast = start ;
-        while(fast != end && fast -> next != end){
+    pair<ListNode* , ListNode*> midAndPrev(ListNode* head){
+        ListNode* slow = head ;
+        ListNode* fast = head ;
+        ListNode* prev = nullptr ;
+        while(fast && fast -> next){
+            prev = slow ;
             slow = slow -> next ;
             fast = fast -> next -> next ;
         }
-        return slow ;
+        return {slow , prev} ;
     }
 
-    TreeNode* createBST(ListNode* head , ListNode* tail){
-        if(head == tail) return nullptr ;
+    TreeNode* solve(ListNode* head){
+        if(!head) return nullptr ;
 
-        ListNode* mid = findMid(head , tail) ;
+        auto temp = midAndPrev(head);
+        ListNode* mid = temp.first ;
+        ListNode* prev = temp.second ;
 
-        TreeNode* root = new TreeNode(mid -> val);
+        TreeNode* root = new TreeNode(mid -> val) ;
 
-        root -> left = createBST(head , mid) ; // here findMid chhecks fast != mid
-        root -> right = createBST(mid -> next , tail) ; // same thing tail always nullptr
+        // means only one element
+        if(!prev) return root ;
+
+        prev -> next = nullptr ;
+
+        root -> left =  solve(head) ;
+        root -> right = solve(mid -> next);
 
         return root ;
     }
 
     TreeNode* sortedListToBST(ListNode* head) {
-        return createBST(head , nullptr);
+        return solve(head);
     }
 };
