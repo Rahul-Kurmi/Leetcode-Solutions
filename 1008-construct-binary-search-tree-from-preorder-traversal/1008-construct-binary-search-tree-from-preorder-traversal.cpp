@@ -17,6 +17,10 @@ public:
         }
 
         TreeNode* root = nullptr ;
+        // If current value does not lie within the valid (min, max) range,
+        // it means this node cannot be part of this subtree,
+        // so we do NOT consume it and return nullptr.
+        // The parent call will handle this value in the correct subtree.
         if(preorder[i] > min && preorder[i] < max){
             root = new TreeNode(preorder[i++]);
             root -> left = buildBSTfromPreorder(preorder , i , min , root -> val);
