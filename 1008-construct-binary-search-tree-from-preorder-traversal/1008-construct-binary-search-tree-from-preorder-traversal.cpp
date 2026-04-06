@@ -11,30 +11,25 @@
  */
 class Solution {
 public:
-    TreeNode* BSTCreation(TreeNode*& root , int data){
-        if(root == nullptr){
-            root = new TreeNode(data);
-            return root ;
+    TreeNode* buildBSTfromPreorder(vector<int>& preorder , int& i , int min , int max){
+        if(i >= preorder.size()){
+            return nullptr ;
         }
 
-        // left connection 
-        if(root -> val > data){
-            root -> left = BSTCreation(root -> left , data);
-        }
-
-        // right connection
-        if(root -> val < data){
-            root -> right = BSTCreation(root -> right, data);
+        TreeNode* root = nullptr ;
+        if(preorder[i] > min && preorder[i] < max){
+            root = new TreeNode(preorder[i++]);
+            root -> left = buildBSTfromPreorder(preorder , i , min , root -> val);
+            root -> right = buildBSTfromPreorder(preorder , i , root -> val , max);
         }
 
         return root ;
-    } 
+    }
 
     TreeNode* bstFromPreorder(vector<int>& preorder) {
-        TreeNode* root = nullptr ;
-        for(int i = 0 ; i < preorder.size(); i++){
-            BSTCreation(root , preorder[i]);
-        }
-        return root ;
+        int min = INT_MIN ;
+        int max = INT_MAX ;
+        int i = 0 ;
+        return buildBSTfromPreorder(preorder , i , min  , max) ;
     }
 };
