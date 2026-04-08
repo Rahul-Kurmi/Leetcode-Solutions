@@ -11,25 +11,23 @@
  */
 class Solution {
 public:
-    int sum = 0 ;
-    void rangeSumBSTHelper(TreeNode* root, int low, int high){
-        if(!root) return ;
+    int rangeSumBST(TreeNode* root, int low, int high) {
+        if(!root) return 0 ;
+
+        int ans = 0 ;
 
         if(root -> val >= low && root -> val <= high){
-            sum += root -> val ;
-            rangeSumBSTHelper(root -> left , low , high);
-            rangeSumBSTHelper(root -> right , low , high);
+            ans += root -> val ;
+            ans += rangeSumBST(root -> left , low , high);
+            ans += rangeSumBST(root -> right , low , high);
         }
         else if(root -> val < low){
-            rangeSumBSTHelper(root -> right , low , high);
+            ans += rangeSumBST(root -> right , low , high);
         }
         else{
-            rangeSumBSTHelper(root -> left , low , high);
+            ans += rangeSumBST(root -> left , low , high);
         }
-    } 
 
-    int rangeSumBST(TreeNode* root, int low, int high) {
-        rangeSumBSTHelper(root , low , high);
-        return sum ;
+        return ans ;
     }
 };
