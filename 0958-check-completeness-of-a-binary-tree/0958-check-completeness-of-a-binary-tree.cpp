@@ -11,40 +11,23 @@
  */
 class Solution {
 public:
-    int totalCount(TreeNode* root){
-        int count = 0 ;
-        queue<TreeNode*>q ;
-        q.push(root);
-        while(!q.empty()){
-            TreeNode* temp = q.front();
-            q.pop();
-            count++;
 
-            if(temp->left) q.push(temp->left);
-            if(temp->right)q.push(temp->right);
-        }
-        return count ;
+    int countNodes(TreeNode* root){
+        if(!root) return 0 ;
+        return 1 + countNodes(root -> left) + countNodes(root -> right);
+    }
+
+    bool isCompleteTreeHelper(TreeNode* root , int index , int totalNodes){
+        if(!root) return true ;
+        if(index >= totalNodes) return false ;
+
+        bool leftCheck = isCompleteTreeHelper(root -> left , 2*index+1 , totalNodes);
+        bool rightCheck = isCompleteTreeHelper(root -> right , 2*index+2 , totalNodes);
+        return leftCheck && rightCheck ;
     }
 
     bool isCompleteTree(TreeNode* root) {
-        int totalNodes = totalCount(root);
-        // Node and their index 
-        queue<pair<TreeNode* , int>> q ;
-        q.push({root , 0});
-        while(!q.empty()){
-            auto temp = q.front();
-            q.pop();
-            TreeNode* tempNode = temp.first ;
-            int tempIndex = temp.second ;
-            if(tempIndex >= totalNodes) return false ;
-
-            if(tempNode -> left){
-                q.push({tempNode -> left , 2*tempIndex + 1});
-            }
-            if(tempNode -> right){
-                q.push({tempNode -> right , 2*tempIndex + 2});
-            }
-        }
-        return true ;
+        int totalNodes = countNodes(root);
+        return isCompleteTreeHelper(root , 0 , totalNodes);
     }
 };
