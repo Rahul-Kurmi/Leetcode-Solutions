@@ -11,29 +11,40 @@
  */
 class Solution {
 public:
-    bool isCompleteTree(TreeNode* root) {
-        queue<TreeNode*> q;
-        bool isNonFullNode = false ;
+    int totalCount(TreeNode* root){
+        int count = 0 ;
+        queue<TreeNode*>q ;
         q.push(root);
         while(!q.empty()){
             TreeNode* temp = q.front();
             q.pop();
+            count++;
 
-            if(temp -> left){
-                if(isNonFullNode) return false ;
-                q.push(temp -> left);
-            }else{
-                isNonFullNode = true ;
+            if(temp->left) q.push(temp->left);
+            if(temp->right)q.push(temp->right);
+        }
+        return count ;
+    }
+
+    bool isCompleteTree(TreeNode* root) {
+        int totalNodes = totalCount(root);
+        // Node and their index 
+        queue<pair<TreeNode* , int>> q ;
+        q.push({root , 0});
+        while(!q.empty()){
+            auto temp = q.front();
+            q.pop();
+            TreeNode* tempNode = temp.first ;
+            int tempIndex = temp.second ;
+            if(tempIndex >= totalNodes) return false ;
+
+            if(tempNode -> left){
+                q.push({tempNode -> left , 2*tempIndex + 1});
             }
-
-            if(temp -> right){
-                if(isNonFullNode) return false ;
-                q.push(temp -> right);
-            }else{
-                isNonFullNode = true ;
+            if(tempNode -> right){
+                q.push({tempNode -> right , 2*tempIndex + 2});
             }
         }
-
         return true ;
     }
 };
