@@ -8,38 +8,47 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
+class compare{
+    public:
+    bool operator()(ListNode* a , ListNode* b){
+        return a -> val > b -> val;
+    }
+};
+
 class Solution {
 public:
-    ListNode* merge(ListNode* headA, ListNode* headB){
-        ListNode* dummy = new ListNode(-1);
-        ListNode* ansNode = dummy ;
-        while(headA && headB){
-            if(headA -> val <= headB -> val){
-                dummy -> next = headA ;
-                headA = headA -> next ;
-                dummy = dummy -> next ;
-            }else{
-                dummy -> next = headB ;
-                headB = headB -> next ;
-                dummy = dummy -> next ;
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        priority_queue<ListNode* , vector<ListNode*> , compare> minHeap ;
+
+        int totalLists = lists.size();
+
+        for(int i = 0 ; i < totalLists ; i++){
+            if(lists[i] != nullptr){
+                minHeap.push(lists[i]);
             }
         }
 
-        if(headA){
-            dummy -> next = headA ;
-        }else{
-            dummy -> next = headB ;
-        }
+        ListNode* head = nullptr ;
+        ListNode* tail = nullptr ;
+        while(!minHeap.empty()){
+            ListNode* temp = minHeap.top();
+            minHeap.pop();
 
-        return ansNode -> next ;
-    }
-
-    ListNode* mergeKLists(vector<ListNode*>& lists) {
-        if(lists.size() == 0) return nullptr ;
-        if(lists.size() == 1) return lists[0] ;
-        ListNode* head = merge(lists[0] , lists[1]);
-        for(int i = 2 ; i < lists.size() ; i++){
-            head = merge(head , lists[i]);
+            if(head == nullptr){
+                head = temp ;
+                tail = temp ;
+                if(temp -> next){
+                    minHeap.push(temp -> next);
+                }
+            }
+            else{
+                tail -> next =  temp ;
+                tail = temp ;
+                if(temp -> next){
+                    minHeap.push(temp -> next);
+                }
+            }
         }
         return head ;
     }
