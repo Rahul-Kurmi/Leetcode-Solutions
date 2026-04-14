@@ -1,31 +1,33 @@
+class NodeData{
+    public :
+        int data ;
+        int index ;
+        NodeData(int _d , int _i) : data(_d) , index(_i) {};
+};
+
+class compare{
+    public :
+        bool operator()(NodeData*& a , NodeData*& b ){
+            return a -> data < b -> data ;
+        }
+};
+
 class Solution {
 public:
-    vector<int> maxSlidingWindow(vector<int>& arr, int k) {
-        vector<int> ans ;
-        deque<int> dq ;
-        
-        for(int i = 0  ; i < k ; i++){
-            while(!dq.empty() && arr[dq.back()] <= arr[i]){
-                dq.pop_back();
-            }
-            dq.push_back(i);
+    vector<int> maxSlidingWindow(vector<int>& nums, int k) {
+        vector<int> ans;
+        priority_queue<NodeData* , vector<NodeData*> , compare> maxHeap;
+
+        for(int i = 0 ; i < k ; i++){
+            maxHeap.push(new NodeData(nums[i] , i));
         }
 
-        // store first ans ;
-        ans.push_back(arr[dq.front()]);
+        ans.push_back(maxHeap.top() -> data);
 
-        for(int i = k ; i < arr.size() ; i++){
-            if(!dq.empty() && i - dq.front() >= k ){
-                dq.pop_front();
-            }
-
-            while(!dq.empty() && arr[dq.back()] <= arr[i]){
-                dq.pop_back();
-            }
-
-            dq.push_back(i);
-
-            ans.push_back(arr[dq.front()]);
+        for(int i = k ; i < nums.size() ; i++){
+            while(!maxHeap.empty() && maxHeap.top() -> index <= i - k ) maxHeap.pop() ;
+            maxHeap.push(new NodeData(nums[i] , i));
+            ans.push_back(maxHeap.top() -> data);
         }
 
         return ans ;
