@@ -1,35 +1,30 @@
-class NodeData{
-    public :
-        int data ;
-        int index ;
-        NodeData(int _d , int _i) : data(_d) , index(_i) {};
-};
-
-class compare{
-    public :
-        bool operator()(NodeData*& a , NodeData*& b ){
-            return a -> data < b -> data ;
-        }
-};
-
 class Solution {
 public:
     vector<int> maxSlidingWindow(vector<int>& nums, int k) {
-        vector<int> ans;
-        priority_queue<NodeData* , vector<NodeData*> , compare> maxHeap;
+        vector<int> ans ;
+        priority_queue<pair<int, int>> maxHeap;
 
+        // condider first k elements 
         for(int i = 0 ; i < k ; i++){
-            maxHeap.push(new NodeData(nums[i] , i));
+            maxHeap.push({nums[i] , i});
         }
 
-        ans.push_back(maxHeap.top() -> data);
+        //store max for first window 
+        ans.push_back(maxHeap.top().first);
 
+        //consider rest of the window
         for(int i = k ; i < nums.size() ; i++){
-            while(!maxHeap.empty() && maxHeap.top() -> index <= i - k ) maxHeap.pop() ;
-            maxHeap.push(new NodeData(nums[i] , i));
-            ans.push_back(maxHeap.top() -> data);
-        }
+            // push current elemnet
+            maxHeap.push({nums[i] , i});
 
+            //remove all the max elements not in this window
+            while(maxHeap.top().second <= i - k){
+                maxHeap.pop();
+            }
+
+            // store max for current window
+            ans.push_back(maxHeap.top().first);
+        }
         return ans ;
     }
 };
