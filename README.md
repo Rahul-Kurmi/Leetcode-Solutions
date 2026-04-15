@@ -96,6 +96,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [1991-find-the-middle-index-in-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1991-find-the-middle-index-in-array) |
 | [2064-minimized-maximum-of-products-distributed-to-any-store](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2064-minimized-maximum-of-products-distributed-to-any-store) |
+| [2163-minimum-difference-in-sums-after-removal-of-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2163-minimum-difference-in-sums-after-removal-of-elements) |
 | [2202-maximize-the-topmost-element-after-k-moves](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2202-maximize-the-topmost-element-after-k-moves) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
@@ -418,6 +419,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1776-car-fleet-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1776-car-fleet-ii) |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 | [1962-remove-stones-to-minimize-the-total](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1962-remove-stones-to-minimize-the-total) |
+| [2163-minimum-difference-in-sums-after-removal-of-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2163-minimum-difference-in-sums-after-removal-of-elements) |
 ## Greedy
 |  |
 | ------- |
@@ -476,6 +478,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0526-beautiful-arrangement](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0526-beautiful-arrangement) |
 | [1373-maximum-sum-bst-in-binary-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1373-maximum-sum-bst-in-binary-tree) |
 | [1655-distribute-repeating-integers](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1655-distribute-repeating-integers) |
+| [2163-minimum-difference-in-sums-after-removal-of-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2163-minimum-difference-in-sums-after-removal-of-elements) |
 ## Backtracking
 |  |
 | ------- |
