@@ -19,7 +19,7 @@ public:
 
         // we only want left size to be just 1 element greater but if it increses by 1 
         // then shift from left to right
-        if(left_max_heap.size() > right_min_heap.size() + 1){
+        if((int)left_max_heap.size() - (int)right_min_heap.size() > 1){
             right_min_heap.push(left_max_heap.top());
             left_max_heap.pop();
         } 
