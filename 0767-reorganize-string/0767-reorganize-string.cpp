@@ -1,38 +1,81 @@
+
+class node {
+    public :
+        char data ;
+        int count ;
+
+        node(char d , int c){
+            data = d ;
+            count = c ;
+        }
+};
+
+class compare{
+    public :
+    bool operator () (node *a , node *b){
+        return a->count < b-> count ;
+    }
+};
+
 class Solution {
 public:
     string reorganizeString(string s) {
-        int freqHash[26] = {0};
-        for(int i = 0 ; i < s.size() ; i++){
-            freqHash[s[i] - 'a']++;
+        // Create Mapping 
+        int freq[26] = {0} ;
+        // 1 --> a , 2 --> b ans so on 
+
+        // Count frequencies of each character
+        for (char ch : s) {
+            freq[ch - 'a']++;
         }
 
-        int highFreq = 0 ;
-        char highChar ;
-        for(int i = 0 ; i < 26  ; i++){
-            if(freqHash[i] > highFreq){
-                highFreq = freqHash[i];
-                highChar = i + 'a';
+        // Create max heap using priority_queue with pointers
+        priority_queue<node*, vector<node*>, compare> maxHeap;
+
+        // Push characters with their frequencies into maxHeap
+        for (int i = 0; i < 26; i++) {
+            if (freq[i] != 0) {
+                node *temp = new node(i + 'a', freq[i]);
+                maxHeap.push(temp);
             }
         }
 
-        int i = 0 ;
-        while(i < s.size() && highFreq > 0 ){
-            s[i] = highChar ;
-            i += 2;
-            highFreq--;
-        }
+        string ans = "";
 
-        if(highFreq != 0) return "";
-        freqHash[highChar - 'a'] = 0;
 
-        for(int j = 0 ; j < 26 ; j++){
-            while(freqHash[j] > 0){
-                (i < s.size()) ? i = i : i = 1 ;
-                s[i] = j + 'a';
-                freqHash[j]--;
-                i += 2 ;
+        // greter than 1 becuse hum 2 value nikal rahe hai max heap se 
+        while(maxHeap.size() > 1) {
+            node * first = maxHeap.top();
+            maxHeap.pop() ;
+            node * second = maxHeap.top();
+            maxHeap.pop();
+
+            ans = ans + first -> data ;
+            ans = ans + second -> data ;
+
+            first -> count-- ;
+            second -> count--;
+
+            if(first -> count != 0 ){
+                maxHeap.push(first) ;
+            }
+
+            if(second -> count != 0 ){
+                maxHeap.push(second) ;
             }
         }
-        return s ;
+
+        if(maxHeap.size() == 1){
+            node * temp = maxHeap.top();
+            maxHeap.pop() ;
+            if(temp->count == 1){
+                ans = ans + temp -> data ;
+            }
+            else{
+                return "";
+            }
+        }
+
+        return ans ;
     }
 };
