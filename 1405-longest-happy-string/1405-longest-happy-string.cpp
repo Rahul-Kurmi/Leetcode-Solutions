@@ -1,97 +1,53 @@
-class node {
-    public :
-        char data ;
-        int count ;
-
-        node(char d , int c){
-            data = d ;
-            count = c ;
-        }
-};
-
-class compare{
-    public :
-    bool operator () (node *a , node *b){
-        return a->count < b-> count ;
-    }
-};
-
 class Solution {
 public:
     string longestDiverseString(int a, int b, int c) {
-        // Create max heap using priority_queue with pointers
-        priority_queue<node*, vector<node*>, compare> maxHeap;
-
-        if(a > 0){
-            node * temp = new node ('a' , a);
-            maxHeap.push(temp) ;
-        }
-
-        if(b > 0){
-            node * temp = new node ('b' , b);
-            maxHeap.push(temp) ;
-        }
-
-        if(c > 0){
-            node * temp = new node ('c' , c);
-            maxHeap.push(temp) ;
-        }
+        priority_queue<pair<int, char>> maxHeap;
+        if(a > 0) maxHeap.push({a ,'a'});
+        if(b > 0) maxHeap.push({b ,'b'});
+        if(c > 0) maxHeap.push({c, 'c'});
 
         string ans = "";
-
         while(maxHeap.size() > 1){
-            node * first = maxHeap.top();
-            maxHeap.pop() ;
-            node * second = maxHeap.top();
+            auto firstData = maxHeap.top();
+            maxHeap.pop();
+            auto secondData = maxHeap.top();
             maxHeap.pop();
 
-            if(first->count >= 2){
-                ans += first->data ;
-                ans += first->data ;
-
-                first->count -= 2 ;
+            if(firstData.first >= 2){
+                ans += firstData.second;
+                ans += firstData.second;
+                firstData.first -= 2; 
             }
-            else{ // count 1 hai 
-                ans += first->data ;
-                first->count -= 1 ;
-            }
-            
-            if(second->count >= 2 && second->count >= first->count){
-                ans += second->data ;
-                ans += second->data ;
-
-                second->count -= 2 ;
-            }
-            else{ // count 1 hai 
-                ans += second->data ;
-                second->count -= 1 ;
+            else{
+                ans += firstData.second;
+                firstData.first -= 1; 
             }
 
-            // push back in heap
-            if(first->count > 0 ){
-                maxHeap.push(first) ;
+            if(secondData.first >= 2 && secondData.first > firstData.first){
+                ans += secondData.second;
+                ans += secondData.second;
+                secondData.first -= 2;
             }
-            if(second->count > 0 ){
-                maxHeap.push(second) ;
+            else{
+                ans += secondData.second;
+                secondData.first -= 1;
             }
+
+            if(firstData.first > 0) maxHeap.push(firstData);
+            if(secondData.first > 0) maxHeap.push(secondData);
         }
 
         if(maxHeap.size() == 1){
-            node * temp = maxHeap.top();
-            maxHeap.pop() ;
-            if(temp->count >= 2){
-                ans += temp->data ;
-                ans += temp->data ;
-
-                temp->count -= 2 ;
+            auto lastTop = maxHeap.top();
+            if(lastTop.first >= 2){
+                ans += lastTop.second;
+                ans += lastTop.second;
             }
-            else{ // count 1 hai 
-                ans += temp->data ;
-                temp->count -= 1 ;
+            else{
+                ans += lastTop.second;
             }
         }
-        
 
-        return ans ;
+        return ans;
     }
 };
