@@ -1,33 +1,19 @@
-#include <string>
-#include <map>
-#include <algorithm>
-
-using namespace std;
-
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-        map<char, bool> mp; // Map to track occurrence of characters
-        int length = 0; // Length of the current substring
-        int ans = 0; // Length of the longest substring
-        int left = 0; // Left pointer for the sliding window
-        
-        for (int right = 0; right < s.size(); ++right) {
-            // If the character has been seen and is within the current window
-            while (mp[s[right]]) {
-                // Move the left pointer to the right of the last occurrence of s[right]
-                mp[s[left]] = false;
-                left++;
+        unordered_map<char , int> mp;
+        int start = 0;
+        int maxLen = 0;
+
+        for(int i = 0 ; i < s.size() ; i++){
+            if(mp.find(s[i]) != mp.end() && mp[s[i]] >= start){
+                start = mp[s[i]] + 1;
             }
-            
-            // Mark the current character as seen
-            mp[s[right]] = true;
-            // Update the length of the current substring
-            length = right - left + 1;
-            // Update the maximum length
-            ans = max(ans, length);
+
+            mp[s[i]] = i;
+            maxLen = max(maxLen, i - start + 1);
         }
-        
-        return ans;
+
+        return maxLen;
     }
 };
