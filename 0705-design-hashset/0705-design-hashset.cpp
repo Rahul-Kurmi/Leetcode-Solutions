@@ -1,82 +1,51 @@
-class Node {
-public:
-    int data;
-    Node* next;
-
-    Node(int _d) {
-        data = _d;
-        next = nullptr;
-    }
-};
-
 class MyHashSet {
 public:
-    vector<Node*> arr;
-    static int m;
+    int M; // number of buckets
+    vector<list<int>> buckets;
 
-    static int hash(int key) {
-        return key % m;
+    int getIndex(int key){
+        return key % M;
     }
 
     MyHashSet() {
-        m = 10007;
-        arr.resize(m, nullptr);
+        M = 150000 ;
+        buckets.resize(M , list<int>{});
+        // buckets = vector<list<int>> (M, list<int>{});
     }
-
+    
     void add(int key) {
-        int index = hash(key);
+        int index = getIndex(key);
 
-        Node* temp = arr[index];
+        auto itr = find(buckets[index].begin() , buckets[index].end(), key);
 
-        // check duplicates
-        while (temp != nullptr) {
-            if (temp->data == key) return;
-            if (temp->next == nullptr) break;
-            temp = temp->next;
-        }
-
-        Node* newNode = new Node(key);
-
-        if (arr[index] == nullptr) {
-            arr[index] = newNode;
-        } else {
-            temp->next = newNode;
+        if(itr == buckets[index].end()){
+            buckets[index].push_back(key);
         }
     }
-
+    
     void remove(int key) {
-        int index = hash(key);
+        int index = getIndex(key);
 
-        Node* temp = arr[index];
-        Node* prev = nullptr;
+        auto itr = find(buckets[index].begin() , buckets[index].end() , key);
 
-        while (temp != nullptr) {
-            if (temp->data == key) {
-                if (prev == nullptr) {
-                    arr[index] = temp->next;
-                } else {
-                    prev->next = temp->next;
-                }
-                delete temp;
-                return; // important
-            }
-            prev = temp;
-            temp = temp->next;
+        if(itr != buckets[index].end()){
+            buckets[index].erase(itr);
         }
     }
-
+    
     bool contains(int key) {
-        int index = hash(key);
+        int index = getIndex(key);
 
-        Node* temp = arr[index];
+        auto itr = find(buckets[index].begin() , buckets[index].end() , key);
 
-        while (temp != nullptr) {
-            if (temp->data == key) return true;
-            temp = temp->next;
-        }
-
-        return false;
+        return itr != buckets[index].end();
     }
 };
 
-int MyHashSet::m = 0;
+/**
+ * Your MyHashSet object will be instantiated and called as such:
+ * MyHashSet* obj = new MyHashSet();
+ * obj->add(key);
+ * obj->remove(key);
+ * bool param_3 = obj->contains(key);
+ */
