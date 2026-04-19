@@ -77,6 +77,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1008-construct-binary-search-tree-from-preorder-traversal) |
 | [1019-next-greater-node-in-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1019-next-greater-node-in-linked-list) |
 | [1031-add-to-array-form-of-integer](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1031-add-to-array-form-of-integer) |
+| [1268-search-suggestions-system](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1268-search-suggestions-system) |
 | [1299-replace-elements-with-greatest-element-on-right-side](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1299-replace-elements-with-greatest-element-on-right-side) |
 | [1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
@@ -180,6 +181,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1003-check-if-word-is-valid-after-substitutions](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1003-check-if-word-is-valid-after-substitutions) |
 | [1021-remove-outermost-parentheses](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1021-remove-outermost-parentheses) |
 | [1047-remove-all-adjacent-duplicates-in-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1047-remove-all-adjacent-duplicates-in-string) |
+| [1268-search-suggestions-system](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1268-search-suggestions-system) |
 | [1405-longest-happy-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1405-longest-happy-string) |
 | [1456-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1456-maximum-number-of-vowels-in-a-substring-of-given-length) |
 | [1910-remove-all-occurrences-of-a-substring](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1910-remove-all-occurrences-of-a-substring) |
@@ -193,6 +195,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0014-longest-common-prefix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0014-longest-common-prefix) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0336-palindrome-pairs](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0336-palindrome-pairs) |
+| [1268-search-suggestions-system](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1268-search-suggestions-system) |
 ## Two Pointers
 |  |
 | ------- |
@@ -252,6 +255,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0912-sort-an-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0912-sort-an-array) |
 | [0973-k-closest-points-to-origin](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0973-k-closest-points-to-origin) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
+| [1268-search-suggestions-system](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1268-search-suggestions-system) |
 | [1424-diagonal-traverse-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1424-diagonal-traverse-ii) |
 | [1552-magnetic-force-between-two-balls](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1552-magnetic-force-between-two-balls) |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
@@ -277,6 +281,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0704-binary-search](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0704-binary-search) |
 | [0792-binary-search](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0792-binary-search) |
 | [0875-koko-eating-bananas](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0875-koko-eating-bananas) |
+| [1268-search-suggestions-system](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1268-search-suggestions-system) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1552-magnetic-force-between-two-balls](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1552-magnetic-force-between-two-balls) |
 | [2064-minimized-maximum-of-products-distributed-to-any-store](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2064-minimized-maximum-of-products-distributed-to-any-store) |
@@ -430,6 +435,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0871-minimum-number-of-refueling-stops](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0871-minimum-number-of-refueling-stops) |
 | [0912-sort-an-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0912-sort-an-array) |
 | [0973-k-closest-points-to-origin](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0973-k-closest-points-to-origin) |
+| [1268-search-suggestions-system](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1268-search-suggestions-system) |
 | [1405-longest-happy-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1405-longest-happy-string) |
 | [1424-diagonal-traverse-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1424-diagonal-traverse-ii) |
 | [1776-car-fleet-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1776-car-fleet-ii) |
