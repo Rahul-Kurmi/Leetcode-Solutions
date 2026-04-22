@@ -1,35 +1,36 @@
 class Solution {
 public:
-    typedef pair<int, int> P;
     vector<int> topKFrequent(vector<int>& nums, int k) {
-        // 1. get freq count
-        unordered_map<int, int> mp;
-        for(int &num : nums){
+        int n = nums.size();
+
+        unordered_map<int , int> mp;
+        for(auto& num : nums){
             mp[num]++;
         }
 
-        //2. Define min-Heap;
-        priority_queue<P, vector<P> , greater<P>> pq ; // {freq , element}
+        // create bucket of size n+1 
+        vector<vector<int>> bucket(n+1);
 
-        //3. push element in min-heap and maintail size of only k
-        for(auto &it : mp){
-            int value = it.first ;
-            int freq = it.second;
+        for(auto& it: mp){
+            int index = it.second; // freq 
+            int value = it.first ; // element
 
-            pq.push({freq, value});
+            bucket[index].push_back(value);
+        }
 
-            if(pq.size() > k){
-                pq.pop();
+
+        vector<int> ans ;
+        for(int i = bucket.size() - 1; i>= 0 ; i--){
+            if(!bucket[i].empty()){
+                for(auto it : bucket[i]){
+                    ans.push_back(it);
+                    k--;
+                    if(k == 0) break ;
+                }
             }
+            if(k == 0) break ;
         }
 
-        //4. result 
-        vector<int> result ;
-        while(!pq.empty()){
-            result.push_back(pq.top().second);
-            pq.pop();
-        }
-
-        return result; 
+        return ans ;
     }
 };
