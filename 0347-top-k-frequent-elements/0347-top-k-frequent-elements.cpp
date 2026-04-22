@@ -6,21 +6,18 @@ public:
             mp[it]++;
         }
 
-        vector<pair<int, int>> store ;
+        priority_queue<pair<int, int>> pq ;
         for(auto it : mp){
-            store.push_back({it.first , it.second});
+            pq.push({it.second, it.first});
         }
 
-        sort(store.begin() , store.end(), [](auto& a, auto& b){
-            return a.second > b.second;
-        });
-
-        vector<int>ans;
-        int i = 0;
-        while(i != k){
-            ans.push_back(store[i].first);
-            i++;
+        vector<int> ans ;
+        while(!pq.empty() && k != 0){
+            ans.push_back(pq.top().second);
+            pq.pop();
+            k--;
         }
-        return ans;
+
+        return ans ;
     }
 };
