@@ -45,18 +45,20 @@ public:
         insertUtil(root -> children[index], word , i+1);
     }
 
-    void traverse(TrieNode* root , priority_queue<P, vector<P> , compare>& minHeap , int k , string word){
+    void traverse(TrieNode* root , priority_queue<P, vector<P> , compare>& minHeap , int k , string& s){
         if(!root) return ;
 
         if(root -> isTerminal){
-            minHeap.push({root -> freqCount , word});
+            // insert in minHeap
+            minHeap.push({root -> freqCount , s});
             if(minHeap.size() > k) minHeap.pop();
         }
 
         for(int i = 0 ; i < 26 ; i++){
             if(root -> children[i]){
-                char ch = i + 'a';
-                traverse(root -> children[i] , minHeap, k , word + ch);
+                s.push_back(i + 'a');
+                traverse(root -> children[i] , minHeap, k , s);
+                s.pop_back(); // backtrack
             }
         }
     }
@@ -68,7 +70,8 @@ public:
         }
 
         priority_queue<P, vector<P> , compare> minHeap ;
-        traverse(root , minHeap, k, "");
+        string s = "";
+        traverse(root , minHeap, k, s);
 
         vector<string> ans ;
         while(!minHeap.empty()){
@@ -77,7 +80,7 @@ public:
         }
 
         // as min heap of top k frequent word and top most is last in top k
-        reverse(ans.begin(), ans.end()); 
+        reverse(ans.begin(), ans.end()); // 🔥 important
 
         return ans;
     }
