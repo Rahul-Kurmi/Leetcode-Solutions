@@ -1,12 +1,12 @@
 class TrieNode{
     public:
         char data ;
-        TrieNode* children[256];
+        TrieNode* children[58];
         bool isTerminal;
 
         TrieNode(char ch){
             this -> data = ch;
-            for(int i = 0 ; i < 256 ; i++){
+            for(int i = 0 ; i < 58 ; i++){
                 children[i] = nullptr ;
             }
             this -> isTerminal = false;
@@ -21,7 +21,7 @@ public:
             return ;
         }
 
-        int index = word[i];
+        int index = word[i]  -'A';
         if(!root -> children[index]){
             root -> children[index] = new TrieNode(word[i]);
         }
@@ -35,7 +35,7 @@ public:
             return root->isTerminal; // ✅ ensure full match
         }
 
-        int index = word[i];
+        int index = word[i] - 'A';
         if(root -> children[index]){
             return isCamelMatch(root -> children[index] , word, i+1);
         }
