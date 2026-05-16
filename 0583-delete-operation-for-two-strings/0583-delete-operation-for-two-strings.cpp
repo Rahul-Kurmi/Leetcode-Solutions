@@ -1,31 +1,25 @@
 class Solution {
 public:
-    // find LCS --> length
-
-    int topDownSolve(string& word1, string& word2, int i , int j , vector<vector<int>>& dp){
-        if(i == 0 || j == 0) return 0 ;
-
-        if(dp[i][j] != -1) return dp[i][j];
-
-        if(word1[i-1] == word2[j-1]){
-            return dp[i][j] = 1 + topDownSolve(word1 , word2, i-1 , j-1 , dp);
-        }
-        else{
-            return dp[i][j] = max(topDownSolve(word1, word2, i-1, j , dp) , topDownSolve(word1, word2, i, j-1, dp));
-        }
-    }
-
-
     int minDistance(string word1, string word2) {
         int m = word1.size();
         int n = word2.size();
         
-        vector<vector<int>> dp(m+1 , vector<int>(n+1 , -1));
+        vector<vector<int>> dp(m+1 , vector<int>(n+1 , 0));
 
-        // get the LCS length 
-        int matchLen = topDownSolve(word1, word2 , m , n , dp);
+        // JUST TABULATION TO FIND LCS
+        for(int i = 1 ; i <= m ; i++){
+            for(int j = 1 ; j <= n ; j++){
+                if(word1[i-1] == word2[j-1]){
+                    dp[i][j] = 1 + dp[i-1][j-1];
+                }
+                else{
+                    dp[i][j] = max(dp[i-1][j] , dp[i][j-1]);
+                }
+            }
+        }
 
-        // remove the lcs length from both and add --> that is the no. of steps required
+        int matchLen = dp[m][n];
+
         int ans = (m-matchLen) + (n - matchLen);
         return ans ;
     }
