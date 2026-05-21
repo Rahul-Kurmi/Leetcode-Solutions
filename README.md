@@ -114,6 +114,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2470-number-of-subarrays-with-lcm-equal-to-k](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2470-number-of-subarrays-with-lcm-equal-to-k) |
 | [2529-maximum-count-of-positive-integer-and-negative-integer](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2529-maximum-count-of-positive-integer-and-negative-integer) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
+| [3043-find-the-length-of-the-longest-common-prefix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
 | [3206-find-common-elements-between-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3206-find-common-elements-between-two-arrays) |
 ## Hash Table
 |  |
@@ -155,6 +156,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2385-amount-of-time-for-binary-tree-to-be-infected) |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
+| [3043-find-the-length-of-the-longest-common-prefix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
 | [3206-find-common-elements-between-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3206-find-common-elements-between-two-arrays) |
 ## String
 |  |
@@ -206,6 +208,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1961-check-if-string-is-a-prefix-of-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1961-check-if-string-is-a-prefix-of-array) |
 | [1963-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1963-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2414-length-of-the-longest-alphabetical-continuous-substring](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2414-length-of-the-longest-alphabetical-continuous-substring) |
+| [3043-find-the-length-of-the-longest-common-prefix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
 | [3407-substring-matching-pattern](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3407-substring-matching-pattern) |
 ## Trie
 |  |
@@ -217,6 +220,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0692-top-k-frequent-words](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0692-top-k-frequent-words) |
 | [1023-camelcase-matching](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1023-camelcase-matching) |
 | [1268-search-suggestions-system](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1268-search-suggestions-system) |
+| [3043-find-the-length-of-the-longest-common-prefix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
 ## Two Pointers
 |  |
 | ------- |
