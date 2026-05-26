@@ -160,6 +160,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
+| [3120-count-the-number-of-special-characters-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3120-count-the-number-of-special-characters-i) |
 | [3206-find-common-elements-between-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3206-find-common-elements-between-two-arrays) |
 | [3923-minimum-generations-to-target-point](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3923-minimum-generations-to-target-point) |
 ## String
@@ -214,6 +215,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1963-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1963-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2414-length-of-the-longest-alphabetical-continuous-substring](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2414-length-of-the-longest-alphabetical-continuous-substring) |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
+| [3120-count-the-number-of-special-characters-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3120-count-the-number-of-special-characters-i) |
 | [3407-substring-matching-pattern](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3407-substring-matching-pattern) |
 | [3922-minimum-flips-to-make-binary-string-coherent](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3922-minimum-flips-to-make-binary-string-coherent) |
 ## Trie
