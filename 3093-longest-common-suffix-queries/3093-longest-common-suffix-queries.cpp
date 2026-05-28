@@ -1,21 +1,16 @@
 class TrieNode{
-    public:
-        int val ;
-        TrieNode* children[26] ;
-        pair<int, int> storeData; // index, size
-
-        TrieNode(int val , int index , int size){
-            this -> val = val;
+    public :
+        int idx; // store index of the loweest suffix Match
+        TrieNode* children[26];
+        TrieNode(int idx){
+            this -> idx = idx ;
             for(int i = 0 ; i < 26 ; i++){
-                children[i] = nullptr ;
+                children[i] = nullptr;
             }
-
-            storeData.first = index;
-            storeData.second = size;
         }
 
-        ~TrieNode() { // Destructor
-            for (auto &it : children) {
+        ~TrieNode(){
+            for(auto &it: children){
                 delete it;
             }
         }
@@ -24,67 +19,62 @@ class TrieNode{
 class Solution {
 public:
 
-    void insertData(TrieNode* root , string &str , int strIndex, int i){
-        if(i == str.size()) return ;
+    void insertInTrie(TrieNode* root, int strIndex ,  vector<string>& wordsContainer){
+        string word = wordsContainer[strIndex];
+        int n = wordsContainer[strIndex].size();
 
-        int index = str[i] - 'a';
-        if(root -> children[index] != nullptr){
-            if(root -> children[index] -> storeData.second > str.size()){
-                root -> children[index] -> storeData.second = str.size();
-                root -> children[index] -> storeData.first = strIndex;
+        for(int i = n - 1 ; i >= 0 ; i--){
+            int index = word[i] - 'a';
+
+            if(root -> children[index] == nullptr){
+                root -> children[index] = new TrieNode(strIndex);
             }
-            insertData(root -> children[index], str, strIndex, i+1);
-        }
-        else{
-            TrieNode* newNode = new TrieNode(str[i] , strIndex , str.size());
-            root -> children[index] = newNode ;
-            insertData(newNode , str, strIndex, i+1);
+
+            root = root -> children[index]; // update root 
+
+            if(wordsContainer[root -> idx].size() > wordsContainer[strIndex].size()){
+                root -> idx = strIndex;
+            }
         }
     }
 
-    int findSuffix(TrieNode* root, string &str, int i){
-        if(i == str.size()) {
-            return root -> storeData.first;
+    int searchInTrie(TrieNode* root, int strIndex ,  vector<string>& wordsQuery){
+        string word = wordsQuery[strIndex];
+        int n = wordsQuery[strIndex].size();
+
+        int resultIdx = root -> idx ;
+        for(int i = n-1 ; i >= 0; i--){
+            int index = word[i] - 'a';
+            if(root -> children[index] == nullptr){
+                return resultIdx;
+            }
+
+            root = root -> children[index];
+
+            resultIdx = root -> idx ;
         }
 
-        int index = str[i] - 'a';
-        if(root -> children[index] == nullptr){
-            return root -> storeData.first;
-        }
-        else{
-            return findSuffix(root -> children[index] , str , i+1);
-        }
+        return resultIdx ;
     }
 
     vector<int> stringIndices(vector<string>& wordsContainer, vector<string>& wordsQuery) {
-        TrieNode* root = new TrieNode('-' , INT_MAX , INT_MAX);
         int m = wordsContainer.size();
         int n = wordsQuery.size();
-        vector<int> ans(n);
-
+        TrieNode* root = new TrieNode(0) ; // store index of first word
         for(int i = 0 ; i < m ; i++){
-            string str = wordsContainer[i];
-            if(root -> storeData.second > str.size()){
-                root -> storeData.first = i ;
-                root -> storeData.second = str.size();
+            if(wordsContainer[root -> idx].size() > wordsContainer[i].size()){
+                root -> idx = i ;
             }
 
-            reverse(str.begin() , str.end());
-
-            insertData(root , str , i , 0);
+            insertInTrie(root , i , wordsContainer);
         }
 
-
+        vector<int> ans(n);
         for(int i = 0 ; i < n ; i++){
-            string str = wordsQuery[i];
-            reverse(str.begin() , str.end());
-
-            int findCommonSuffix = findSuffix(root , str, 0);
-
-            ans[i] = findCommonSuffix;
+            ans[i] = searchInTrie(root, i, wordsQuery);
         }
 
-        delete root;
+        delete root; // delete Trie
 
         return ans ;
     }
