@@ -1,88 +1,91 @@
-class TrieNode {
-public:
-    unordered_map<char, TrieNode*> children;
+class TrieNode{
+    public:
+        int val ;
+        TrieNode* children[26] ;
+        pair<int, int> storeData; // index, size
 
-    pair<int,int> storeData; // {index, size}
+        TrieNode(int val , int index , int size){
+            this -> val = val;
+            for(int i = 0 ; i < 26 ; i++){
+                children[i] = nullptr ;
+            }
 
-    TrieNode(int idx, int sz) {
-        storeData = {idx, sz};
-    }
-
-    ~TrieNode() {
-        for (auto &it : children) {
-            delete it.second;
+            storeData.first = index;
+            storeData.second = size;
         }
-    }
+
+        ~TrieNode() { // Destructor
+            for (auto &it : children) {
+                delete it;
+            }
+        }
 };
 
 class Solution {
 public:
 
-    void insertData(TrieNode* root, string &str, int strIndex) {
+    void insertData(TrieNode* root , string &str , int strIndex, int i){
+        if(i == str.size()) return ;
 
-        TrieNode* node = root;
-
-        for(char ch : str) {
-
-            if(node->children.count(ch) == 0) {
-                node->children[ch] =
-                    new TrieNode(strIndex, str.size());
+        int index = str[i] - 'a';
+        if(root -> children[index] != nullptr){
+            if(root -> children[index] -> storeData.second > str.size()){
+                root -> children[index] -> storeData.second = str.size();
+                root -> children[index] -> storeData.first = strIndex;
             }
-
-            node = node->children[ch];
-
-            if(node->storeData.second > str.size()) {
-                node->storeData = {strIndex, (int)str.size()};
-            }
+            insertData(root -> children[index], str, strIndex, i+1);
+        }
+        else{
+            TrieNode* newNode = new TrieNode(str[i] , strIndex , str.size());
+            root -> children[index] = newNode ;
+            insertData(newNode , str, strIndex, i+1);
         }
     }
 
-    int findSuffix(TrieNode* root, string &str) {
-
-        TrieNode* node = root;
-
-        for(char ch : str) {
-
-            if(node->children.count(ch) == 0) {
-                return node->storeData.first;
-            }
-
-            node = node->children[ch];
+    int findSuffix(TrieNode* root, string &str, int i){
+        if(i == str.size()) {
+            return root -> storeData.first;
         }
 
-        return node->storeData.first;
+        int index = str[i] - 'a';
+        if(root -> children[index] == nullptr){
+            return root -> storeData.first;
+        }
+        else{
+            return findSuffix(root -> children[index] , str , i+1);
+        }
     }
 
-    vector<int> stringIndices(vector<string>& wordsContainer,
-                              vector<string>& wordsQuery) {
+    vector<int> stringIndices(vector<string>& wordsContainer, vector<string>& wordsQuery) {
+        TrieNode* root = new TrieNode('-' , INT_MAX , INT_MAX);
+        int m = wordsContainer.size();
+        int n = wordsQuery.size();
+        vector<int> ans(n);
 
-        TrieNode* root = new TrieNode(INT_MAX, INT_MAX);
-
-        // store globally shortest string
-        for(int i = 0; i < wordsContainer.size(); i++) {
-
+        for(int i = 0 ; i < m ; i++){
             string str = wordsContainer[i];
-
-            if(root->storeData.second > str.size()) {
-                root->storeData = {i, (int)str.size()};
+            if(root -> storeData.second > str.size()){
+                root -> storeData.first = i ;
+                root -> storeData.second = str.size();
             }
 
-            reverse(str.begin(), str.end());
+            reverse(str.begin() , str.end());
 
-            insertData(root, str, i);
+            insertData(root , str , i , 0);
         }
 
-        vector<int> ans;
 
-        for(string str : wordsQuery) {
+        for(int i = 0 ; i < n ; i++){
+            string str = wordsQuery[i];
+            reverse(str.begin() , str.end());
 
-            reverse(str.begin(), str.end());
+            int findCommonSuffix = findSuffix(root , str, 0);
 
-            ans.push_back(findSuffix(root, str));
+            ans[i] = findCommonSuffix;
         }
 
-        delete root; // delte trieNode
+        delete root;
 
-        return ans;
+        return ans ;
     }
 };
