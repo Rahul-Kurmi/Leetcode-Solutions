@@ -182,6 +182,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0049-group-anagrams](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0049-group-anagrams) |
 | [0067-add-binary](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0067-add-binary) |
 | [0071-simplify-path](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0071-simplify-path) |
+| [0072-edit-distance](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0072-edit-distance) |
 | [0079-word-search](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0079-word-search) |
 | [0179-largest-number](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0179-largest-number) |
 | [0205-isomorphic-strings](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0205-isomorphic-strings) |
@@ -549,6 +550,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0022-generate-parentheses](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0022-generate-parentheses) |
 | [0032-longest-valid-parentheses](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0032-longest-valid-parentheses) |
 | [0053-maximum-subarray](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0053-maximum-subarray) |
+| [0072-edit-distance](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0072-edit-distance) |
 | [0085-maximal-rectangle](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0085-maximal-rectangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0198-house-robber](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0198-house-robber) |
