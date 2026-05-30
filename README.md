@@ -118,6 +118,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
 | [3093-longest-common-suffix-queries](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3093-longest-common-suffix-queries) |
+| [3161-block-placement-queries](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3161-block-placement-queries) |
 | [3206-find-common-elements-between-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3206-find-common-elements-between-two-arrays) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 | [3923-minimum-generations-to-target-point](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3923-minimum-generations-to-target-point) |
@@ -329,6 +330,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1552-magnetic-force-between-two-balls](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1552-magnetic-force-between-two-balls) |
 | [2064-minimized-maximum-of-products-distributed-to-any-store](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2064-minimized-maximum-of-products-distributed-to-any-store) |
 | [2529-maximum-count-of-positive-integer-and-negative-integer](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2529-maximum-count-of-positive-integer-and-negative-integer) |
+| [3161-block-placement-queries](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3161-block-placement-queries) |
 | [3932-count-k-th-roots-in-a-range](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3932-count-k-th-roots-in-a-range) |
 ## Math
 |  |
@@ -748,10 +750,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0493-reverse-pairs](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0493-reverse-pairs) |
+| [3161-block-placement-queries](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3161-block-placement-queries) |
 ## Segment Tree
 |  |
 | ------- |
 | [0493-reverse-pairs](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0493-reverse-pairs) |
+| [3161-block-placement-queries](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3161-block-placement-queries) |
 ## Ordered Set
 |  |
 | ------- |
