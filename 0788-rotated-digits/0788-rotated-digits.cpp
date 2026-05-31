@@ -1,35 +1,36 @@
 class Solution {
 public:
-    
-    bool isGood(int num){
-        bool changed = false;
-        while(num > 0){
-            int digit = num % 10 ;
 
-            //invalid digits --> 3, 4, 7
-            if(digit == 3 || digit == 4 || digit == 7) return false ;
+    int solve(int num){
+        // BASE CASE if num == 0 valid but, can't change thus return 0  
+        if(num == 0) return 0 ;
 
-            // Valid digits -> 0, 1, 8, 2, 5, 6, 9 
-            // but only 2, 5, 6, 9, can raotate 180 to create new digit --> new num
-            if(digit == 2 || digit == 5 || digit == 6 || digit == 9){
-                changed = true ;
-            }
+        int remainingCheck = solve(num / 10);
 
-            num /= 10 ;
+        int currDigit = num % 10 ;
+        int currCheck;
+
+        if(currDigit == 0 || currDigit == 1 || currDigit == 8) {
+            currCheck = 0 ; // valid digit but doest't change the number 
+        }
+        else if(currDigit == 2 || currDigit == 5 || currDigit == 6 || currDigit == 9){
+            currCheck = 1 ; // valid digit and change the number
+        } 
+        else{ // means currDigit is 3  or  4 or 7 
+            currCheck = 2 ;
         }
 
-        return changed ;
+        if(remainingCheck == 0 && currCheck == 0) return 0 ;
+        else if(remainingCheck == 2 || currCheck == 2) return 2 ;
+        else return 1 ;
     }
 
     int rotatedDigits(int n) {
         int count = 0 ;
-
         for(int i = 1 ; i <= n ; i++){
-            if(isGood(i)){
-                count++;
-            }
+            if(solve(i) == 1) count++;
         }
 
-        return count;
+        return count ;
     }
 };
