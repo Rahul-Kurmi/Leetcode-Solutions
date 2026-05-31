@@ -1,11 +1,13 @@
 class Solution {
 public:
 
-    int solve(int num){
+    int solve(int num , vector<int>& dp){
         // BASE CASE if num == 0 valid but, can't change thus return 0  
         if(num == 0) return 0 ;
 
-        int remainingCheck = solve(num / 10);
+        if(dp[num] != -1) return dp[num];
+
+        int remainingCheck = solve(num / 10 , dp);
 
         int currDigit = num % 10 ;
         int currCheck;
@@ -20,15 +22,20 @@ public:
             currCheck = 2 ;
         }
 
-        if(remainingCheck == 0 && currCheck == 0) return 0 ;
-        else if(remainingCheck == 2 || currCheck == 2) return 2 ;
-        else return 1 ;
+        if(remainingCheck == 0 && currCheck == 0) return dp[num] =  0 ;
+        else if(remainingCheck == 2 || currCheck == 2) return dp[num] =  2 ;
+        else return dp[num] =  1 ;
     }
 
     int rotatedDigits(int n) {
         int count = 0 ;
+
+        // 0 : same 
+        // 1 : good
+        // 2 : invalid
+        vector<int> dp(n+1, -1);
         for(int i = 1 ; i <= n ; i++){
-            if(solve(i) == 1) count++;
+            if(solve(i, dp) == 1) count++;
         }
 
         return count ;
