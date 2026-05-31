@@ -355,6 +355,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0415-add-strings](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0415-add-strings) |
 | [0775-global-and-local-inversions](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0775-global-and-local-inversions) |
 | [0779-k-th-symbol-in-grammar](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0779-k-th-symbol-in-grammar) |
+| [0788-rotated-digits](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0788-rotated-digits) |
 | [0973-k-closest-points-to-origin](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0973-k-closest-points-to-origin) |
 | [1031-add-to-array-form-of-integer](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1031-add-to-array-form-of-integer) |
 | [1048-clumsy-factorial](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1048-clumsy-factorial) |
@@ -562,6 +563,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0494-target-sum](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0494-target-sum) |
 | [0526-beautiful-arrangement](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0526-beautiful-arrangement) |
 | [0583-delete-operation-for-two-strings](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0583-delete-operation-for-two-strings) |
+| [0788-rotated-digits](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0788-rotated-digits) |
 | [0871-minimum-number-of-refueling-stops](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0871-minimum-number-of-refueling-stops) |
 | [1092-shortest-common-supersequence](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1092-shortest-common-supersequence) |
 | [1312-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1312-minimum-insertion-steps-to-make-a-string-palindrome) |
