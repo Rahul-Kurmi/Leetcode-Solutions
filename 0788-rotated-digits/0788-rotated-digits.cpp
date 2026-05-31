@@ -33,9 +33,36 @@ public:
         // 0 : same 
         // 1 : good
         // 2 : invalid
+
+        // CONVERTING INTO TABULATION
+        
+
         vector<int> dp(n+1, -1);
+        dp[0] = 0 ;
+
         for(int i = 1 ; i <= n ; i++){
-            if(solve(i, dp) == 1) count++;
+
+            int remainingCheck = dp[i / 10] ;
+
+            int currDigit = i % 10 ;
+            int currCheck;
+
+            if(currDigit == 0 || currDigit == 1 || currDigit == 8) {
+                currCheck = 0 ; // valid digit but doest't change the number 
+            }
+            else if(currDigit == 2 || currDigit == 5 || currDigit == 6 || currDigit == 9){
+                currCheck = 1 ; // valid digit and change the number
+            } 
+            else{ // means currDigit is 3  or  4 or 7 
+                currCheck = 2 ;
+            }
+
+            if(remainingCheck == 0 && currCheck == 0) dp[i] =  0 ;
+            else if(remainingCheck == 2 || currCheck == 2) dp[i] =  2 ;
+            else{
+                dp[i] = 1 ;
+                count++;
+            }
         }
 
         return count ;
