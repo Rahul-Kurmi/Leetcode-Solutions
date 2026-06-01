@@ -1,25 +1,58 @@
 class NumArray {
 public:
-    vector<int> prefixSum ;
-    NumArray(vector<int>& nums) {
-        int n = nums.size();
-        int sum = 0 ;
-        for(int i = 0 ; i < n ; i++){
-            sum += nums[i];
-            prefixSum.push_back(sum);
+    vector<int> segTree; // initialize segment tree
+    int n ;
+    void createSegmentTree(vector<int>& nums,  int i , int l , int r){
+        if(l == r){
+            segTree[i] = nums[l];
+            return ;
         }
+
+        int mid = l + (r - l) / 2; 
+        createSegmentTree(nums, 2*i+1, l , mid);
+        createSegmentTree(nums, 2*i+2, mid+1, r);
+
+        segTree[i] =  segTree[2*i+1] + segTree[2*i+2];
+
+    }
+
+    int sumRangeQuery(int &start , int &end , int i , int l , int r){
+        // [l, r] --> our segTree range
+        // [start , end] --> find range sum 
+        // we try to find [l , r] in  [start , end]
+
+        // CASE 1 : [l,r] out of bound in [start, end]
+        if(r < start ||  l > end){ // our [l,r] not in [start, end]
+            return 0 ;
+        }
+
+        // CASE 2 : Intirely inside ir [l,r] is in [start, end]
+        else if(l >= start && r <= end){
+            return segTree[i];
+        }
+
+        // CASE 3 : overlapping or [start , end] inside [l , r]
+        else{
+            int mid = l + (r - l) / 2 ;
+            return sumRangeQuery(start , end , 2*i+1 , l , mid) + 
+                   sumRangeQuery(start , end , 2*i+2 , mid+1, r);
+        }
+
+    }
+
+    NumArray(vector<int>& nums) {
+        n = nums.size() ;
+        segTree.resize(4*n);
+        createSegmentTree(nums , 0 , 0 , n-1); // nums , i , l , r
     }
     
-    int sumRange(int left, int right) {
-        if(left == 0)
-            return prefixSum[right];
-
-        return prefixSum[right] - prefixSum[left-1];
+    int sumRange(int start, int end) {
+        return sumRangeQuery(start , end , 0 , 0 , n-1);
     }
 };
 
 /**
  * Your NumArray object will be instantiated and called as such:
  * NumArray* obj = new NumArray(nums);
- * int param_1 = obj->sumRange(left,right);
+ * int param_1 = obj->sumRange(l,r);
  */
