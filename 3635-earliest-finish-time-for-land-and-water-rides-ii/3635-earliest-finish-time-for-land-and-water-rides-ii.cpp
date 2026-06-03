@@ -1,53 +1,26 @@
 class Solution {
 public:
-    int earliestFinishTime(vector<int>& landStartTime,
-                           vector<int>& landDuration,
-                           vector<int>& waterStartTime,
-                           vector<int>& waterDuration) {
 
-        // CASE 1:
-        // Start with a land ride, choosing the one that finishes earliest.
-        int firstFinishLandRide = INT_MAX;
+    int findFinishTime(vector<int>& start1, vector<int>& duration1, vector<int>& start2, vector<int>& duration2) {
 
-        for (int i = 0; i < landStartTime.size(); i++) {
-            firstFinishLandRide = min(
-                firstFinishLandRide,
-                landStartTime[i] + landDuration[i]
-            );
+        int finish1 = INT_MAX;
+        for (int i = 0; i < start1.size(); i++) {
+            finish1 = min(finish1, start1[i] + duration1[i]);
         }
 
-        int landToWaterTravel = INT_MAX;
-
-        for (int i = 0; i < waterStartTime.size(); i++) {
-            landToWaterTravel = min(
-                landToWaterTravel,
-                max(firstFinishLandRide, waterStartTime[i]) +
-                    waterDuration[i]
-            );
+        int finish2 = INT_MAX;
+        for (int i = 0; i < start2.size(); i++) {
+            finish2 = min(finish2, max(finish1, start2[i]) + duration2[i]);
         }
 
-        // CASE 2:
-        // Start with a water ride, choosing the one that finishes earliest.
-        int firstFinishWaterRide = INT_MAX;
+        return finish2;
+    }
 
-        for (int i = 0; i < waterStartTime.size(); i++) {
-            firstFinishWaterRide = min(
-                firstFinishWaterRide,
-                waterStartTime[i] + waterDuration[i]
-            );
-        }
+    int earliestFinishTime(vector<int>& landStartTime, vector<int>& landDuration, vector<int>& waterStartTime, vector<int>& waterDuration) {
+        int pehleLand_FirWater = findFinishTime(landStartTime, landDuration, waterStartTime, waterDuration);
 
-        int waterToLandTravel = INT_MAX;
+        int pehleWater_FirLand = findFinishTime(waterStartTime, waterDuration, landStartTime, landDuration);
 
-        for (int i = 0; i < landStartTime.size(); i++) {
-            waterToLandTravel = min(
-                waterToLandTravel,
-                max(firstFinishWaterRide, landStartTime[i]) +
-                    landDuration[i]
-            );
-        }
-
-        // Return the minimum finishing time among both possibilities.
-        return min(landToWaterTravel, waterToLandTravel);
+        return min(pehleLand_FirWater, pehleWater_FirLand);
     }
 };
