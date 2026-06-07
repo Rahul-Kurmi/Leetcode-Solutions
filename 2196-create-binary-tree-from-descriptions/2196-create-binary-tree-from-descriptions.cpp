@@ -11,81 +11,44 @@
  */
 class Solution {
 public:
-    void createBinaryTreeHelper(vector<vector<int>>& descriptions, unordered_map<int, TreeNode*> &findNode, unordered_map<TreeNode* , bool>& isParent){
+    TreeNode* createBinaryTree(vector<vector<int>>& descriptions) {
+        unordered_map<int, TreeNode*> storeNodes ;
+        unordered_set<int> childSet ; // they can never be root
 
-        for(auto &desc : descriptions){
+        for(vector<int>& desc : descriptions){
+            int parent = desc[0];
+            int child = desc[1];
             bool isLeft = desc[2];
+
+            if(storeNodes.count(parent) == 0){
+                storeNodes[parent] = new TreeNode(parent);
+            }
+
+            if(storeNodes.count(child) == 0){
+                storeNodes[child] = new TreeNode(child);
+            }
+
             if(isLeft){
-                TreeNode* root ;
-                TreeNode* child ; 
-                if(findNode.find(desc[0]) == findNode.end()){
-                    root = new TreeNode(desc[0]);
-                    findNode[desc[0]] = root ;
-                }
-                else{
-                    root = findNode[desc[0]];
-                }
-
-                if(findNode.find(desc[1]) == findNode.end()){
-                    child = new TreeNode(desc[1]);
-                    findNode[desc[1]] = child;
-                }
-                else{
-                    child = findNode[desc[1]];
-                }
-
-                isParent[child] = true ;
-                
-                if(isParent[root] != true){
-                    isParent[root] = false ;
-                }
-
-                root -> left = child ;
+                storeNodes[parent] -> left =  storeNodes[child];
             }
             else{
-                TreeNode* root ;
-                TreeNode* child ; 
-                if(findNode.find(desc[0]) == findNode.end()){
-                    root = new TreeNode(desc[0]);
-                    findNode[desc[0]] = root ;
-                }
-                else{
-                    root = findNode[desc[0]];
-                }
+                storeNodes[parent] -> right = storeNodes[child];
+            }
 
-                if(findNode.find(desc[1]) == findNode.end()){
-                    child = new TreeNode(desc[1]);
-                    findNode[desc[1]] = child;
-                }
-                else{
-                    child = findNode[desc[1]];
-                }
+            // insert child in childSet
+            childSet.insert(child); 
+        }  
 
-                isParent[child] = true ;
-                
-                if(isParent[root] != true){
-                    isParent[root] = false ;
-                }
-                
-                root -> right = child ;
+
+        // find the node that is not present in childSet that is the root
+        for(vector<int> &desc : descriptions){
+            int parent = desc[0];
+
+            if(childSet.count(parent) == 0){
+                return storeNodes[parent];
             }
         }
 
-    }
-
-    TreeNode* createBinaryTree(vector<vector<int>>& descriptions) {
-        unordered_map<int, TreeNode*> findNode;
-        unordered_map<TreeNode* , bool> isParent ;
-
-        createBinaryTreeHelper(descriptions , findNode, isParent);
-
-        TreeNode* root = nullptr ;
-        for(auto it : isParent){
-            if(it.second == false){
-                root = it.first;
-            }
-        }
-
-        return root ;
+        return nullptr; // we will never reach here
     }
 };
