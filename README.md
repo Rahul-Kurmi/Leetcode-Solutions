@@ -131,6 +131,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
+| [3691-maximum-total-subarray-value-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3691-maximum-total-subarray-value-ii) |
 | [3923-minimum-generations-to-target-point](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3923-minimum-generations-to-target-point) |
 ## Hash Table
 |  |
@@ -524,6 +525,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 | [1962-remove-stones-to-minimize-the-total](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1962-remove-stones-to-minimize-the-total) |
 | [2163-minimum-difference-in-sums-after-removal-of-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2163-minimum-difference-in-sums-after-removal-of-elements) |
+| [3691-maximum-total-subarray-value-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3691-maximum-total-subarray-value-ii) |
 ## Greedy
 |  |
 | ------- |
@@ -543,6 +545,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2202-maximize-the-topmost-element-after-k-moves](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2202-maximize-the-topmost-element-after-k-moves) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
+| [3691-maximum-total-subarray-value-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3691-maximum-total-subarray-value-ii) |
 ## String Matching
 |  |
 | ------- |
@@ -794,6 +797,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0307-range-sum-query-mutable](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0307-range-sum-query-mutable) |
 | [0493-reverse-pairs](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0493-reverse-pairs) |
 | [3161-block-placement-queries](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3161-block-placement-queries) |
+| [3691-maximum-total-subarray-value-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3691-maximum-total-subarray-value-ii) |
 ## Ordered Set
 |  |
 | ------- |
