@@ -389,6 +389,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2470-number-of-subarrays-with-lcm-equal-to-k](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2470-number-of-subarrays-with-lcm-equal-to-k) |
 | [2523-closest-prime-numbers-in-range](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2523-closest-prime-numbers-in-range) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
+| [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 | [3932-count-k-th-roots-in-a-range](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3932-count-k-th-roots-in-a-range) |
 ## Counting
 |  |
@@ -707,6 +708,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1373-maximum-sum-bst-in-binary-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1373-maximum-sum-bst-in-binary-tree) |
 | [1382-balance-a-binary-search-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1382-balance-a-binary-search-tree) |
 | [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2385-amount-of-time-for-binary-tree-to-be-infected) |
+| [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 ## Linked List
 |  |
 | ------- |
@@ -862,6 +864,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1382-balance-a-binary-search-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1382-balance-a-binary-search-tree) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 | [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2385-amount-of-time-for-binary-tree-to-be-infected) |
+| [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 ## Breadth-First Search
 |  |
 | ------- |
