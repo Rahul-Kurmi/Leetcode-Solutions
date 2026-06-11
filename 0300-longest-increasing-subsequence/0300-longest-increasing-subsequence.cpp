@@ -1,40 +1,24 @@
 class Solution {
 public:
-    int lowerBoundIndex(vector<int>& temp , int target){
-        int start = 0;
-        int end = temp.size() - 1;
-        while(start < end){
-            int mid = start + (end - start) / 2 ;
-            if(temp[mid] < target){
-                start = mid + 1; 
-            }
-            else{
-                end = mid; 
-            }
-        } 
 
-        return end ;
-    }
-
+    // THIS IS THE ONLY CODE THAT WILL HELP US IN PRINTING LIS --> PRINTING LIS CODE IN --> GFG
     int lengthOfLIS(vector<int>& nums) {
-        vector<int> temp;
-        temp.push_back(nums[0]);
+        int n = nums.size();
+        vector<int> dp(n, 1); // DP with LIS at each iindex 1 ie. element itself
+        int maxLIS = 1 ;
 
-        // int len = 0 ;
-        for(int i = 1 ; i < nums.size(); i++){
-            if(nums[i] > temp.back()){
-                temp.push_back(nums[i]);
-                // len++;
-            }
-            else{
-                // we can also use 
-                // int index = lower_bound(temp.begin(), temp.end(), nums[i]) - temp.begin();
-
-                int index = lowerBoundIndex(temp , nums[i]);
-                temp[index] = nums[i];
+        for(int i = 0 ; i < n ; i++){
+            for(int j = 0 ; j < i ; j++){
+                if(nums[j] < nums[i]){ // means jth element can form LIS with ith
+                    // dp[i] --> max of dp[j] + 1 ie. LIS of jth and curr ith element and dp[i] 
+                    dp[i] = max(dp[i] , dp[j] + 1);
+                    maxLIS = max(dp[i] , maxLIS); 
+                }
             }
         }
 
-        return (int)temp.size(); // or just return len
+        // can do this as well if not updated maxLIS in loop
+        // maxLIS = *max_element(dp.begin() , dp.end());
+        return maxLIS ;
     }
 };
