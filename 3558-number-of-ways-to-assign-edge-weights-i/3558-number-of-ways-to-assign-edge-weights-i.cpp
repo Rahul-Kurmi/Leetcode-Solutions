@@ -1,54 +1,53 @@
+//Approach (DFS to find max depth + Fast Exponentiation)
+//T.C : O(n) for DFS + O(log n) for power
+//S.C : O(n) for adjacency list + O(n) recursion stack
 class Solution {
 public:
+    static constexpr long long MOD = 1e9 + 7;
 
-    int MOD = 1e9 + 7 ;
+    long long power(long long base, long long exponent) {
+        if (exponent == 0)
+            return 1;
 
-    long long modPower(long long base, long long exp) {
-        long long ans = 1;
+        long long half = power(base, exponent / 2);
 
-        while(exp > 0) {
+        long long result = (half * half) % MOD;
 
-            if(exp & 1) {          // exponent is odd ie. exp = 1 --> base is ans ie. 1*base
-                ans = (ans * base) % MOD;
-            }
-
-            base = (base * base) % MOD;
-            exp >>= 1;            // exp /= 2
+        if (exponent % 2 == 1) {
+            result = (result * base) % MOD;
         }
 
-        return ans;
+        return result;
     }
 
-    
-    int maxHeightCalculate(unordered_map<int, vector<int>>& adjElements , int root , int parent){
+    int getMaxDepth(unordered_map<int, vector<int>>& adj, int node, int parent) {
 
-        int maxHeight = 0 ;
+        int depth = 0;
 
-        for(int neighbour : adjElements[root]){
-            if(neighbour == parent) continue ;
+        for (int neighbor : adj[node]) {
+            if (neighbor == parent)
+                continue;
 
-            maxHeight = max(maxHeight , maxHeightCalculate(adjElements, neighbour, root) + 1);
+            depth = max(depth, getMaxDepth(adj, neighbor, node) + 1);
         }
 
-        return maxHeight ;
+        return depth;
     }
-
 
     int assignEdgeWeights(vector<vector<int>>& edges) {
-        unordered_map<int, vector<int>> adjElements ;
 
-        for(auto &edge: edges){
+        unordered_map<int, vector<int>> adj;
+
+        for (auto& edge : edges) {
             int u = edge[0];
             int v = edge[1];
 
-            adjElements[u].push_back(v);
-            adjElements[v].push_back(u);
+            adj[u].push_back(v);
+            adj[v].push_back(u);
         }
 
-        int maxHeight = maxHeightCalculate(adjElements , 1 , -1);
+        int maxDepth = getMaxDepth(adj, 1, 0);
 
-        int oddPossibility = modPower(2, maxHeight - 1);
-
-        return oddPossibility;
+        return power(2, maxDepth - 1);
     }
 };
