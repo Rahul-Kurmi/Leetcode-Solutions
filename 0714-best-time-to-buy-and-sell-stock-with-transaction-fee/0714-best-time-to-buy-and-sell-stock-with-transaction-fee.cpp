@@ -23,7 +23,27 @@ public:
 
     int maxProfit(vector<int>& prices, int fee) {
         int n = prices.size();
-        vector<vector<int>> dp(n , vector<int>(2, -1));
-        return maxProfitHelper(prices, 0 , 1, fee, dp);
+
+        // TABULATION CODE
+        vector<vector<int>> dp(n+1 , vector<int>(2, 0));
+        for(int i = n-1 ; i >= 0 ; i--){
+            for(int buy = 0 ; buy <= 1 ; buy++){
+                int profit ;
+                if(buy){
+                    int buyProfit = -prices[i] + dp[i+1][0];
+                    int skipProfit = 0 + dp[i+1][1];
+                    profit = max(buyProfit , skipProfit);
+                }
+                else{ // we're paying transaction fee at each full transaction
+                    int sellProfit = -fee + prices[i] + dp[i+1][1];
+                    int skipProfit = 0 + dp[i+1][0];
+                    profit = max(sellProfit , skipProfit);
+                }
+
+                dp[i][buy]=  profit ;
+            }
+        }
+
+        return dp[0][1];
     }
 };
