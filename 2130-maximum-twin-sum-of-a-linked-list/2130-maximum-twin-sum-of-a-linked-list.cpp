@@ -10,31 +10,46 @@
  */
 class Solution {
 public:
-    int totalNodes(ListNode* head){
-        int count = 0 ;
-        while(head != nullptr){
-            count++;
-            head = head -> next ;
+    ListNode* getMiddle(ListNode* head){
+        ListNode* fast = head ;
+        ListNode* slow = head ;
+        while(fast != nullptr){
+            fast = fast -> next;
+            if(fast != nullptr){
+                fast = fast -> next ;
+                slow = slow -> next ;
+            }
         }
-        return count ;
+
+        return slow ;
+    }
+
+    ListNode* reverseLinkedList(ListNode* head){
+        ListNode* prev = nullptr ;
+        ListNode* curr = head ;
+        ListNode* temp ;
+        while(curr != nullptr){
+            temp = curr -> next ;
+            curr -> next = prev ;
+            prev = curr;
+            curr = temp;
+        }
+
+        return prev ;
     }
 
     int pairSum(ListNode* head) {
-        int size = totalNodes(head);
-        unordered_map<int, int> mp ;
-        int index = 1 ;
+        ListNode* mid = getMiddle(head);
+        mid = reverseLinkedList(mid);
+        
         int maxPairSum = 0 ;
-        while(head != nullptr){
-            if(mp.find(size - index + 1) != mp.end()){
-                int sum = head -> val + mp[size - index + 1];
-                maxPairSum = max(maxPairSum , sum);
-            }
-            else{
-                mp[index] = head -> val;
-            }
-            index++;
+        while(mid != nullptr){
+            int sum = mid -> val + head -> val ;
             head = head -> next ;
+            mid = mid -> next ;
+            maxPairSum = max(maxPairSum , sum);
         }
-        return maxPairSum;
+
+        return maxPairSum ;
     }
 };
