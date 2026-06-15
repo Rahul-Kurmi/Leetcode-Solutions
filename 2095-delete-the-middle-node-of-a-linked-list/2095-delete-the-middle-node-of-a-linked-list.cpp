@@ -10,30 +10,22 @@
  */
 class Solution {
 public:
-    ListNode* findMid(ListNode* head){
-        ListNode* fast = head ;
-        ListNode* slow = head ;
-
-        while(fast != nullptr){
-            fast = fast -> next ;
-            if(fast != nullptr){
-                fast = fast -> next ;
-                slow = slow -> next ;
-            }
-        }
-
-        return slow ;
-    }
-
     ListNode* deleteMiddle(ListNode* head) {
-        if(head -> next == nullptr) return nullptr ;
-        ListNode* mid = findMid(head);
-        ListNode* midPrev = head ;
-        while(midPrev -> next != mid){
-            midPrev = midPrev -> next ;
+        if(head->next == nullptr) return nullptr;
+
+        ListNode* slow = head;
+        ListNode* fast = head;
+        ListNode* prev = nullptr;
+
+        while(fast && fast->next){
+            prev = slow;
+            slow = slow->next;
+            fast = fast->next->next;
         }
 
-        midPrev -> next = mid -> next ;
-        return head ;
+        prev->next = slow->next;
+        delete slow;
+
+        return head;
     }
 };
