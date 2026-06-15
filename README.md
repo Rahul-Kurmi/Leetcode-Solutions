@@ -56,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0349-intersection-of-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0354-russian-doll-envelopes](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0354-russian-doll-envelopes) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
+| [0486-predict-the-winner](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0486-predict-the-winner) |
 | [0491-non-decreasing-subsequences](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0491-non-decreasing-subsequences) |
 | [0493-reverse-pairs](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0493-reverse-pairs) |
 | [0494-target-sum](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0494-target-sum) |
@@ -388,6 +389,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0326-power-of-three](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0342-power-of-four) |
 | [0415-add-strings](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0415-add-strings) |
+| [0486-predict-the-winner](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0486-predict-the-winner) |
 | [0775-global-and-local-inversions](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0775-global-and-local-inversions) |
 | [0779-k-th-symbol-in-grammar](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0779-k-th-symbol-in-grammar) |
 | [0788-rotated-digits](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0788-rotated-digits) |
@@ -597,6 +599,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0326-power-of-three](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0342-power-of-four) |
 | [0394-decode-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0394-decode-string) |
+| [0486-predict-the-winner](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0486-predict-the-winner) |
 | [0779-k-th-symbol-in-grammar](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0779-k-th-symbol-in-grammar) |
 | [1823-find-the-winner-of-the-circular-game](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1823-find-the-winner-of-the-circular-game) |
 ## Dynamic Programming
@@ -616,6 +619,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0337-house-robber-iii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0337-house-robber-iii) |
 | [0354-russian-doll-envelopes](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0354-russian-doll-envelopes) |
+| [0486-predict-the-winner](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0486-predict-the-winner) |
 | [0494-target-sum](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0494-target-sum) |
 | [0526-beautiful-arrangement](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0526-beautiful-arrangement) |
 | [0583-delete-operation-for-two-strings](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0583-delete-operation-for-two-strings) |
@@ -1002,4 +1006,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0705-design-hashset](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0706-design-hashmap) |
+## Game Theory
+|  |
+| ------- |
+| [0486-predict-the-winner](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0486-predict-the-winner) |
 <!---LeetCode Topics End-->
