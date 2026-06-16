@@ -1,52 +1,38 @@
 class Solution {
 public:
-    bool checkWord(string& word, vector<string>& wordDict){
-        for(auto it : wordDict){
-            if(it == word) return true ;
-        }
-        return false ;
-    }
-
-    // MEMOIZATION
-    bool wordBreakHelper(string& s, vector<string>& wordDict, int start, vector<int>& dp){
-        if(start == s.size()) return true ;
-
-        if(dp[start] != -1) return dp[start]; 
-
-        // one case make a string 
-        string word = "";
-        bool flag = false ;
-        for(int i = start ; i < s.size(); i++){
-            word += s[i];
-            if(checkWord(word, wordDict)){
-                flag = flag || wordBreakHelper(s, wordDict, i+1, dp);
-            }
+    unordered_set<string> st;
+    int n;
+    
+    bool solve(string &s, int idx, vector<int>& dp) {
+        if(idx == n) {
+            return true;
         }
 
-        return dp[start] = flag;
-    }
+        if(st.find(s.substr(idx)) != st.end()) {
+            return true;
+        }
 
+        if(dp[idx]!= -1) return dp[idx] ;
+        
+        for(int len = 1; len<=n; len++) {   
+            string temp = s.substr(idx, len);
+            if(st.find(temp) != st.end() && solve(s, idx+len, dp))
+                return dp[idx] = true;
+            
+        }
+        
+        return dp[idx] = false;
+    }
+    
     bool wordBreak(string s, vector<string>& wordDict) {
-        vector<bool> dp(s.size() + 1, false);
-
-        // TABULATION 
-        // BASE CASE --> if(start == s.size()) return true 
-
-        dp[s.size()] = true ;
-
-        for(int start = s.size() - 1 ; start >= 0 ; start--){
-            string word = "";
-            bool flag = false ;
-            for(int i = start ; i < s.size(); i++){
-                word += s[i];
-                if(checkWord(word, wordDict)){
-                    flag = flag || dp[i+1];
-                }
-            }
-
-            dp[start] = flag;
+        n = s.length();
+        
+        for(string &word : wordDict) {
+            st.insert(word);
         }
 
-        return dp[0];
+        vector<int> dp(n , -1);
+        
+        return solve(s, 0, dp);
     }
 };
