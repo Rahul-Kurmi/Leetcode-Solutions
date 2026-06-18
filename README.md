@@ -82,6 +82,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0739-daily-temperatures](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0739-daily-temperatures) |
 | [0775-global-and-local-inversions](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0775-global-and-local-inversions) |
 | [0792-binary-search](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0792-binary-search) |
+| [0801-minimum-swaps-to-make-sequences-increasing](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0801-minimum-swaps-to-make-sequences-increasing) |
 | [0853-car-fleet](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0853-car-fleet) |
 | [0871-minimum-number-of-refueling-stops](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0871-minimum-number-of-refueling-stops) |
 | [0875-koko-eating-bananas](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0875-koko-eating-bananas) |
@@ -635,6 +636,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0583-delete-operation-for-two-strings](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0583-delete-operation-for-two-strings) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0788-rotated-digits](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0788-rotated-digits) |
+| [0801-minimum-swaps-to-make-sequences-increasing](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0801-minimum-swaps-to-make-sequences-increasing) |
 | [0871-minimum-number-of-refueling-stops](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0871-minimum-number-of-refueling-stops) |
 | [1092-shortest-common-supersequence](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1092-shortest-common-supersequence) |
 | [1312-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1312-minimum-insertion-steps-to-make-a-string-palindrome) |
