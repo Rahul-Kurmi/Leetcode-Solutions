@@ -36,9 +36,29 @@ public:
         countZerosOnesHelper(countZerosOnes, strs);
 
         int size = strs.size();
-        // DP --> changing parameter --> i , m , n --> 3D Dp
-        vector<vector<vector<int>>> dp(size, vector<vector<int>>(m+1, vector<int>(n+1 , -1)));
+        // TABULATION  DP --> changing parameter --> i , m , n --> 3D Dp
+        vector<vector<vector<int>>> dp(size + 1, vector<vector<int>>(m+1, vector<int>(n+1 , 0)));
 
-        return findMaxFormHelper(countZerosOnes, m, n , 0, dp);
+        // BASE CASE --> when i == n return 0, no need to write as all initialized with 0
+
+        for(int i = size-1 ; i >= 0 ; i--){
+            for(int t_zeros = 0 ; t_zeros <= m ; t_zeros++){
+                for(int t_ones = 0 ; t_ones <= n; t_ones++){
+                    int zeroCount = countZerosOnes[i].first ;
+                    int oneCount = countZerosOnes[i].second ;
+
+                    int include = 0 ;
+                    if(zeroCount <= t_zeros && oneCount <= t_ones){ 
+                        include =  1 + dp[i+1][t_zeros-zeroCount][t_ones-oneCount] ;
+                    }
+
+                    int exclude = dp[i+1][t_zeros][t_ones];
+
+                    dp[i][t_zeros][t_ones] =  max(include, exclude);
+                }
+            }
+        }
+
+        return dp[0][m][n];
     }
 };
