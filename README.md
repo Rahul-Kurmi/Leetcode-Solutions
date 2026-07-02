@@ -141,6 +141,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3093-longest-common-suffix-queries](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3093-longest-common-suffix-queries) |
 | [3161-block-placement-queries](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3161-block-placement-queries) |
 | [3206-find-common-elements-between-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3206-find-common-elements-between-two-arrays) |
+| [3286-find-a-safe-walk-through-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3286-find-a-safe-walk-through-a-grid) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
@@ -469,6 +470,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1672-richest-customer-wealth](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1672-richest-customer-wealth) |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2812-find-the-safest-path-in-a-grid) |
+| [3286-find-a-safe-walk-through-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3286-find-a-safe-walk-through-a-grid) |
 ## Simulation
 |  |
 | ------- |
@@ -588,6 +590,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1962-remove-stones-to-minimize-the-total](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1962-remove-stones-to-minimize-the-total) |
 | [2163-minimum-difference-in-sums-after-removal-of-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2163-minimum-difference-in-sums-after-removal-of-elements) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2812-find-the-safest-path-in-a-grid) |
+| [3286-find-a-safe-walk-through-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3286-find-a-safe-walk-through-a-grid) |
 | [3691-maximum-total-subarray-value-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3691-maximum-total-subarray-value-ii) |
 ## Greedy
 |  |
@@ -991,6 +994,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1345-jump-game-iv](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1345-jump-game-iv) |
 | [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2385-amount-of-time-for-binary-tree-to-be-infected) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2812-find-the-safest-path-in-a-grid) |
+| [3286-find-a-safe-walk-through-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3286-find-a-safe-walk-through-a-grid) |
 ## Binary Tree
 |  |
 | ------- |
@@ -1087,4 +1091,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2812-find-the-safest-path-in-a-grid) |
+## Graph Theory
+|  |
+| ------- |
+| [3286-find-a-safe-walk-through-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3286-find-a-safe-walk-through-a-grid) |
+## Shortest Path
+|  |
+| ------- |
+| [3286-find-a-safe-walk-through-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3286-find-a-safe-walk-through-a-grid) |
 <!---LeetCode Topics End-->
