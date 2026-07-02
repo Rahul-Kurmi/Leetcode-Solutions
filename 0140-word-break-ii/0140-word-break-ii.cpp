@@ -1,29 +1,36 @@
 class Solution {
 public:
-    vector<string> result ;
     unordered_set<string> dict;
-
-    void solve(string &s , int start, string &store){
+    unordered_map<int, vector<string>> mp ; // map for Memoization
+    
+    vector<string> solve(string &s, int start){
         if(start == s.size()){
-            result.push_back(store);
-            return ;
+            return {""}; // empty string vector  
         }
+
+        if(mp.find(start) != mp.end()){
+            return mp[start];
+        }
+
+        vector<string> ans ;
+        string word = "";
 
         for(int i = start ; i < s.size() ; i++){
-            string tempWord = s.substr(start , i - start + 1);
+            word += s[i] ;
+            if(dict.find(word) != dict.end()){
+                vector<string> rightPart = solve(s, i+1);
+                for(auto endRightPart : rightPart){
+                    string endPart ;
+                    if(endRightPart.size() > 0){
+                        endPart = " " + endRightPart;
+                    }
 
-            if(dict.find(tempWord) != dict.end()){
-                string originalString = store; // store for backtracking
-                if(!store.empty()){ // only push space in middle
-                    store += " "; 
+                    ans.push_back(word + endPart);
                 }
-                
-                store += tempWord ;
-                solve(s , i+1 , store);
-                store = originalString ; // backtrack 
-
             }
         }
+
+        return  mp[start] = ans ;
     }
 
     vector<string> wordBreak(string s, vector<string>& wordDict) {
@@ -31,10 +38,6 @@ public:
             dict.insert(word);
         }
 
-        string store = "";
-        solve(s, 0 , store);
-
-        return result ;
-
+        return solve(s, 0);
     }
 };
