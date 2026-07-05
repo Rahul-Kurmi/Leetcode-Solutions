@@ -97,6 +97,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1031-add-to-array-form-of-integer](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1031-add-to-array-form-of-integer) |
 | [1268-search-suggestions-system](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1268-search-suggestions-system) |
 | [1299-replace-elements-with-greatest-element-on-right-side](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1299-replace-elements-with-greatest-element-on-right-side) |
+| [1301-number-of-paths-with-max-score](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1301-number-of-paths-with-max-score) |
 | [1340-jump-game-v](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1340-jump-game-v) |
 | [1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
 | [1345-jump-game-iv](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1345-jump-game-iv) |
@@ -465,6 +466,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0498-diagonal-traverse](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0498-diagonal-traverse) |
 | [0898-transpose-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0898-transpose-matrix) |
 | [0980-unique-paths-iii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0980-unique-paths-iii) |
+| [1301-number-of-paths-with-max-score](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1301-number-of-paths-with-max-score) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1572-matrix-diagonal-sum](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1572-matrix-diagonal-sum) |
 | [1672-richest-customer-wealth](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1672-richest-customer-wealth) |
@@ -684,6 +686,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0801-minimum-swaps-to-make-sequences-increasing](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0801-minimum-swaps-to-make-sequences-increasing) |
 | [0871-minimum-number-of-refueling-stops](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0871-minimum-number-of-refueling-stops) |
 | [1092-shortest-common-supersequence](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1092-shortest-common-supersequence) |
+| [1301-number-of-paths-with-max-score](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1301-number-of-paths-with-max-score) |
 | [1312-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1312-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1340-jump-game-v](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1340-jump-game-v) |
 | [1373-maximum-sum-bst-in-binary-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1373-maximum-sum-bst-in-binary-tree) |
