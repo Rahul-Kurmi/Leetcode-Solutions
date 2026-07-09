@@ -112,6 +112,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1572-matrix-diagonal-sum](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1572-matrix-diagonal-sum) |
 | [1655-distribute-repeating-integers](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1655-distribute-repeating-integers) |
 | [1670-design-front-middle-back-queue](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1670-design-front-middle-back-queue) |
+| [1671-minimum-number-of-removals-to-make-mountain-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1671-minimum-number-of-removals-to-make-mountain-array) |
 | [1672-richest-customer-wealth](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1672-richest-customer-wealth) |
 | [1691-maximum-height-by-stacking-cuboids](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1691-maximum-height-by-stacking-cuboids) |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1752-check-if-array-is-sorted-and-rotated) |
@@ -398,6 +399,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1268-search-suggestions-system](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1268-search-suggestions-system) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1552-magnetic-force-between-two-balls](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1552-magnetic-force-between-two-balls) |
+| [1671-minimum-number-of-removals-to-make-mountain-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1671-minimum-number-of-removals-to-make-mountain-array) |
 | [2064-minimized-maximum-of-products-distributed-to-any-store](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2064-minimized-maximum-of-products-distributed-to-any-store) |
 | [2529-maximum-count-of-positive-integer-and-negative-integer](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2529-maximum-count-of-positive-integer-and-negative-integer) |
 | [2560-house-robber-iv](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2560-house-robber-iv) |
@@ -610,6 +612,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1382-balance-a-binary-search-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1382-balance-a-binary-search-tree) |
 | [1402-reducing-dishes](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1402-reducing-dishes) |
 | [1405-longest-happy-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1405-longest-happy-string) |
+| [1671-minimum-number-of-removals-to-make-mountain-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1671-minimum-number-of-removals-to-make-mountain-array) |
 | [1962-remove-stones-to-minimize-the-total](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1962-remove-stones-to-minimize-the-total) |
 | [1963-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1963-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2064-minimized-maximum-of-products-distributed-to-any-store](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2064-minimized-maximum-of-products-distributed-to-any-store) |
@@ -695,6 +698,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1373-maximum-sum-bst-in-binary-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1373-maximum-sum-bst-in-binary-tree) |
 | [1402-reducing-dishes](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1402-reducing-dishes) |
 | [1655-distribute-repeating-integers](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1655-distribute-repeating-integers) |
+| [1671-minimum-number-of-removals-to-make-mountain-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1671-minimum-number-of-removals-to-make-mountain-array) |
 | [1691-maximum-height-by-stacking-cuboids](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1691-maximum-height-by-stacking-cuboids) |
 | [2163-minimum-difference-in-sums-after-removal-of-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2163-minimum-difference-in-sums-after-removal-of-elements) |
 | [2560-house-robber-iv](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2560-house-robber-iv) |
