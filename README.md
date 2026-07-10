@@ -145,6 +145,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3206-find-common-elements-between-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3206-find-common-elements-between-two-arrays) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3286-find-a-safe-walk-through-a-grid) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
+| [3534-path-existence-queries-in-a-graph-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
@@ -331,6 +332,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
 | [2161-partition-array-according-to-given-pivot](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2161-partition-array-according-to-given-pivot) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2271-rearrange-array-elements-by-sign) |
+| [3534-path-existence-queries-in-a-graph-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
 ## Sorting
@@ -370,6 +372,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 | [2126-destroying-asteroids](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2126-destroying-asteroids) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
+| [3534-path-existence-queries-in-a-graph-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
 ## Binary Search
@@ -405,6 +408,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2560-house-robber-iv](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2560-house-robber-iv) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3161-block-placement-queries](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3161-block-placement-queries) |
+| [3534-path-existence-queries-in-a-graph-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
 | [3932-count-k-th-roots-in-a-range](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3932-count-k-th-roots-in-a-range) |
@@ -513,6 +517,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0980-unique-paths-iii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0980-unique-paths-iii) |
 | [1655-distribute-repeating-integers](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1655-distribute-repeating-integers) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
+| [3534-path-existence-queries-in-a-graph-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
 ## Stack
 |  |
@@ -620,6 +625,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
 | [2202-maximize-the-topmost-element-after-k-moves](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2202-maximize-the-topmost-element-after-k-moves) |
 | [2560-house-robber-iv](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2560-house-robber-iv) |
+| [3534-path-existence-queries-in-a-graph-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
 | [3691-maximum-total-subarray-value-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3691-maximum-total-subarray-value-ii) |
@@ -702,6 +708,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1691-maximum-height-by-stacking-cuboids](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1691-maximum-height-by-stacking-cuboids) |
 | [2163-minimum-difference-in-sums-after-removal-of-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2163-minimum-difference-in-sums-after-removal-of-elements) |
 | [2560-house-robber-iv](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2560-house-robber-iv) |
+| [3534-path-existence-queries-in-a-graph-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
 ## Backtracking
 |  |
@@ -1109,6 +1116,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3286-find-a-safe-walk-through-a-grid) |
+| [3534-path-existence-queries-in-a-graph-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 ## Shortest Path
 |  |
 | ------- |
