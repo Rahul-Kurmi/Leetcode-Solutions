@@ -278,6 +278,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3120-count-the-number-of-special-characters-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3120-count-the-number-of-special-characters-i) |
 | [3305-count-of-substrings-containing-every-vowel-and-k-consonants-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3305-count-of-substrings-containing-every-vowel-and-k-consonants-i) |
 | [3306-count-of-substrings-containing-every-vowel-and-k-consonants-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3306-count-of-substrings-containing-every-vowel-and-k-consonants-ii) |
+| [3348-smallest-divisible-digit-product-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3348-smallest-divisible-digit-product-ii) |
 | [3407-substring-matching-pattern](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3407-substring-matching-pattern) |
 | [3614-process-string-with-special-operations-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3614-process-string-with-special-operations-ii) |
 | [3838-weighted-word-mapping](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3838-weighted-word-mapping) |
@@ -453,6 +454,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2523-closest-prime-numbers-in-range](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2523-closest-prime-numbers-in-range) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
+| [3348-smallest-divisible-digit-product-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3348-smallest-divisible-digit-product-ii) |
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3514-number-of-unique-xor-triplets-ii) |
 | [3536-maximum-product-of-two-digits](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3536-maximum-product-of-two-digits) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
@@ -638,6 +640,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
 | [2202-maximize-the-topmost-element-after-k-moves](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2202-maximize-the-topmost-element-after-k-moves) |
 | [2560-house-robber-iv](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2560-house-robber-iv) |
+| [3348-smallest-divisible-digit-product-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3348-smallest-divisible-digit-product-ii) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
@@ -662,6 +665,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2470-number-of-subarrays-with-lcm-equal-to-k](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2470-number-of-subarrays-with-lcm-equal-to-k) |
 | [2523-closest-prime-numbers-in-range](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2523-closest-prime-numbers-in-range) |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
+| [3348-smallest-divisible-digit-product-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3348-smallest-divisible-digit-product-ii) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3658-gcd-of-odd-and-even-sums) |
 ## Recursion
 |  |
@@ -749,6 +753,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0980-unique-paths-iii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0980-unique-paths-iii) |
 | [0988-smallest-string-starting-from-leaf](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0988-smallest-string-starting-from-leaf) |
 | [1655-distribute-repeating-integers](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1655-distribute-repeating-integers) |
+| [3348-smallest-divisible-digit-product-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3348-smallest-divisible-digit-product-ii) |
 ## Bucket Sort
 |  |
 | ------- |
