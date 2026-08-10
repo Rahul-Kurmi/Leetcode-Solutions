@@ -445,6 +445,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0973-k-closest-points-to-origin](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0973-k-closest-points-to-origin) |
 | [1031-add-to-array-form-of-integer](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1031-add-to-array-form-of-integer) |
 | [1048-clumsy-factorial](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1048-clumsy-factorial) |
+| [1510-stone-game-iv](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1510-stone-game-iv) |
 | [1776-car-fleet-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1776-car-fleet-ii) |
 | [1823-find-the-winner-of-the-circular-game](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1823-find-the-winner-of-the-circular-game) |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
@@ -723,6 +724,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1340-jump-game-v](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1340-jump-game-v) |
 | [1373-maximum-sum-bst-in-binary-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1373-maximum-sum-bst-in-binary-tree) |
 | [1402-reducing-dishes](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1402-reducing-dishes) |
+| [1510-stone-game-iv](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1510-stone-game-iv) |
 | [1655-distribute-repeating-integers](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1655-distribute-repeating-integers) |
 | [1671-minimum-number-of-removals-to-make-mountain-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1671-minimum-number-of-removals-to-make-mountain-array) |
 | [1691-maximum-height-by-stacking-cuboids](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1691-maximum-height-by-stacking-cuboids) |
@@ -1127,6 +1129,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0486-predict-the-winner](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0486-predict-the-winner) |
+| [1510-stone-game-iv](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1510-stone-game-iv) |
 ## Memoization
 |  |
 | ------- |
@@ -1149,4 +1152,20 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3286-find-a-safe-walk-through-a-grid) |
+## Minimax
+|  |
+| ------- |
+| [1510-stone-game-iv](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1510-stone-game-iv) |
+## Nim Game
+|  |
+| ------- |
+| [1510-stone-game-iv](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1510-stone-game-iv) |
+## Sprague–Grundy Theorem
+|  |
+| ------- |
+| [1510-stone-game-iv](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1510-stone-game-iv) |
+## Zero-Sum Game
+|  |
+| ------- |
+| [1510-stone-game-iv](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1510-stone-game-iv) |
 <!---LeetCode Topics End-->
