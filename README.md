@@ -140,6 +140,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2560-house-robber-iv](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2560-house-robber-iv) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2812-find-the-safest-path-in-a-grid) |
+| [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3020-find-the-maximum-number-of-elements-in-subset) |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
 | [3093-longest-common-suffix-queries](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3093-longest-common-suffix-queries) |
@@ -202,6 +203,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2385-amount-of-time-for-binary-tree-to-be-infected) |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
+| [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3020-find-the-maximum-number-of-elements-in-subset) |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
 | [3120-count-the-number-of-special-characters-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3120-count-the-number-of-special-characters-i) |
@@ -591,6 +593,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1456-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1456-maximum-number-of-vowels-in-a-substring-of-given-length) |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
+| [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [3305-count-of-substrings-containing-every-vowel-and-k-consonants-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3305-count-of-substrings-containing-every-vowel-and-k-consonants-i) |
 | [3306-count-of-substrings-containing-every-vowel-and-k-consonants-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3306-count-of-substrings-containing-every-vowel-and-k-consonants-ii) |
 ## Heap (Priority Queue)
