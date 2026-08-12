@@ -1,26 +1,30 @@
+//Approach-1 (With Nested Loop - Classic Sliding Window Template)
+//T.C : O(n)
+//S.C : O(n)
 class Solution {
 public:
     int maxSubarrayLength(vector<int>& nums, int k) {
-        unordered_map<int, int> mp ;
-        int i = 0 ; 
-        int j = 0 ;
-        int maxLen = 0 ;
-        while(j < nums.size()){
-            int element = nums[j];
-            if(mp[element] < k){
-                mp[element]++;
-                maxLen = max(maxLen , j - i + 1);
-                j++;
-            }
-            else{
-                while(nums[i] != element){
-                    mp[nums[i]]--;
-                    i++;
-                }
+        int n = nums.size();
+        
+        unordered_map<int, int> mp;
+        
+        int i = 0;
+        int j = 0;
+        int result = 0;
+        
+        while(j < n) {
+            
+            mp[nums[j]]++;
+            
+            while(i < j && mp[nums[j]] > k) {
                 mp[nums[i]]--;
                 i++;
             }
+            
+            result = max(result, j - i + 1);
+            j++;
         }
-        return maxLen; 
+        
+        return result;
     }
 };
