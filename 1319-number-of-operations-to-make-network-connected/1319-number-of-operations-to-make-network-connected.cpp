@@ -1,54 +1,54 @@
 class Solution {
 public:
-    void dfs(int node, vector<vector<int>>& adjList, vector<bool>& visited) {
-        visited[node] = true;
+    int find(int i , vector<int>& parent){
+        if(i == parent[i]){
+            return i ;
+        }
 
-        for(auto& neighbour : adjList[node]) {
-            if(!visited[neighbour]) {
-                dfs(neighbour, adjList, visited);
-            }
+        return parent[i] = find(parent[i] , parent);
+    }
+
+    void unionSet(int x, int y , vector<int>& parent, vector<int>& rank){
+        int x_parent = find(x , parent);
+        int y_parent = find(y , parent);
+
+        if(x_parent == y_parent) return ;
+
+        if(rank[x_parent] > rank[y_parent]){
+            parent[y_parent] = x_parent ;
+        }
+        else if(rank[x_parent] < rank[y_parent]){
+            parent[x_parent] = y_parent ;
+        }
+        else{
+            parent[x_parent] = y_parent ;
+            rank[y_parent] += 1 ;
         }
     }
 
     int makeConnected(int n, vector<vector<int>>& connections) {
-        int totalEdges = connections.size();
+        vector<int> parent(n);
+        vector<int> rank(n , 0);
 
-        // If there are n nodes, at least n-1 edges are required
-        // to connect all the nodes.
-        // If we have fewer than n-1 edges, it is impossible
-        // to make all the nodes connected.
-        if(totalEdges < n - 1) return -1;
-
-        // Since we have at least n-1 edges, it is possible to
-        // connect all the nodes.
-        // Now, we find the number of disconnected components.
-        // To connect 'components' components, we need
-        // exactly 'components - 1' connections.
-        
-        vector<vector<int>> adjList(n);
-
-        for(auto& edge : connections) {
-            int u = edge[0];
-            int v = edge[1];
-
-            adjList[u].push_back(v);
-            adjList[v].push_back(u);
+        for(int i = 0 ; i < n ; i++){
+            parent[i] = i ;
         }
 
-        vector<bool> visited(n, false);
+        int totalEdge =  connections.size();
+        if(totalEdge < n - 1) return -1 ;
 
-        int components = 0;
+        int components = n ;
 
-        // Count the number of disconnected components.
-        for(int i = 0; i < n; i++) {
-            if(!visited[i]) {
-                dfs(i, adjList, visited);
-                components++;
+        for(auto& edge : connections){
+            int x = edge[0];
+            int y = edge[1];
+
+            if(find(x, parent) != find(y, parent)){ // merge both 
+                unionSet(x, y, parent, rank);
+                components--;
             }
         }
 
-        // To connect 'components' components,
-        // we need 'components - 1' connections.
-        return components - 1;
+        return components - 1 ;
     }
 };
