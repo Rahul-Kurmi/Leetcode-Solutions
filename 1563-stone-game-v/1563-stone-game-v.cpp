@@ -1,57 +1,45 @@
+//Approach-1 - Recursion + Memo
+//T.C : O(n^3)
+//S.C : O(n^2)
 class Solution {
 public:
-    int getSum(vector<int>& stoneValue, int i, int j) {
-        int sum = 0;
-
-        while(i <= j) {
-            sum += stoneValue[i];
-            i++;
+    int t[501][501];
+    int solve(int l, int r, vector<int>& cumSum) {
+        if(l >= r) {
+            return 0; //Zero score. No further division possible
         }
 
-        return sum;
-    }
+        if(t[l][r] != -1) {
+            return t[l][r];
+        }
 
-    int solve(vector<int>& stoneValue, int start, int end, vector<vector<int>>& dp){
-        if(start == end)
-            return 0;
-        
-        if(dp[start][end] != -1) return dp[start][end];
+        int score = 0;
+        for(int mid = l; mid <= r-1; mid++) {
+            int leftSum  = cumSum[mid] - (l-1 >= 0 ? cumSum[l-1] : 0); //[l..mid]
+            int rightSum = cumSum[r] - cumSum[mid]; //mid+1, r
 
-        int totalSum = getSum(stoneValue, start, end);
-
-        int currSum = 0;
-        int maxSum = 0;
-
-        // divide at every possible position
-        for(int i = start; i < end; i++) {
-
-            currSum += stoneValue[i];
-
-            int leftSum = currSum;
-            int rightSum = totalSum - leftSum;
-
-            if(leftSum < rightSum) { // when righSum > leftSum, bob will remove rightSum
-                maxSum = max(maxSum, leftSum + solve(stoneValue, start, i, dp));
-            }
-            else if(leftSum > rightSum) {
-                maxSum = max(maxSum, rightSum + solve(stoneValue, i + 1, end, dp));
-            }
-            else {  // when leftSum == rightSum, Alice will want to maximize the sum 
-                maxSum = max(maxSum,
-                    max(
-                        leftSum + solve(stoneValue, start, i, dp),
-                        rightSum + solve(stoneValue, i + 1, end, dp)
-                    )
-                );
+            if(leftSum < rightSum) {
+                score = max(score, leftSum + solve(l, mid, cumSum));
+            } else if(leftSum > rightSum) {
+                score = max(score, rightSum + solve(mid+1, r, cumSum));
+            } else {
+                score = max({score, leftSum + solve(l, mid, cumSum), rightSum + solve(mid+1, r, cumSum)});
             }
         }
 
-        return dp[start][end] =  maxSum;
+        return t[l][r] = score;
     }
 
     int stoneGameV(vector<int>& stoneValue) {
         int n = stoneValue.size();
-        vector<vector<int>> dp(n+1, vector<int>(n+1 , -1));
-        return solve(stoneValue, 0, n - 1, dp);
+
+        vector<int> cumSum(n, 0);
+        cumSum[0] = stoneValue[0];
+        for(int i = 1; i < n; i++) {
+            cumSum[i] = cumSum[i-1] + stoneValue[i];
+        }
+
+        memset(t, -1, sizeof(t));
+        return solve(0, n-1, cumSum);
     }
 };
