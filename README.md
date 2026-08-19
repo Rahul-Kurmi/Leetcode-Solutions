@@ -105,6 +105,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1345-jump-game-iv](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1345-jump-game-iv) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1381-design-a-stack-with-increment-operation](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1381-design-a-stack-with-increment-operation) |
+| [1386-cinema-seat-allocation](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1386-cinema-seat-allocation) |
 | [1402-reducing-dishes](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1402-reducing-dishes) |
 | [1424-diagonal-traverse-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1424-diagonal-traverse-ii) |
 | [1441-build-an-array-with-stack-operations](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1441-build-an-array-with-stack-operations) |
@@ -199,6 +200,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1123-lowest-common-ancestor-of-deepest-leaves](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1123-lowest-common-ancestor-of-deepest-leaves) |
 | [1345-jump-game-iv](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1345-jump-game-iv) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
+| [1386-cinema-seat-allocation](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1386-cinema-seat-allocation) |
 | [1655-distribute-repeating-integers](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1655-distribute-repeating-integers) |
 | [1848-sum-of-unique-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1848-sum-of-unique-elements) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
@@ -535,6 +537,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0526-beautiful-arrangement](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0526-beautiful-arrangement) |
 | [0779-k-th-symbol-in-grammar](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0779-k-th-symbol-in-grammar) |
 | [0980-unique-paths-iii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0980-unique-paths-iii) |
+| [1386-cinema-seat-allocation](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1386-cinema-seat-allocation) |
 | [1655-distribute-repeating-integers](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1655-distribute-repeating-integers) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3514-number-of-unique-xor-triplets-ii) |
@@ -638,6 +641,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0767-reorganize-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0767-reorganize-string) |
 | [0871-minimum-number-of-refueling-stops](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0871-minimum-number-of-refueling-stops) |
 | [1382-balance-a-binary-search-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1382-balance-a-binary-search-tree) |
+| [1386-cinema-seat-allocation](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1386-cinema-seat-allocation) |
 | [1402-reducing-dishes](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1402-reducing-dishes) |
 | [1405-longest-happy-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1405-longest-happy-string) |
 | [1671-minimum-number-of-removals-to-make-mountain-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1671-minimum-number-of-removals-to-make-mountain-array) |
