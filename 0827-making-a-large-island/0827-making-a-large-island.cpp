@@ -1,71 +1,100 @@
-//Approach - 3  - Optimal DFS (You can use BFS as well)
-//T.C : O(m*n)
-//S.C : O(m*n)
 class Solution {
 public:
-    int m , n ;
-    vector<vector<int>> directions = {{0,1} , {1,0} , {-1, 0}, {0, -1}};
-
-    int DFS(int i , int j , vector<vector<int>>& grid, int unique_id){
-        grid[i][j] = unique_id ;
-
-        int size =  1;
-
-        for(auto dir : directions){
-            int new_i = i + dir[0];
-            int new_j = j + dir[1];
-
-            if(new_i >= 0 && new_j >= 0 && new_i < m && new_j < n && grid[new_i][new_j] == 1){
-                size += DFS(new_i , new_j , grid, unique_id);
-            }
+    // DSU with findParent and Union with size of the set 
+    int findParent(int x , vector<int>& parent){
+        if(x == parent[x]){
+            return x ;
         }
 
-        return size ; 
+        return parent[x] = findParent(parent[x] , parent);
     }
 
+    void unionBySize(int x, int y , vector<int>& size, vector<int>& parent){
+        int parent_x = findParent(x , parent);
+        int parent_y = findParent(y , parent);
+
+        if(parent_x == parent_y) return ;
+
+        if(size[parent_x] > size[parent_y]){
+            parent[parent_y] = parent_x ;
+            size[parent_x] += size[parent_y];
+        }
+        else{
+            parent[parent_x] = parent_y ;
+            size[parent_y] += size[parent_x];
+        }
+    }
+
+    // Global directions array
+    vector<vector<int>> directions{{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
 
     int largestIsland(vector<vector<int>>& grid) {
-        m = grid.size();
-        n = grid[0].size();
+        int m = grid.size();
+        int n = grid[0].size();
 
-        unordered_map<int , int> setUniqueIds ;
-        int unique_id = 2 ; // starting with unique id = 2 
+        int dsu_size = m * n ;
+        vector<int> parent(dsu_size);
+        for(int i = 0 ; i < dsu_size; i++){
+            parent[i] = i ;
+        }
 
-        int maxArea = 0 ;
+        vector<int> size(dsu_size, 1);
 
+        // Step 1: Connect all existing 1s using DSU
+        // visit every 1 in grid all combine sets of 1 
         for(int i = 0 ; i < m ; i++){
             for(int j = 0 ; j < n ; j++){
                 if(grid[i][j] == 1){
-                    int islandSize = DFS(i , j , grid, unique_id);
-                    setUniqueIds[unique_id] = islandSize;
-                    unique_id++;
-                    maxArea = max(maxArea, islandSize);
+                    int curr_node = i * n + j  ; // curr_row * col size + curr_col
+                    for(auto dir: directions){
+                        int new_i = i + dir[0];
+                        int new_j = j + dir[1];
+
+                        // if this adj node is also 1 
+                        if(new_i >= 0 && new_j >= 0 && new_i < m && new_j < n && grid[new_i][new_j] == 1){
+                            int new_node = new_i * n + new_j ; 
+                            unionBySize(curr_node, new_node, size, parent);
+                        }
+
+                    }
                 }
             }
         }
 
-        
 
+        // Step 2: Find the largest island without modification
+        int maxArea = 0 ;
+        for(int idx = 0 ; idx < dsu_size ; idx++){ // check for all DSU nodes which has maxArea
+            // this below if is so that we do less iteration ie. only for cell with 1 
+            if(grid[idx/m][idx%m] == 1){    // grid[idx/total_row][idx%total_row] --> gives correspoinding cell to node
+                maxArea = max(maxArea , size[idx]);
+            }
+        }
+        
+        // Step 3: Try flipping each 0 to 1
         for(int i = 0 ; i < m ; i++){
             for(int j = 0 ; j < n ; j++){
-                unordered_set<int> st; // store all unique ids
                 if(grid[i][j] == 0){
-                    for(vector<int>& dir : directions) {
-                        int x = i + dir[0];
-                        int y = j + dir[1];
-                        if(x >= 0 && x < m && y >= 0 && y < n && grid[x][y] != 0)
-                            st.insert(grid[x][y]);
+                    unordered_set<int> uniqueParents;
+                    for(auto dir: directions){
+                        int new_i = i + dir[0];
+                        int new_j = j + dir[1];
+
+                        // if this adj node is also 1 
+                        if(new_i >= 0 && new_j >= 0 && new_i < m && new_j < n && grid[new_i][new_j] == 1){
+                            int new_node = new_i * n + new_j ; 
+                            uniqueParents.insert(findParent(new_node, parent));
+                        }
                     }
-                    
-                    int sum = 1; //converting current 0 to 1
-                    for(const int &s : st) {
-                        sum += setUniqueIds[s];
+
+                    int newSize = 1; // Flip this 0 to 1
+                    for (int parent : uniqueParents) {
+                        newSize += size[parent];
                     }
-                    maxArea = max(maxArea, sum);
+                    maxArea = max(maxArea, newSize);
                 }
             }
         }
-
         return maxArea;
     }
 };
