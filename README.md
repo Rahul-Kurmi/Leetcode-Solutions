@@ -275,6 +275,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0696-count-binary-substrings](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0696-count-binary-substrings) |
 | [0767-reorganize-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0767-reorganize-string) |
 | [0917-reverse-only-letters](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0917-reverse-only-letters) |
+| [0940-distinct-subsequences-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0940-distinct-subsequences-ii) |
 | [0988-smallest-string-starting-from-leaf](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0988-smallest-string-starting-from-leaf) |
 | [1003-check-if-word-is-valid-after-substitutions](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1003-check-if-word-is-valid-after-substitutions) |
 | [1021-remove-outermost-parentheses](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1021-remove-outermost-parentheses) |
@@ -749,6 +750,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0788-rotated-digits](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0788-rotated-digits) |
 | [0801-minimum-swaps-to-make-sequences-increasing](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0801-minimum-swaps-to-make-sequences-increasing) |
 | [0871-minimum-number-of-refueling-stops](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0871-minimum-number-of-refueling-stops) |
+| [0940-distinct-subsequences-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0940-distinct-subsequences-ii) |
 | [1092-shortest-common-supersequence](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1092-shortest-common-supersequence) |
 | [1301-number-of-paths-with-max-score](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1301-number-of-paths-with-max-score) |
 | [1312-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1312-minimum-insertion-steps-to-make-a-string-palindrome) |
