@@ -86,6 +86,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0792-binary-search](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0792-binary-search) |
 | [0801-minimum-swaps-to-make-sequences-increasing](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0801-minimum-swaps-to-make-sequences-increasing) |
 | [0827-making-a-large-island](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0827-making-a-large-island) |
+| [0835-image-overlap](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0835-image-overlap) |
 | [0853-car-fleet](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0853-car-fleet) |
 | [0871-minimum-number-of-refueling-stops](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0871-minimum-number-of-refueling-stops) |
 | [0875-koko-eating-bananas](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0875-koko-eating-bananas) |
@@ -514,6 +515,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0463-island-perimeter](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0463-island-perimeter) |
 | [0498-diagonal-traverse](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0498-diagonal-traverse) |
 | [0827-making-a-large-island](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0827-making-a-large-island) |
+| [0835-image-overlap](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0835-image-overlap) |
 | [0898-transpose-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0898-transpose-matrix) |
 | [0980-unique-paths-iii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0980-unique-paths-iii) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1091-shortest-path-in-binary-matrix) |
