@@ -20,29 +20,6 @@ public:
         }
     }
 
-    int solve(string& s, int k , int i , int j, vector<vector<int>>& dp, vector<vector<bool>>& isPallindrome){
-        // BASE CASE:
-        int n = s.size();
-        if(i >= n || j >= n){
-            return 0 ;
-        }
-
-        if(dp[i][j] != -1) return dp[i][j];
-
-        // if pallindrome found     
-        int take = INT_MIN ;
-
-        if(isPallindrome[i][j]){
-            take = 1 + solve(s, k , j+1, j+k, dp, isPallindrome);
-        }
-
-        // pallindrome not possible
-        int grow = solve(s, k, i, j+1, dp, isPallindrome);
-        int slide = solve(s, k, i+1, j+1, dp, isPallindrome);
-
-        return dp[i][j] = max({take, grow, slide});
-    }
-
     int maxPalindromes(string s, int k) {
         
         // giving TLE for k = 1 and s size very large --> handle that edge case
@@ -56,8 +33,27 @@ public:
         // fill isPallindrome
         createIsPallindrome(isPallindrome , s);
 
-        // memoization vector
-        vector<vector<int>> dp(n , vector<int>(n , -1));
-        return solve(s, k, 0 , k-1, dp, isPallindrome);
+        // TABULATION CODE 
+        vector<vector<int>> dp(n + 1, vector<int>(n + 1 , 0));
+
+        for(int i = n-1 ; i >= 0 ; i--){
+            for(int j = n-1 ; j >= 0 ; j--){
+                // if pallindrome found     
+                int take = INT_MIN ;
+
+                if(isPallindrome[i][j]){
+                    // add check for j+k for out of bound errors
+                    take = 1 + (j + k < n ? dp[j+1][j+k] : 0);
+                }
+
+                // pallindrome not possible
+                int grow = dp[i][j+1];
+                int slide = dp[i+1][j+1];
+
+                dp[i][j] = max({take, grow, slide});
+            }
+        }
+
+        return dp[0][k-1]; 
     }
 };
