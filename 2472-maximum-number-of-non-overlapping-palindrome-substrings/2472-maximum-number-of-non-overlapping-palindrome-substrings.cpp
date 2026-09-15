@@ -20,40 +20,35 @@ public:
         }
     }
 
+    int solve(int len, int k,  string& s, vector<vector<bool>>& isPallindrome, vector<int>& dp){
+        if(len < k) return 0; // BASE CASE
+
+        if(dp[len] != -1) return dp[len];
+
+        int result = solve(len - 1, k , s, isPallindrome, dp);
+ 
+        int j = len - 1;
+
+        for(int i = 0 ; j - i + 1 >= k ; i++){
+            if(isPallindrome[i][j]){
+                result = max(result , 1 + solve(i, k, s, isPallindrome, dp));
+            }
+        } 
+
+        return  dp[len] = result ;
+    }
+
     int maxPalindromes(string s, int k) {
-        
-        // giving TLE for k = 1 and s size very large --> handle that edge case
         if(k == 1) return s.size();
 
         int n = s.size();
 
-        // creating isPallindrome 2D vector
         vector<vector<bool>> isPallindrome(n, vector<bool>(n , false));
-
-        // fill isPallindrome
         createIsPallindrome(isPallindrome , s);
 
-        // TABULATION CODE 
-        vector<vector<int>> dp(n + 1, vector<int>(n + 1 , 0));
+        // DP
+        vector<int> dp(n + 1, -1);
 
-        for(int i = n-1 ; i >= 0 ; i--){
-            for(int j = n-1 ; j >= 0 ; j--){
-                // if pallindrome found     
-                int take = INT_MIN ;
-
-                if(isPallindrome[i][j]){
-                    // add check for j+k for out of bound errors
-                    take = 1 + (j + k < n ? dp[j+1][j+k] : 0);
-                }
-
-                // pallindrome not possible
-                int grow = dp[i][j+1];
-                int slide = dp[i+1][j+1];
-
-                dp[i][j] = max({take, grow, slide});
-            }
-        }
-
-        return dp[0][k-1]; 
+        return solve(n, k, s, isPallindrome, dp);
     }
 };
