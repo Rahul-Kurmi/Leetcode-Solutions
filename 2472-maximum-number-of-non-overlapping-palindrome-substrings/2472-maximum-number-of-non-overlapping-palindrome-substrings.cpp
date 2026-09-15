@@ -46,9 +46,24 @@ public:
         vector<vector<bool>> isPallindrome(n, vector<bool>(n , false));
         createIsPallindrome(isPallindrome , s);
 
-        // DP
-        vector<int> dp(n + 1, -1);
+        // DP --> TABULATION
+        vector<int> dp(n + 1, 0);
 
-        return solve(n, k, s, isPallindrome, dp);
+        for(int len = k ; len <= n ; len++){
+
+            int result = dp[len - 1];
+
+            int j = len - 1;
+
+            for(int i = 0 ; j - i + 1 >= k ; i++){
+                if(isPallindrome[i][j]){
+                    result = max(result , 1 + dp[i]);
+                }
+            } 
+
+            dp[len] = result ;
+        }
+
+        return dp[n];
     }
 };
