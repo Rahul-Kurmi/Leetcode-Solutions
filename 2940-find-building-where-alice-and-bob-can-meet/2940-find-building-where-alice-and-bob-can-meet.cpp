@@ -1,92 +1,95 @@
+//Approach (Using Segment Tree Range Maximum Query + Binary Search)
+//T.C : O(n + q*(logn)^2)
+//S.C : O(n)
 class Solution {
 public:
-    void buildSegmentTree(int idx, int l, int r, int* segmentTree,  vector<int>& heights){
-        if(l == r){
-            segmentTree[idx] = l;
+    // Builds the segment tree using the max function and stores indices
+    void buildSegmentTree(int i, int l, int r, int segmentTree[], vector<int>& heights) {
+        if (l == r) {
+            segmentTree[i] = l; // Store the index
             return;
         }
-
-        int mid = l + (r - l)/2 ;
-        buildSegmentTree(2*idx + 1 , l , mid , segmentTree, heights);
-        buildSegmentTree(2*idx + 2 , mid + 1, r, segmentTree, heights);
-
-        segmentTree[idx] = (heights[segmentTree[2*idx+1]] > heights[segmentTree[2*idx + 2]]) ? 
-                            segmentTree[2*idx + 1] : segmentTree[2*idx + 2];
+        
+        int mid = l + (r - l) / 2;
+        buildSegmentTree(2 * i + 1, l, mid, segmentTree, heights);
+        buildSegmentTree(2 * i + 2, mid + 1, r, segmentTree, heights);
+        
+        // Store the index of the maximum element
+        segmentTree[i] = (heights[segmentTree[2 * i + 1]] >= heights[segmentTree[2 * i + 2]]) ?
+                        segmentTree[2 * i + 1] : segmentTree[2 * i + 2];
     }
 
-    int* constructSegTree(vector<int>& heights, int n){
-        int * segmentTree = new int[4*n] ;
-        buildSegmentTree(0 , 0 , n-1, segmentTree, heights);
-        return segmentTree ;
+    // Function to construct the segment tree
+    int* constructST(vector<int>& heights, int n) {
+        int* segmentTree = new int[4 * n];
+        buildSegmentTree(0, 0, n - 1, segmentTree, heights);
+        return segmentTree;
     }
 
-
-    int querySegmentTree(int start, int end, int idx, int l, int r, int* segmentTree, vector<int>& heights){
-        // CASE 1 : out of range
-        if(l > end || r < start ){
-            return -1 ; 
+    // Function to query the segment tree for the index of the maximum value in range [start, end]
+    int querySegmentTree(int start, int end, int i, int l, int r, int segmentTree[], vector<int>& heights) {
+        if (l > end || r < start) {
+            return -1; // Return -1 for out-of-bound queries
         }
-        // CASE 2 : perfectly in range 
-        else if(l >= start && r <= end) {
-            return segmentTree[idx];
+        
+        if (l >= start && r <= end) {
+            return segmentTree[i]; // Return the index of the maximum element
         }
-        // CASE 3 : Partial overlap
-        int mid = l + (r - l) / 2 ;
-        int leftIndex = querySegmentTree(start, end, 2*idx+1 , l , mid, segmentTree, heights);
-        int rightIndex = querySegmentTree(start, end, 2*idx+2, mid+1, r, segmentTree, heights);
+        
+        int mid = l + (r - l) / 2;
+        int leftIndex = querySegmentTree(start, end, 2 * i + 1, l, mid, segmentTree, heights);
+        int rightIndex = querySegmentTree(start, end, 2 * i + 2, mid + 1, r, segmentTree, heights);
 
-        // check for invalid indexes
-        if(leftIndex == -1) return rightIndex;
-        if(rightIndex == -1) return leftIndex;
+        // Handle cases where one side is out of bounds
+        if (leftIndex == -1)
+            return rightIndex;
+        if (rightIndex == -1)
+            return leftIndex;
 
-        return (heights[leftIndex] >= heights[rightIndex]) ? leftIndex : rightIndex ;
+        // Return the index of the maximum element
+        return (heights[leftIndex] >= heights[rightIndex]) ? leftIndex : rightIndex;
     }
 
-    int RMIQ(int* segmentTree, vector<int>& heights, int n, int start, int end){
-        return querySegmentTree(start, end , 0 , 0 , n-1 , segmentTree, heights);
+    // Function to return the index of the maximum element in the range from a to b
+    int RMIQ(int st[], vector<int>& heights, int n, int a, int b) {
+        return querySegmentTree(a, b, 0, 0, n - 1, st, heights);
     }
-
 
     vector<int> leftmostBuildingQueries(vector<int>& heights, vector<vector<int>>& queries) {
         int n = heights.size();
-        int* segmentTree = constructSegTree(heights, n);
+        int* segmentTree = constructST(heights, n);
 
-        vector<int> result ;
+        vector<int> result;
+        for(auto& query: queries){
+            int alice = min(query[0],query[1]);
+            int bob   = max(query[0],query[1]);
 
-        for(auto query : queries){
-            int minIdx = min(query[0] , query[1]);
-            int maxIdx = max(query[0] , query[1]);
-
-            if(minIdx == maxIdx){
-                result.push_back(minIdx);
+            if(alice == bob || heights[bob] > heights[alice]){
+                result.push_back(bob);
+                continue;
             }
-            else if(heights[maxIdx] > heights[minIdx]){
-                result.push_back(maxIdx);
-            }
-            else{
-                // get right range in which we will search for next leftmost higer building
-                int l = maxIdx + 1 ;
-                int r = n - 1;
-                int result_idx = INT_MAX ;
-                while(l <= r){
-                    int mid = l + (r - l) / 2 ;
 
-                    int idx = RMIQ(segmentTree, heights, n, l , mid);
+            int l = bob+1;
+            int r = n - 1;
+            int result_idx = INT_MAX;
+            while (l <= r) {
+                int mid = l + (r - l) / 2;
+                int idx = RMIQ(segmentTree, heights, n, l, mid);
 
-                    // if idx uilding is higher than both the building 
-                    if(heights[idx] > max(heights[maxIdx] , heights[minIdx])){
-                        r = mid - 1 ;
-                        result_idx = min(result_idx, idx);
-                    }
-                    else{
-                        l = mid + 1 ;
-                    }
+                if (heights[idx] > max(heights[alice], heights[bob])) {
+                    r = mid - 1;
+                    result_idx = min(result_idx, idx);
+                } else {
+                    l = mid + 1;
                 }
+            }
 
-                result_idx == INT_MAX ? result.push_back(-1) : result.push_back(result_idx);
+            if(result_idx == INT_MAX) {
+                result.push_back(-1);
+            } else {
+                result.push_back(result_idx);
             }
         }
-
-        return result ;
+        return result;
     }
 };
