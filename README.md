@@ -162,6 +162,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3479-fruits-into-baskets-iii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3479-fruits-into-baskets-iii) |
 | [3483-unique-3-digit-even-numbers](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3483-unique-3-digit-even-numbers) |
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3514-number-of-unique-xor-triplets-ii) |
+| [3524-find-x-value-of-array-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3524-find-x-value-of-array-i) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
@@ -493,6 +494,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
 | [3348-smallest-divisible-digit-product-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3348-smallest-divisible-digit-product-ii) |
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3514-number-of-unique-xor-triplets-ii) |
+| [3524-find-x-value-of-array-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3524-find-x-value-of-array-i) |
 | [3536-maximum-product-of-two-digits](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3536-maximum-product-of-two-digits) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
@@ -790,6 +792,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2560-house-robber-iv](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2560-house-robber-iv) |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
 | [3414-maximum-score-of-non-overlapping-intervals](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3414-maximum-score-of-non-overlapping-intervals) |
+| [3524-find-x-value-of-array-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3524-find-x-value-of-array-i) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
 ## Backtracking
