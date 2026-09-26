@@ -125,6 +125,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1691-maximum-height-by-stacking-cuboids](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1691-maximum-height-by-stacking-cuboids) |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1752-check-if-array-is-sorted-and-rotated) |
 | [1776-car-fleet-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1776-car-fleet-ii) |
+| [1807-evaluate-the-bracket-pairs-of-a-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1807-evaluate-the-bracket-pairs-of-a-string) |
 | [1823-find-the-winner-of-the-circular-game](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1823-find-the-winner-of-the-circular-game) |
 | [1848-sum-of-unique-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1848-sum-of-unique-elements) |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
@@ -221,6 +222,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1386-cinema-seat-allocation](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1386-cinema-seat-allocation) |
 | [1655-distribute-repeating-integers](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1655-distribute-repeating-integers) |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
+| [1807-evaluate-the-bracket-pairs-of-a-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1807-evaluate-the-bracket-pairs-of-a-string) |
 | [1848-sum-of-unique-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1848-sum-of-unique-elements) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 | [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2385-amount-of-time-for-binary-tree-to-be-infected) |
@@ -300,6 +302,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1405-longest-happy-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1405-longest-happy-string) |
 | [1456-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1456-maximum-number-of-vowels-in-a-substring-of-given-length) |
+| [1807-evaluate-the-bracket-pairs-of-a-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1807-evaluate-the-bracket-pairs-of-a-string) |
 | [1910-remove-all-occurrences-of-a-substring](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1910-remove-all-occurrences-of-a-substring) |
 | [1961-check-if-string-is-a-prefix-of-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1961-check-if-string-is-a-prefix-of-array) |
 | [1963-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1963-minimum-number-of-swaps-to-make-the-string-balanced) |
