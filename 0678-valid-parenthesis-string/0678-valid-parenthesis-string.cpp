@@ -1,57 +1,36 @@
+//(Using Bottom Up)
+//T.C : O(n*n)
+//S.C : O(n*n)
 class Solution {
-public:
-    int dp[101][101];
-
-    bool solve(string &s, int i, int count){
-
-        if(i == s.size()){
-            return count == 0;
-        }
-
-        // Already calculated this state
-        if(dp[i][count] != -1){
-            return dp[i][count];
-        }
-
-        bool ifOpen = false;
-
-        if(s[i] == '('){
-            ifOpen = solve(s, i+1, count+1);
-        }
-
-        bool ifClose = false;
-
-        if(s[i] == ')' && count > 0){
-            ifClose = solve(s, i+1, count-1);
-        }
-
-        bool ifStar = false;
-
-        if(s[i] == '*'){
-
-            // '*' -> '('
-            bool takeOpen = solve(s, i+1, count+1);
-
-            // '*' -> ')'
-            bool takeClose = false;
-
-            if(count > 0){
-                takeClose = solve(s, i+1, count-1);
-            }
-
-            // '*' -> empty
-            bool skip = solve(s, i+1, count);
-
-            ifStar = takeOpen || takeClose || skip;
-        }
-
-        return dp[i][count] = ifOpen || ifClose || ifStar;
-    }
-
+public: 
     bool checkValidString(string s) {
+        int n = s.size();
+        vector<vector<bool>> t(n + 1, vector<bool>(n + 1, false));
+        //State Definition :
+        //t[i][j] = if the string from index i to n-1 is valid or not having j count brackets
+        t[n][0] = true;
 
-        memset(dp, -1, sizeof(dp));
+        for (int i = n - 1; i >= 0; i--) {
+            for (int count = n; count >=0; count--) {
+                bool isValid = false;
 
-        return solve(s, 0, 0);
+                if (s[i] == '*') {
+                    isValid |= t[i + 1][count + 1]; //Treating * as ( --> solve(i+1, count+1)
+                    if (count > 0) {
+                        isValid |= t[i + 1][count - 1]; //Treating * as ) --> solve(i+1, count-1)
+                    }
+                    isValid |= t[i + 1][count]; //Treating * as empty --> solve(i+1, count)
+                } else {
+                    if (s[i] == '(') {
+                        isValid |= t[i + 1][count + 1]; //solve(i+1, count+1)
+                    } else if (count > 0) {
+                        isValid |= t[i + 1][count - 1]; //solve(i+1, count=-1)
+                    }
+                }
+                t[i][count] = isValid;
+            }
+        }
+
+        return t[0][0];
     }
 };
