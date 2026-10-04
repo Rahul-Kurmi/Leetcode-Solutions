@@ -1,36 +1,42 @@
-//(Using Bottom Up)
-//T.C : O(n*n)
-//S.C : O(n*n)
+// USING STACK 
 class Solution {
-public: 
+public:
     bool checkValidString(string s) {
-        int n = s.size();
-        vector<vector<bool>> t(n + 1, vector<bool>(n + 1, false));
-        //State Definition :
-        //t[i][j] = if the string from index i to n-1 is valid or not having j count brackets
-        t[n][0] = true;
-
-        for (int i = n - 1; i >= 0; i--) {
-            for (int count = n; count >=0; count--) {
-                bool isValid = false;
-
-                if (s[i] == '*') {
-                    isValid |= t[i + 1][count + 1]; //Treating * as ( --> solve(i+1, count+1)
-                    if (count > 0) {
-                        isValid |= t[i + 1][count - 1]; //Treating * as ) --> solve(i+1, count-1)
-                    }
-                    isValid |= t[i + 1][count]; //Treating * as empty --> solve(i+1, count)
-                } else {
-                    if (s[i] == '(') {
-                        isValid |= t[i + 1][count + 1]; //solve(i+1, count+1)
-                    } else if (count > 0) {
-                        isValid |= t[i + 1][count - 1]; //solve(i+1, count=-1)
-                    }
+        stack<int> st ;
+        stack<int> stars ;
+        for(int i = 0 ; i < s.size() ; i++){
+            if(s[i] == '('){
+                st.push(i);
+            }
+            else if(s[i] == ')'){
+                if(!st.empty()){
+                    st.pop();
                 }
-                t[i][count] = isValid;
+                else{ // st is empty no maching pair --> check if we have stars
+                    if(stars.empty()) return false ; // no mathing '(' for ')'
+                    else stars.pop();
+                }
+            }
+            else{ // push '*' in stars stack
+                stars.push(i);
             }
         }
 
-        return t[0][0];
+
+        while(!st.empty()){
+            // if no stars --> means can't get matching return false
+            if(stars.empty()) return false ;
+
+            // means we have remaining '(' in the stack
+            if(stars.top() > st.top()){
+                // means star came after '(' --> we can match
+                st.pop();
+                stars.pop();
+            }
+            else return false ;
+        }
+        
+        return true ;
+
     }
 };
