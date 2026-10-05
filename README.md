@@ -290,6 +290,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0692-top-k-frequent-words](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0692-top-k-frequent-words) |
 | [0696-count-binary-substrings](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0696-count-binary-substrings) |
 | [0767-reorganize-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0767-reorganize-string) |
+| [0856-score-of-parentheses](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0856-score-of-parentheses) |
 | [0917-reverse-only-letters](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0917-reverse-only-letters) |
 | [0940-distinct-subsequences-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0940-distinct-subsequences-ii) |
 | [0988-smallest-string-starting-from-leaf](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0988-smallest-string-starting-from-leaf) |
@@ -620,6 +621,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0678-valid-parenthesis-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0678-valid-parenthesis-string) |
 | [0739-daily-temperatures](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0739-daily-temperatures) |
 | [0853-car-fleet](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0853-car-fleet) |
+| [0856-score-of-parentheses](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0856-score-of-parentheses) |
 | [0901-online-stock-span](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0901-online-stock-span) |
 | [1003-check-if-word-is-valid-after-substitutions](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1003-check-if-word-is-valid-after-substitutions) |
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1008-construct-binary-search-tree-from-preorder-traversal) |
@@ -1309,6 +1311,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0022-generate-parentheses](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0022-generate-parentheses) |
 | [0678-valid-parenthesis-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0678-valid-parenthesis-string) |
+| [0856-score-of-parentheses](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0856-score-of-parentheses) |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1190-reverse-substrings-between-each-pair-of-parentheses) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 | [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
