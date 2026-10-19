@@ -135,6 +135,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [1991-find-the-middle-index-in-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1991-find-the-middle-index-in-array) |
 | [2064-minimized-maximum-of-products-distributed-to-any-store](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2064-minimized-maximum-of-products-distributed-to-any-store) |
+| [2089-find-target-indices-after-sorting-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2089-find-target-indices-after-sorting-array) |
 | [2126-destroying-asteroids](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2126-destroying-asteroids) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
 | [2161-partition-array-according-to-given-pivot](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2161-partition-array-according-to-given-pivot) |
@@ -424,6 +425,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1552-magnetic-force-between-two-balls](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1552-magnetic-force-between-two-balls) |
 | [1691-maximum-height-by-stacking-cuboids](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1691-maximum-height-by-stacking-cuboids) |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
+| [2089-find-target-indices-after-sorting-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2089-find-target-indices-after-sorting-array) |
 | [2126-destroying-asteroids](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2126-destroying-asteroids) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
 | [2333-minimum-sum-of-squared-difference](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2333-minimum-sum-of-squared-difference) |
@@ -464,6 +466,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
 | [1671-minimum-number-of-removals-to-make-mountain-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1671-minimum-number-of-removals-to-make-mountain-array) |
 | [2064-minimized-maximum-of-products-distributed-to-any-store](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2064-minimized-maximum-of-products-distributed-to-any-store) |
+| [2089-find-target-indices-after-sorting-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2089-find-target-indices-after-sorting-array) |
 | [2179-count-good-triplets-in-an-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2179-count-good-triplets-in-an-array) |
 | [2333-minimum-sum-of-squared-difference](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2529-maximum-count-of-positive-integer-and-negative-integer](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2529-maximum-count-of-positive-integer-and-negative-integer) |
