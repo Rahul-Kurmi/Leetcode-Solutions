@@ -183,6 +183,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3737-count-subarrays-with-majority-element-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3737-count-subarrays-with-majority-element-i) |
 | [3739-count-subarrays-with-majority-element-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3739-count-subarrays-with-majority-element-ii) |
 | [3838-weighted-word-mapping](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3838-weighted-word-mapping) |
+| [3886-sum-of-sortable-integers](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3886-sum-of-sortable-integers) |
 | [3923-minimum-generations-to-target-point](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3923-minimum-generations-to-target-point) |
 ## Hash Table
 |  |
@@ -436,6 +437,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
 | [3727-maximum-alternating-sum-of-squares](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3727-maximum-alternating-sum-of-squares) |
+| [3886-sum-of-sortable-integers](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3886-sum-of-sortable-integers) |
 ## Binary Search
 |  |
 | ------- |
@@ -533,6 +535,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3723-maximize-sum-of-squares-of-digits](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3723-maximize-sum-of-squares-of-digits) |
 | [3754-concatenate-non-zero-digits-and-multiply-by-sum-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3754-concatenate-non-zero-digits-and-multiply-by-sum-i) |
 | [3870-count-commas-in-range](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3870-count-commas-in-range) |
+| [3886-sum-of-sortable-integers](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3886-sum-of-sortable-integers) |
 | [3932-count-k-th-roots-in-a-range](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3932-count-k-th-roots-in-a-range) |
 ## Counting
 |  |
@@ -760,6 +763,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3020-find-the-maximum-number-of-elements-in-subset) |
 | [3483-unique-3-digit-even-numbers](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3483-unique-3-digit-even-numbers) |
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3514-number-of-unique-xor-triplets-ii) |
+| [3886-sum-of-sortable-integers](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3886-sum-of-sortable-integers) |
 ## Number Theory
 |  |
 | ------- |
