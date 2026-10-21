@@ -331,6 +331,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3407-substring-matching-pattern](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3407-substring-matching-pattern) |
 | [3614-process-string-with-special-operations-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3614-process-string-with-special-operations-ii) |
 | [3838-weighted-word-mapping](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3838-weighted-word-mapping) |
+| [3863-minimum-operations-to-sort-a-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3863-minimum-operations-to-sort-a-string) |
 | [3922-minimum-flips-to-make-binary-string-coherent](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3922-minimum-flips-to-make-binary-string-coherent) |
 ## Trie
 |  |
