@@ -185,6 +185,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3838-weighted-word-mapping](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3838-weighted-word-mapping) |
 | [3886-sum-of-sortable-integers](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3886-sum-of-sortable-integers) |
 | [3923-minimum-generations-to-target-point](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3923-minimum-generations-to-target-point) |
+| [3942-minimum-operations-to-sort-a-permutation](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3942-minimum-operations-to-sort-a-permutation) |
 ## Hash Table
 |  |
 | ------- |
