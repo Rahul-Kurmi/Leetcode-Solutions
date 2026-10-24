@@ -322,6 +322,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1910-remove-all-occurrences-of-a-substring](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1910-remove-all-occurrences-of-a-substring) |
 | [1961-check-if-string-is-a-prefix-of-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1961-check-if-string-is-a-prefix-of-array) |
 | [1963-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1963-minimum-number-of-swaps-to-make-the-string-balanced) |
+| [2409-count-days-spent-together](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2409-count-days-spent-together) |
 | [2414-length-of-the-longest-alphabetical-continuous-substring](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2414-length-of-the-longest-alphabetical-continuous-substring) |
 | [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2472-maximum-number-of-non-overlapping-palindrome-substrings) |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
@@ -522,6 +523,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [2180-count-integers-with-even-digit-sum](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2180-count-integers-with-even-digit-sum) |
+| [2409-count-days-spent-together](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2409-count-days-spent-together) |
 | [2470-number-of-subarrays-with-lcm-equal-to-k](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2470-number-of-subarrays-with-lcm-equal-to-k) |
 | [2523-closest-prime-numbers-in-range](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2523-closest-prime-numbers-in-range) |
 | [3116-kth-smallest-amount-with-single-denomination-combination](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3116-kth-smallest-amount-with-single-denomination-combination) |
