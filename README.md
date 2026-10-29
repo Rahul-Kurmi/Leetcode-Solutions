@@ -185,6 +185,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3737-count-subarrays-with-majority-element-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3737-count-subarrays-with-majority-element-i) |
 | [3739-count-subarrays-with-majority-element-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3739-count-subarrays-with-majority-element-ii) |
 | [3838-weighted-word-mapping](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3838-weighted-word-mapping) |
+| [3841-palindromic-path-queries-in-a-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3841-palindromic-path-queries-in-a-tree) |
 | [3882-minimum-xor-path-in-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3882-minimum-xor-path-in-a-grid) |
 | [3886-sum-of-sortable-integers](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3886-sum-of-sortable-integers) |
 | [3923-minimum-generations-to-target-point](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3923-minimum-generations-to-target-point) |
@@ -336,6 +337,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3407-substring-matching-pattern](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3407-substring-matching-pattern) |
 | [3614-process-string-with-special-operations-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3614-process-string-with-special-operations-ii) |
 | [3838-weighted-word-mapping](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3838-weighted-word-mapping) |
+| [3841-palindromic-path-queries-in-a-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3841-palindromic-path-queries-in-a-tree) |
 | [3863-minimum-operations-to-sort-a-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3863-minimum-operations-to-sort-a-string) |
 | [3922-minimum-flips-to-make-binary-string-coherent](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3922-minimum-flips-to-make-binary-string-coherent) |
 ## Trie
@@ -629,6 +631,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
 | [3644-maximum-k-to-sort-a-permutation](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3644-maximum-k-to-sort-a-permutation) |
 | [3702-longest-subsequence-with-non-zero-bitwise-xor](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3702-longest-subsequence-with-non-zero-bitwise-xor) |
+| [3841-palindromic-path-queries-in-a-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3841-palindromic-path-queries-in-a-tree) |
 | [3882-minimum-xor-path-in-a-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3882-minimum-xor-path-in-a-grid) |
 ## Stack
 |  |
@@ -921,6 +924,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2179-count-good-triplets-in-an-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2179-count-good-triplets-in-an-array) |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3737-count-subarrays-with-majority-element-i) |
 | [3739-count-subarrays-with-majority-element-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3739-count-subarrays-with-majority-element-ii) |
+| [3841-palindromic-path-queries-in-a-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3841-palindromic-path-queries-in-a-tree) |
 ## Merge Sort
 |  |
 | ------- |
@@ -992,6 +996,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
+| [3841-palindromic-path-queries-in-a-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3841-palindromic-path-queries-in-a-tree) |
 ## Linked List
 |  |
 | ------- |
@@ -1081,6 +1086,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2179-count-good-triplets-in-an-array](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2179-count-good-triplets-in-an-array) |
 | [2940-find-building-where-alice-and-bob-can-meet](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2940-find-building-where-alice-and-bob-can-meet) |
 | [3161-block-placement-queries](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3161-block-placement-queries) |
+| [3841-palindromic-path-queries-in-a-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3841-palindromic-path-queries-in-a-tree) |
 ## Segment Tree
 |  |
 | ------- |
@@ -1094,6 +1100,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3691-maximum-total-subarray-value-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3691-maximum-total-subarray-value-ii) |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3737-count-subarrays-with-majority-element-i) |
 | [3739-count-subarrays-with-majority-element-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3739-count-subarrays-with-majority-element-ii) |
+| [3841-palindromic-path-queries-in-a-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3841-palindromic-path-queries-in-a-tree) |
 ## Ordered Set
 |  |
 | ------- |
@@ -1165,6 +1172,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2385-amount-of-time-for-binary-tree-to-be-infected) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
+| [3841-palindromic-path-queries-in-a-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/3841-palindromic-path-queries-in-a-tree) |
 ## Breadth-First Search
 |  |
 | ------- |
