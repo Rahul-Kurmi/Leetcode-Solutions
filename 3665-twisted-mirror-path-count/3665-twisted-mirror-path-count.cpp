@@ -2,47 +2,47 @@ class Solution {
 public:
     int MOD = 1e9 + 7;
 
-    int solve(vector<vector<int>>& grid, int i, int j, bool isDown, vector<vector<vector<int>>>& dp) {
-
-        int m = grid.size();
-        int n = grid[0].size();
-
-        if(i >= m || j >= n) return 0;
-
-        if(i == m-1 && j == n-1) return 1;
-
-        if(dp[i][j][isDown] != -1) {
-            return dp[i][j][isDown];
-        }
-
-        // If current cell is 1
-        if(grid[i][j] == 1) {
-            if(isDown) {
-                return dp[i][j][isDown] = solve(grid, i, j+1, false, dp);
-            }
-            else {
-                return dp[i][j][isDown] = solve(grid, i+1, j, true, dp);
-            }
-        }
-
-        // Move Right
-        int moveRight = solve(grid, i, j+1, false, dp);
-
-        // Move Down
-        int moveDown = solve(grid, i+1, j, true, dp);
-
-        return dp[i][j][isDown] = (moveRight + moveDown) % MOD;
-    }
-
     int uniquePaths(vector<vector<int>>& grid) {
 
         int m = grid.size();
         int n = grid[0].size();
 
-        vector<vector<vector<int>>> dp(
-            m, vector<vector<int>>(n, vector<int>(2, -1))
-        );
+        vector<vector<vector<int>>> dp(m+1, vector<vector<int>>(n+1, vector<int>(2, 0)));
 
-        return solve(grid, 0, 0, false, dp);
+        // Base case: Destination
+        dp[m-1][n-1][0] = 1;
+        dp[m-1][n-1][1] = 1;
+
+        // Traverse from bottom-right to top-left
+        for(int i = m-1; i >= 0; i--) {
+            for(int j = n-1; j >= 0; j--) {
+
+                // Destination already initialized
+                if(i == m-1 && j == n-1) continue;
+
+                // If current cell is 1
+                if(grid[i][j] == 1) {
+
+                    // Arrived by moving RIGHT
+                    dp[i][j][0] = dp[i+1][j][1];
+
+                    // Arrived by moving DOWN
+                    dp[i][j][1] = dp[i][j+1][0];
+                }
+
+                else {
+
+                    int moveRight = dp[i][j+1][0];
+                    int moveDown = dp[i+1][j][1];
+
+                    int total = (moveRight + 1LL * moveDown) % MOD;
+
+                    dp[i][j][0] = total;
+                    dp[i][j][1] = total;
+                }
+            }
+        }
+
+        return dp[0][0][0];
     }
 };
