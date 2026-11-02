@@ -1,4 +1,4 @@
-//Approach-1 (Greedily Pick mid element)
+//Approach-2 (Iterate till n/2)
 //T.C : O(nlogn) for sorting
 //S.C : O(1)
 class Solution {
@@ -11,8 +11,9 @@ public:
         int mid = nums[n/2];
 
         int moves = 0;
-        for(int i = 0; i < n; i++) {
+        for(int i = 0; i < n/2; i++) {
             moves += abs(nums[i] - mid);
+            moves += abs(nums[n-i-1] - mid);
         }
 
         return moves;
