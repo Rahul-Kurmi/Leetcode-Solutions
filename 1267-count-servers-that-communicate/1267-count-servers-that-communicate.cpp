@@ -1,44 +1,81 @@
-//Approach - 3 (Another better Approach)
-//T.C : O(m*n)
-//S.C : O(m+n)
+// Approach 4 : DSU
 class Solution {
 public:
+    void Union(int x, int y, vector<int>& parent, vector<int>& rank) {
+
+        int x_parent = findParent(x, parent);
+        int y_parent = findParent(y, parent);
+
+        if(x_parent == y_parent) return;
+
+        if(rank[y_parent] > rank[x_parent]) {
+            parent[x_parent] = y_parent;
+        }
+        else if(rank[x_parent] > rank[y_parent]) {
+            parent[y_parent] = x_parent;
+        }
+        else {
+            parent[y_parent] = x_parent;
+            rank[x_parent]++;
+        }
+    }
+
+    int findParent(int x, vector<int>& parent) {
+        if(x == parent[x]) {
+            return x;
+        }
+
+        return parent[x] = findParent(parent[x], parent);
+    }
+
     int countServers(vector<vector<int>>& grid) {
+
         int m = grid.size();
         int n = grid[0].size();
 
-        vector<int> colServerCount(n, 0);
-        vector<int> RowAkelaServerCol(m, -1);
+        // DSU contains row nodes + column nodes
+        vector<int> parent(m + n);
+        vector<int> rank(m + n, 0);
 
-        int resultServers = 0;
-
-        for(int row = 0; row < m; row++) {
-            int countServersRow = 0;
-            for(int col = 0; col < n; col++) {
-                if(grid[row][col] == 1) {
-                    countServersRow += 1;
-                    colServerCount[col]++;
-                    RowAkelaServerCol[row] = col;
-                }
-            }
-
-            if(countServersRow > 1) {
-                resultServers += countServersRow;
-                RowAkelaServerCol[row] = -1; //no akela server in this row
-            }
+        for(int i = 0; i < m + n; i++) {
+            parent[i] = i;
         }
 
-        //Check Akela servers in each row
-        for(int row = 0; row < m; row++) {
-            if(RowAkelaServerCol[row] != -1) {
-                int col = RowAkelaServerCol[row];
-                if(colServerCount[col] > 1) {
-                    resultServers += 1;
+        vector<vector<int>> adjList(m);
+
+        // Build adjacency list
+        for(int i = 0; i < m; i++) {
+            for(int j = 0; j < n; j++) {
+
+                if(grid[i][j] == 1) {
+                    adjList[i].push_back(m + j);
+
+                    // Connect row i with column m+j
+                    Union(i, m + j, parent, rank);
                 }
             }
         }
 
-        return resultServers;
-        
+        // Count actual servers in each connected component
+        unordered_map<int, int> mp;
+
+        for(int i = 0; i < m; i++) {
+            for(auto ngh : adjList[i]) {
+
+                int root = findParent(i, parent);
+                mp[root]++;
+            }
+        }
+
+        // Count servers belonging to components with size > 1
+        int ans = 0;
+
+        for(auto &it : mp) {
+            if(it.second > 1) {
+                ans += it.second;
+            }
+        }
+
+        return ans;
     }
 };
