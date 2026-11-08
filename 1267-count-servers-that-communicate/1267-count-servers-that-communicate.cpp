@@ -1,4 +1,4 @@
-//Approach - 2 (Better Approach)
+//Approach - 3 (Another better Approach)
 //T.C : O(m*n)
 //S.C : O(m+n)
 class Solution {
@@ -7,27 +7,38 @@ public:
         int m = grid.size();
         int n = grid[0].size();
 
-        vector<int> indexColCount(n, 0);
-        vector<int> indexRowCount(m, 0);
-        
-        //Preprocessing
+        vector<int> colServerCount(n, 0);
+        vector<int> RowAkelaServerCol(m, -1);
+
+        int resultServers = 0;
+
         for(int row = 0; row < m; row++) {
+            int countServersRow = 0;
             for(int col = 0; col < n; col++) {
-                if(grid[row][col] == 1) { //found a server at grid[row][col]
-                    indexColCount[col] += 1;
-                    indexRowCount[row] += 1;
+                if(grid[row][col] == 1) {
+                    countServersRow += 1;
+                    colServerCount[col]++;
+                    RowAkelaServerCol[row] = col;
+                }
+            }
+
+            if(countServersRow > 1) {
+                resultServers += countServersRow;
+                RowAkelaServerCol[row] = -1; //no akela server in this row
+            }
+        }
+
+        //Check Akela servers in each row
+        for(int row = 0; row < m; row++) {
+            if(RowAkelaServerCol[row] != -1) {
+                int col = RowAkelaServerCol[row];
+                if(colServerCount[col] > 1) {
+                    resultServers += 1;
                 }
             }
         }
 
-        int resultServers = 0;
-        for(int row = 0; row < m; row++) {
-            for(int col = 0; col < n; col++) {
-                if(grid[row][col] == 1 && (indexColCount[col] > 1 || indexRowCount[row] > 1)) {
-                    resultServers++;
-                }
-            }
-        }
         return resultServers;
+        
     }
 };
