@@ -104,6 +104,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1091-shortest-path-in-binary-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1091-shortest-path-in-binary-matrix) |
 | [1254-number-of-closed-islands](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1254-number-of-closed-islands) |
 | [1260-shift-2d-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1260-shift-2d-grid) |
+| [1267-count-servers-that-communicate](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1267-count-servers-that-communicate) |
 | [1268-search-suggestions-system](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1268-search-suggestions-system) |
 | [1299-replace-elements-with-greatest-element-on-right-side](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1299-replace-elements-with-greatest-element-on-right-side) |
 | [1301-number-of-paths-with-max-score](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1301-number-of-paths-with-max-score) |
@@ -572,6 +573,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0387-first-unique-character-in-a-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0387-first-unique-character-in-a-string) |
 | [0692-top-k-frequent-words](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0692-top-k-frequent-words) |
 | [0767-reorganize-string](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0767-reorganize-string) |
+| [1267-count-servers-that-communicate](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1267-count-servers-that-communicate) |
 | [1655-distribute-repeating-integers](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1655-distribute-repeating-integers) |
 | [1848-sum-of-unique-elements](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1848-sum-of-unique-elements) |
 | [2529-maximum-count-of-positive-integer-and-negative-integer](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2529-maximum-count-of-positive-integer-and-negative-integer) |
@@ -594,6 +596,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1091-shortest-path-in-binary-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1091-shortest-path-in-binary-matrix) |
 | [1254-number-of-closed-islands](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1254-number-of-closed-islands) |
 | [1260-shift-2d-grid](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1260-shift-2d-grid) |
+| [1267-count-servers-that-communicate](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1267-count-servers-that-communicate) |
 | [1301-number-of-paths-with-max-score](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1301-number-of-paths-with-max-score) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1572-matrix-diagonal-sum](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1572-matrix-diagonal-sum) |
@@ -1011,6 +1014,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0988-smallest-string-starting-from-leaf](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0988-smallest-string-starting-from-leaf) |
 | [1123-lowest-common-ancestor-of-deepest-leaves](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1123-lowest-common-ancestor-of-deepest-leaves) |
 | [1254-number-of-closed-islands](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1254-number-of-closed-islands) |
+| [1267-count-servers-that-communicate](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1267-count-servers-that-communicate) |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1319-number-of-operations-to-make-network-connected) |
 | [1367-linked-list-in-binary-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1367-linked-list-in-binary-tree) |
 | [1373-maximum-sum-bst-in-binary-tree](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1373-maximum-sum-bst-in-binary-tree) |
@@ -1227,6 +1231,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1096-brace-expansion-ii](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1096-brace-expansion-ii) |
 | [1123-lowest-common-ancestor-of-deepest-leaves](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1123-lowest-common-ancestor-of-deepest-leaves) |
 | [1254-number-of-closed-islands](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1254-number-of-closed-islands) |
+| [1267-count-servers-that-communicate](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1267-count-servers-that-communicate) |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1319-number-of-operations-to-make-network-connected) |
 | [1345-jump-game-iv](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1345-jump-game-iv) |
 | [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2385-amount-of-time-for-binary-tree-to-be-infected) |
@@ -1337,6 +1342,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0827-making-a-large-island](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0827-making-a-large-island) |
 | [0947-most-stones-removed-with-same-row-or-column](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/0947-most-stones-removed-with-same-row-or-column) |
 | [1254-number-of-closed-islands](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1254-number-of-closed-islands) |
+| [1267-count-servers-that-communicate](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1267-count-servers-that-communicate) |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/1319-number-of-operations-to-make-network-connected) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2685-count-the-number-of-complete-components](https://github.com/Rahul-Kurmi/Leetcode-Solutions/tree/master/2685-count-the-number-of-complete-components) |
