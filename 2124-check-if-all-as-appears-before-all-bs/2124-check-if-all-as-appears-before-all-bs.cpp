@@ -1,9 +1,9 @@
-//Approach-3 (Substring search for "ba")
-//T.C : O(n)  (the pattern has constant length 2)
+//Approach-4 (Check if string is sorted)
+//T.C : O(n)
 //S.C : O(1)
 class Solution {
 public:
     bool checkString(string s) {
-        return s.find("ba") == string::npos;
+        return is_sorted(begin(s), end(s));
     }
 };
