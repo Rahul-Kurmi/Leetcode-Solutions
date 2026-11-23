@@ -1,34 +1,36 @@
-
+//T.C : O(1) for both methods
+//S.C : O(n) for the stream
 class ProductOfNumbers {
 public:
-    vector<long long> prefixProduct;
+    vector<int> nums; //cumulative prod store karenge
+    int n;
 
     ProductOfNumbers() {
-        
+        nums.clear();
+        n = 0;
     }
     
     void add(int num) {
         if(num == 0) {
-            prefixProduct.clear();
-        }
-        else {
-            if(prefixProduct.empty()) {
-                prefixProduct.push_back(num);
+            nums = {}; // make it empty 
+            n = 0;
+        } else {
+            if(nums.empty()) {
+                nums.push_back(num);
+            } else {
+                nums.push_back(nums[n-1] * num);
             }
-            else {
-                long long last = prefixProduct.back();
-                prefixProduct.push_back(last * num);
-            }
+            n++; //increasing size by 1
         }
     }
     
     int getProduct(int k) {
-        if(k > prefixProduct.size()) return 0;
+        if(k > n) {
+            return 0;
+        } else if(k == n) {
+            return nums[n-1];
+        }
 
-        int n = prefixProduct.size();
-
-        if(k == n) return prefixProduct[n-1];
-
-        return prefixProduct[n-1] / prefixProduct[n-k-1];
+        return nums[n-1] / nums[n-k-1];
     }
 };
