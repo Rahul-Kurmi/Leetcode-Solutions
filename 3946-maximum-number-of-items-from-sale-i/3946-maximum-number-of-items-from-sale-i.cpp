@@ -1,8 +1,30 @@
-//Approach-2 (Bottom Up)
+//Approach-1 (Recursion Memo)
 //T.C : O(n^2 + n*budget)
 //S.C : O(n + n*budget)
 class Solution {
 public:
+    int t[1001][1501];
+
+    int solve(int i, int budget, int minPrice, vector<vector<int>>& items, vector<int>& copies) {
+        if(i == 0) {
+            return budget/minPrice;
+        }
+
+        if(t[i][budget] != -1)
+            return t[i][budget];
+
+        int take = 0;
+        int price = items[i-1][1];
+
+        if(price <= budget) {
+            take = 1 + copies[i-1] + solve(i-1, budget-price, minPrice, items, copies);
+        }
+
+        int skip = solve(i-1, budget, minPrice, items, copies);
+
+        return t[i][budget] = max(take, skip);
+    }
+
     int maximumSaleItems(vector<vector<int>>& items, int budget) {
         int n = items.size();
 
@@ -23,27 +45,7 @@ public:
             copies[i] = copy;
         }
 
-        vector<vector<int>> t(n + 1, vector<int>(budget + 1, 0));
-
-        // Base case: no item types left, spend leftover on the cheapest item
-        // n = 0
-        for (int b = 0; b <= budget; b++)
-            t[0][b] = b / minPrice;
-
-        for (int i = 1; i <= n; i++) {
-            for (int b = 0; b <= budget; b++) {
-                int price = items[i - 1][1];
-                int take = 0;
-
-                if (price <= b)
-                    take = 1 + copies[i - 1] + t[i - 1][b - price];
-
-                int skip = t[i - 1][b];
-
-                t[i][b] = max(take, skip);
-            }
-        }
-
-        return t[n][budget];
+        memset(t, -1, sizeof(t));
+        return solve(n, budget, minPrice, items, copies);
     }
 };
